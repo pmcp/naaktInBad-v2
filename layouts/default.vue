@@ -10,10 +10,9 @@
       </div>
     </div>
     <main class="w-1/2">
-
       <nuxt class="mx-32"/>
     </main>
-    <More class="fixed bottom-0 z-10"/>
+    <More class="fixed bottom-0 z-10 w-full"/>
   </div>
 </template>
 <script>

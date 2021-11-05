@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="relative mb-10 ">
+    <div class="relative mb-10 w-full">
       <button @click="toggleMore">More Columns</button>
     </div>
     <custom-transition :id="1">

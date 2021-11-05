@@ -1,0 +1,7 @@
+# example netlify.toml
+[build]
+  command = "nuxt generate"
+  functions = "functions"
+  publish = "dist"
+[dev]
+  command = "npm run dev" # or serve/dev/watch, depending on the scripts in package.json
