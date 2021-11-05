@@ -1,0 +1,9 @@
+<template>
+  <vue-plyr>
+    <audio>
+      <source
+        src="/audio/sample.mp3"
+        type="audio/mp3">
+    </audio>
+  </vue-plyr>
+</template>

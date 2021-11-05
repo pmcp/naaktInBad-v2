@@ -2,7 +2,6 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'universal',
-  target: 'static',
   /*
   ** Headers of the page
   */
@@ -13,11 +12,9 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
-
+  plugins: [{ src: '~/plugins/vue-plyr', mode: 'client' }],
   /*
   ** Customize the progress-bar color
   */
@@ -26,20 +23,12 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [
-  ],
-
-  /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
+  css: [],
 
   /*
   ** Nuxt.js modules
   */
-  modules: [
-  ],
+  modules: ['@nuxt/content'],
 
   /*
   ** Build configuration
@@ -59,5 +48,9 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  //  Added by PMCP
+  target: 'static',
+  components: true,
+  buildModules: ['@nuxtjs/tailwindcss'],
 }

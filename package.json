@@ -14,21 +14,28 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxt/content": "^1.15.0",
+    "@tailwindcss/typography": "^0.4.1",
     "cross-env": "^5.2.0",
     "netlify-identity-widget": "^1.9.2",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "vue-plyr": "^7.0.0",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.2.1",
+    "autoprefixer": "^9.8.8",
     "babel-eslint": "^8.2.1",
     "eslint": "^5.0.1",
     "eslint-config-prettier": "^3.1.0",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-prettier": "2.6.2",
     "eslint-plugin-vue": "^4.0.0",
-    "nodemon": "^1.11.0",
-    "prettier": "1.14.3",
     "netlify-cli": "^3.39.4",
-    "netlify-lambda": "^1.6.3"
+    "netlify-lambda": "^1.6.3",
+    "nodemon": "^1.11.0",
+    "postcss": "^7.0.39",
+    "prettier": "1.14.3",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }
