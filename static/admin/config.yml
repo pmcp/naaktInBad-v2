@@ -1,0 +1,132 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
+
+media_folder: static/img
+public_folder: /img
+
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 'acd567a26350e2ad1a5f'
+
+# TODO: Add image upload
+# TODO: Add editorial flow
+# TODO: Change name of article in list
+collections:
+  - name: 'articles'
+    label: 'Articles'
+    folder: 'content/articles'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - label: 'Song'
+        name: 'song'
+        widget: 'string'
+
+      - label: 'Artist'
+        name: 'artist'
+        widget: 'string'
+
+      - label: 'Label'
+        name: 'label'
+        widget: 'string'
+
+      - label: 'Release Year'
+        name: 'release'
+        widget: 'string'
+
+      - label: 'Image'
+        name: 'cover'
+        widget: 'image'
+        media_library:
+          config:
+            multiple: false,
+            previewStep: false
+
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'relation'
+        required: false
+        collection: 'tags'
+        search_fields: ['name']
+        value_field: 'name'
+        multiple: true
+        display_fields: ['name']
+
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+
+      - label: "Audio"
+        name: "audio"
+        widget: "file"
+        media_library:
+          config:
+            multiple: false
+
+      - label: 'Publish Date'
+        name: 'date'
+        widget: 'datetime'
+
+  - name: 'pages'
+    label: 'Pages'
+    folder: 'content/pages'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+
+      - label: 'Publish Date'
+        name: 'date'
+        widget: 'datetime'
+
+  - name: 'tags'
+    label: 'Tags'
+    folder: 'content/tags'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+  - label: 'Settings'
+    name: 'settings'
+    files:
+      - label: 'Website Settings'
+        name: 'main'
+        editor:
+          preview: false
+        file: 'content/settings/main.yml'
+        fields:
+          # TODO: add all social stuff
+          - { label: Website Title, name: title, widget: string }
+
+      - label: 'Social Settings'
+        name: 'social'
+        editor:
+          preview: false
+        file: 'site/content/settings/social.yml'
+        fields:
+          # TODO: add all social stuff
+          - { label: Test, name: test, widget: string }

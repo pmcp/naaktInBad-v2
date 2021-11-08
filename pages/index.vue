@@ -1,6 +1,6 @@
 <template>
   <div>
-    <articles :articles="articles"/>
+    <articles/>
   </div>
 </template>
 
@@ -13,15 +13,18 @@ export default {
         { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
       ]
     }
-  },
-
-  async asyncData({ $content }) {
-    const articles = await $content('articles').fetch()
-    const settings = await $content('settings').fetch()
-    return {
-      articles,
-      settings
-    }
   }
+
+  // TODO: Move this to store
+  // async asyncData({ $content }) {
+  //   const articles = await $content('articles')
+  //     .limit(2)
+  //     .fetch()
+  //   const settings = await $content('settings').fetch()
+  //   return {
+  //     articles,
+  //     settings
+  //   }
+  // }
 }
 </script>

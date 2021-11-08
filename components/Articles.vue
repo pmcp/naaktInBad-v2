@@ -1,22 +1,40 @@
 <template>
   <div>
-    <!-- TODO: lazy load (check nuxt content) -->
     <div
       v-for="(article, i) in articles"
       :key="`articles_${i}`">
-      <nuxt-content
-        :document="article"
-      />
+      <Observer @intersect="intersected(article.slug)"/>
+      <Article :article="article" />
+      {{ article.artist }}
+      <br><br><br><br><br><br>
+
+
+
     </div>
   </div>
 </template>
 <script>
+import { mapActions } from 'vuex'
+
 export default {
-  props: {
-    articles: {
-      type: Array,
-      required: true
+  data() {
+    return {
+      observer: null
     }
+  },
+  computed: {
+    articles() {
+      return this.$store.getters.articles
+    }
+  },
+  mounted() {
+    this.getLatestArticles()
+  },
+  methods: {
+    async intersected(slug) {
+      this.getNextArticle(slug)
+    },
+    ...mapActions(['getLatestArticles', 'getNextArticle'])
   }
 }
 </script>

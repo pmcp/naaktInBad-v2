@@ -1,4 +1,5 @@
 export const state = () => ({
+  articles: [],
   animationStyles: [
     {
       description: 'simple fade',
@@ -40,22 +41,49 @@ export const state = () => ({
     }
   ],
   moreOpen: false,
-  titleAudio: 'test'
+  titleAudio: 'test',
+  activeArticle: 0
 })
 
 export const mutations = {
   setMore(state, val) {
     state.moreOpen = val
+  },
+  setActiveArticle(state, val) {
+    state.activeArticle = val
+  },
+  addArticles(state, newArticles) {
+    state.articles = [...state.articles, ...newArticles]
   }
 }
 
 export const actions = {
+  async getLatestArticles({ state, commit }, id) {
+    const article = await this.$content('articles')
+      .sortBy('date', 'asc')
+      .limit(1)
+      .fetch()
+    commit('addArticles', article)
+  },
+  async getNextArticle({ state, commit }, slug) {
+    const [prev, next] = await this.$content('articles')
+      .sortBy('date', 'asc')
+      .surround(slug)
+      .fetch()
+    // TODO: feedback when last article
+    console.log(slug, prev, next)
+    if (next === null) return
+    commit('addArticles', [next])
+  },
   toggleMore({ state, commit }) {
     commit('setMore', !state.moreOpen)
   }
 }
 
 export const getters = {
+  articles: state => {
+    return state.articles
+  },
   plyrDesign: state => {
     return {
       controls: `

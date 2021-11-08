@@ -52,5 +52,5 @@ module.exports = {
   //  Added by PMCP
   target: 'static',
   components: true,
-  buildModules: ['@nuxtjs/tailwindcss'],
+  buildModules: ['@nuxtjs/tailwindcss', '@vueuse/core/nuxt']
 }
