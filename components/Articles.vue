@@ -5,11 +5,6 @@
       :key="`articles_${i}`">
       <Observer @intersect="intersected(article.slug)"/>
       <Article :article="article" />
-      {{ article.artist }}
-      <br><br><br><br><br><br>
-
-
-
     </div>
   </div>
 </template>

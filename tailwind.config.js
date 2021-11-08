@@ -12,7 +12,8 @@ module.exports = {
     },
     colors: {
       transparent: 'transparent',
-      current: 'currentColor'
+      current: 'currentColor',
+      white: '#fff'
     },
     spacing: {
       px: '1px',

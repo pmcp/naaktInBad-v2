@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="flex justify-between w-full">
+    class="flex justify-between w-full bg-white">
     <div
       v-for="(navItem, i) in navigation"
       :key="`navigation_${i}`">

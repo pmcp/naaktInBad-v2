@@ -1,13 +1,15 @@
 <template>
   <div>
-    <div class="relative mb-10 w-full">
+    <div class="relative mb-10 w-full container mx-auto">
       <button @click="toggleMore">More Columns</button>
     </div>
     <custom-transition :id="1">
       <div
         v-if="open"
-        class="bg-blue-200 h-10">
-        More items
+        class="bg-white h-10 border-t-2">
+        <div class="container mx-auto">
+          More items
+        </div>
       </div>
     </custom-transition>
   </div>

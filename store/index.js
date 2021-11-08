@@ -29,20 +29,12 @@ export const state = () => ({
       leaveToClass: 'transform -translate-y-full opacity-0'
     }
   ],
-  navigation: [
-    {
-      title: 'About'
-    },
-    {
-      title: 'Tags'
-    },
-    {
-      title: 'Discovery'
-    }
-  ],
+  navigation: [{ title: 'About' }, { title: 'Tags' }, { title: 'Discovery' }],
   moreOpen: false,
   titleAudio: 'test',
-  activeArticle: 0
+  activeArticle: 0,
+  songUrl: null,
+  songName: null
 })
 
 export const mutations = {
@@ -54,6 +46,12 @@ export const mutations = {
   },
   addArticles(state, newArticles) {
     state.articles = [...state.articles, ...newArticles]
+  },
+  setSongUrl(state, songUrl) {
+    state.songUrl = songUrl
+  },
+  setSongName(state, songName) {
+    state.songName = songName
   }
 }
 
@@ -77,6 +75,10 @@ export const actions = {
   },
   toggleMore({ state, commit }) {
     commit('setMore', !state.moreOpen)
+  },
+  playSong({ state, commit }, article) {
+    commit('setSongName', `${article.artist} - ${article.song}`)
+    commit('setSongUrl', article.audio)
   }
 }
 
@@ -95,7 +97,7 @@ export const getters = {
               <span class="label--not-pressed plyr__tooltip" role="tooltip">Play</span>
           </button>
           <div class="flex-grow flex flex-col italic">
-            <div class="text-right">${state.titleAudio}</div>
+            <div class="text-right">${state.songName}</div>
             <div class="plyr__progress">
                 <input data-plyr="seek" type="range" min="0" max="100" step="0.01" value="0" aria-label="Seek">
                 <progress class="plyr__progress__buffer" min="0" max="100" value="0">% buffered</progress>
