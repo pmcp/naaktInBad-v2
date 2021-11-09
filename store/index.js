@@ -100,7 +100,7 @@ export const getters = {
             <div class="text-right">${state.songName}</div>
             <div class="plyr__progress">
                 <input data-plyr="seek" type="range" min="0" max="100" step="0.01" value="0" aria-label="Seek">
-                <progress class="plyr__progress__buffer" min="0" max="100" value="0">% buffered</progress>
+                  <progress class="plyr__progress__buffer" min="0" max="100" value="0">% buffered</progress>
                 <span role="tooltip" class="plyr__tooltip">00:00</span>
             </div>
             <div class="flex justify-end">

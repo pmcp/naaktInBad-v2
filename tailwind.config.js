@@ -1,5 +1,9 @@
 module.exports = {
   purge: [],
+  purge: [
+    './layouts/*.vue',
+    './store/*.js',
+  ],
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
