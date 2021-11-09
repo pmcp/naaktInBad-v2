@@ -1,9 +1,5 @@
 module.exports = {
-  purge: [],
-  purge: [
-    './layouts/*.vue',
-    './store/*.js',
-  ],
+  purge: ['./layouts/*.vue', './store/*.js'],
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -17,7 +13,8 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      white: '#fff'
+      white: '#fff',
+      black: '#000'
     },
     spacing: {
       px: '1px',
@@ -1024,5 +1021,5 @@ module.exports = {
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus']
   },
-  plugins: []
+  plugins: [require('@tailwindcss/typography')]
 }

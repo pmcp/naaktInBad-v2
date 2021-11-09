@@ -6,9 +6,9 @@
     <custom-transition :id="1">
       <div
         v-if="open"
-        class="bg-white h-10 border-t-2">
+        class="bg-white h-80 border-t-2">
         <div class="container mx-auto">
-          More items
+          <More-Items />
         </div>
       </div>
     </custom-transition>

@@ -1,15 +1,18 @@
 <template>
   <div>
-    <vue-plyr
-      v-if="songUrl"
-      ref="plyr"
-      :options="options">
-      <audio>
-        <source
-          :src="songUrl"
-          type="audio/mp3">
-      </audio>
-    </vue-plyr>
+    <div v-if="songUrl != null">
+      <div>
+        <vue-plyr
+          ref="plyr"
+          :options="options">
+          <audio>
+            <source
+              :src="songUrl"
+              type="audio/mp3">
+          </audio>
+        </vue-plyr>
+      </div>
+    </div>
     <div v-else>
       No song selected
     </div>
@@ -28,8 +31,11 @@ export default {
   },
   watch: {
     songUrl(newUrl) {
+      console.log(newUrl)
+      if (newUrl == null) return
       this.$nextTick().then(() => {
         console.log(this.$refs.plyr)
+
         this.$refs.plyr.player.play()
       })
     }

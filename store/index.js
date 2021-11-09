@@ -48,6 +48,7 @@ export const mutations = {
     state.articles = [...state.articles, ...newArticles]
   },
   setSongUrl(state, songUrl) {
+    console.log('setting song url', songUrl)
     state.songUrl = songUrl
   },
   setSongName(state, songName) {
@@ -59,7 +60,7 @@ export const actions = {
   async getLatestArticles({ state, commit }, id) {
     const article = await this.$content('articles')
       .sortBy('date', 'asc')
-      .limit(1)
+      // .limit(1)
       .fetch()
     commit('addArticles', article)
   },
