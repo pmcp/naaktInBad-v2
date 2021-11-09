@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'ArnoPro';
+    src: url('ArnoPro-BoldItalic.woff2') format('woff2'),
+        url('ArnoPro-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ArnoPro';
+    src: url('ArnoPro-Italic.woff2') format('woff2'),
+        url('ArnoPro-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ArnoPro';
+    src: url('ArnoPro-Bold.woff2') format('woff2'),
+        url('ArnoPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ArnoPro';
+    src: url('ArnoPro-Regular.woff2') format('woff2'),
+        url('ArnoPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Americana Std';
+    src: url('AmericanaStd.woff2') format('woff2'),
+        url('AmericanaStd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Americana Std';
+    src: url('AmericanaStd-Italic.woff2') format('woff2'),
+        url('AmericanaStd-Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Americana Std';
+    src: url('AmericanaStd-Bold.woff2') format('woff2'),
+        url('AmericanaStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Americana Std';
+    src: url('AmericanaStd-ExtraBold.woff2') format('woff2'),
+        url('AmericanaStd-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
