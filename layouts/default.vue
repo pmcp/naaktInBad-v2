@@ -18,7 +18,7 @@
     </div>
     <More class="hidden md:block fixed bottom-0 z-10 w-full"/>
     <!-- Player in mobile view -->
-    <Player class="md:hidden sticky bottom-0 border-t pt-2 bg-white px-5"/>
+    <!--    <Player class="md:hidden sticky bottom-0 border-t pt-2 bg-white px-5"/>-->
 
   </div>
 </template>
