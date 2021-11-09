@@ -2,12 +2,11 @@
   <div>
     <div
       v-if="article"
-      :class="[centered ? 'flex-wrap w-40' : 'flex-wrap md:flex-nowrap']"
+      :class="[centered ? 'flex-wrap w-40' : 'flex-wrap gap-5 md:flex-nowrap']"
       class="flex ">
       <!-- Cover Image -->
-      {{ center }}
       <div
-        :class="[centered ? 'w-full' : 'w-1/2 max-w-xs md:h-24 md:w-24']"
+        :class="[centered ? 'w-full' : 'w-1/2 md:w-48']"
         class="order-0  h-auto  "
       >
         <img
@@ -27,7 +26,7 @@
         <div
           :class="[centered ? 'text-center' : '']"
           class="prose">
-          <div>{{ article.artist }}</div>
+          <div class="font-bold">{{ article.artist }}</div>
           <div>{{ article.song }}</div>
           <div>{{ article.label }} ( {{ article.release }} )</div>
           <div>

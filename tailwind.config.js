@@ -239,6 +239,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'ArnoPro',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
@@ -808,6 +809,11 @@ module.exports = {
       30: '30',
       40: '40',
       50: '50'
+    }
+  },
+  extend: {
+    fontFamily: {
+      serif: ['ArnoPro', 'Americana Std']
     }
   },
   variantOrder: [

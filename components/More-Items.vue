@@ -6,12 +6,6 @@
       :key="`articles_${i}`"
       centered
     />
-    <Song-Card
-      v-for="(article, i) in articles"
-      :article="article"
-      :key="`articles_${i}`"
-      centered
-    />
   </div>
 </template>
 

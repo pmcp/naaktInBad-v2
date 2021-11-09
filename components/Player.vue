@@ -1,26 +1,23 @@
 <template>
-  <div>
-    <div v-if="songUrl != null">
-      <div>
-        <vue-plyr
-          ref="plyr"
-          :options="options">
-          <audio>
-            <source
-              :src="songUrl"
-              type="audio/mp3">
-          </audio>
-        </vue-plyr>
-      </div>
-    </div>
-    <div v-else>
-      No song selected
-    </div>
-  </div>
+  <vue-plyr
+    ref="plyr"
+    :options="options">
+    <audio>
+      <source
+        :src="src"
+        type="audio/mp3">
+    </audio>
+  </vue-plyr>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      src: null,
+      player: null
+    }
+  },
   computed: {
     options() {
       return this.$store.getters.plyrDesign
@@ -32,12 +29,30 @@ export default {
   watch: {
     songUrl(newUrl) {
       console.log(newUrl)
-      if (newUrl == null) return
-      this.$nextTick().then(() => {
-        console.log(this.$refs.plyr)
+      if (this.player === null) {
+        this.player = this.$refs.plyr.player
+      }
 
-        this.$refs.plyr.player.play()
-      })
+      console.log(this.player)
+      console.log('watching songUrl', newUrl)
+      if (newUrl == null) return
+
+      console.log('gonna set source', newUrl)
+
+      // this.player.source = {
+      //   type: 'audio',
+      //   title: 'Example title',
+      //   sources: [
+      //     {
+      //       src: newUrl,
+      //       type: 'audio/mp3'
+      //     }
+      //   ]
+      // }
+      this.player.play()
+      // this.$nextTick().then(() => {
+      //   this.player.stop()
+      // })
     }
   }
 }
