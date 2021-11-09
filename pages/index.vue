@@ -11,20 +11,14 @@ export default {
     return {
       script: [
         { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
+      ],
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://unpkg.com/vue-plyr/dist/vue-plyr.css'
+        }
       ]
     }
   }
-
-  // TODO: Move this to store
-  // async asyncData({ $content }) {
-  //   const articles = await $content('articles')
-  //     .limit(2)
-  //     .fetch()
-  //   const settings = await $content('settings').fetch()
-  //   return {
-  //     articles,
-  //     settings
-  //   }
-  // }
 }
 </script>
