@@ -78,6 +78,9 @@ export const actions = {
     commit('setMore', !state.moreOpen)
   },
   playSong({ state, commit }, article) {
+    console.log(article)
+
+    this.$router.push(article.slug)
     commit('setSongName', `${article.artist} - ${article.song}`)
     commit('setSongUrl', article.audio)
   }

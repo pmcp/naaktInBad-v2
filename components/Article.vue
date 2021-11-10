@@ -11,17 +11,12 @@
   </div>
 </template>
 <script>
-import { mapActions } from 'vuex'
-
 export default {
   props: {
     article: {
       type: Object,
       required: true
     }
-  },
-  methods: {
-    ...mapActions(['playSong'])
   }
 }
 </script>

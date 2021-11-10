@@ -16,16 +16,13 @@ media_library:
   config:
     publicKey: 'acd567a26350e2ad1a5f'
 
-# TODO: Add image upload
-# TODO: Add editorial flow
-# TODO: Change name of article in list
 collections:
   - name: 'articles'
     label: 'Articles'
     folder: 'content/articles'
     format: 'frontmatter'
     create: true
-    slug: '{{slug}}'
+    slug: '{{artist}}-{{song}}'
     editor:
       preview: false
     fields:

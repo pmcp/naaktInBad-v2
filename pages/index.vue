@@ -9,9 +9,6 @@ export default {
   // Netlify script to identify user: TODO: maybe move to an admin page?
   head() {
     return {
-      script: [
-        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
-      ],
       link: [
         {
           rel: 'stylesheet',
