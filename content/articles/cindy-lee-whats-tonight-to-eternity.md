@@ -1,9 +1,4 @@
 ---
-player: '<iframe style="border: 0; width: 100%; height: 120px;"
-  src="https://bandcamp.com/EmbeddedPlayer/album=3015345955/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/artwork=small/track=1155878474/transparent=true/"
-  seamless><a
-  href="https://cindylee.bandcamp.com/album/whats-tonight-to-eternity">What&#39;s
-  Tonight To Eternity by Cindy Lee</a></iframe>'
 song: What's Tonight To Eternity?
 artist: Cindy Lee
 label: Superior Viaduct

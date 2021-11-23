@@ -1,5 +1,8 @@
 export const state = () => ({
   articles: [],
+  tags: [],
+  activeTag: null,
+  activeArticle: null,
   animationStyles: [
     {
       description: 'simple fade',
@@ -29,12 +32,12 @@ export const state = () => ({
       leaveToClass: 'transform -translate-y-full opacity-0'
     }
   ],
-  navigation: [{ title: 'About' }, { title: 'Tags' }, { title: 'Discovery' }],
-  moreOpen: false,
-  titleAudio: 'test',
-  activeArticle: 0,
-  songUrl: null,
-  songName: null
+  navigation: [
+    { title: 'Over', path: 'over' },
+    { title: 'Tags', path: 'tags' },
+    { title: 'Ontdek', path: 'ontdek' }
+  ],
+  moreOpen: false
 })
 
 export const mutations = {
@@ -44,50 +47,122 @@ export const mutations = {
   setActiveArticle(state, val) {
     state.activeArticle = val
   },
+  setTags(state, val) {
+    state.tags = val
+  },
+  setActiveTag(state, val) {
+    state.activeTag = val
+  },
   addArticles(state, newArticles) {
-    state.articles = [...state.articles, ...newArticles]
+    state.articles = [...state.articles, ...filteredArticles]
   },
-  setSongUrl(state, songUrl) {
-    console.log('setting song url', songUrl)
-    state.songUrl = songUrl
-  },
-  setSongName(state, songName) {
-    state.songName = songName
+  setArticles(state, articles) {
+    state.articles = [...articles]
+    console.log('set aarticles', state.articles)
   }
 }
 
 export const actions = {
-  async getLatestArticles({ state, commit }, id) {
-    const article = await this.$content('articles')
-      .sortBy('date', 'asc')
-      // .limit(1)
-      .fetch()
-    commit('addArticles', article)
+  async getArticles({ state, commit }) {
+    // Scenarios
+    // 1. Initial:
+    //    - 10 articles (or less if less)
+    //    - ascending by date
+
+    // 2. Scrolling in page:
+    //    - Get 5 more articles
+
+    // 3. Click on article in More Nav:
+    //    - Scroll to article
+
+    // 4. Click a tag
+    //    - Remove all articles
+    //    - Get 10 articles with tag
+    //    - ascending by date
+
+    // 5. Scrolling in page with tag active
+    //    - Get 5 more articles
+    const loadedArticles = state.articles.length
+    let articles = []
+    console.log(
+      `Getting articles, skip = ${state.articles.length}, tag = ${
+        state.activeTag
+      }`
+    )
+    if (state.activeTag) {
+      console.log('with tag', state.activeTag)
+      articles = await this.$content('articles')
+        .sortBy('date', 'asc')
+        .where({ tags: { $contains: state.activeTag } })
+        .skip(loadedArticles)
+        .limit(10)
+        .fetch()
+        .catch(err => {
+          console.log(err)
+        })
+    } else {
+      console.log('no tag', state.activeTag)
+      articles = await this.$content('articles')
+        .sortBy('date', 'asc')
+        .skip(loadedArticles)
+        .limit(10)
+        .fetch()
+        .catch(err => {
+          console.log(err)
+        })
+    }
+    console.log('got articles', articles)
+    const allArticles = [...state.articles, ...articles]
+    commit('setArticles', allArticles)
   },
-  async getNextArticle({ state, commit }, slug) {
-    const [prev, next] = await this.$content('articles')
-      .sortBy('date', 'asc')
-      .surround(slug)
+  async getTags({ state, commit }) {
+    const articles = await this.$content('articles')
+      .only(['tags'])
       .fetch()
-    // TODO: feedback when last article
-    console.log(slug, prev, next)
-    if (next === null) return
-    commit('addArticles', [next])
+
+    const tags = articles.reduce((acc, article) => {
+      article.tags.forEach(tag => {
+        if (!acc.includes(tag)) {
+          acc.push(tag)
+        }
+      })
+      return acc
+    }, [])
+
+    commit('setTags', tags)
   },
   toggleMore({ state, commit }) {
     commit('setMore', !state.moreOpen)
   },
-  playSong({ state, commit }, article) {
-    console.log(article)
 
-    this.$router.push(article.slug)
-    commit('setSongName', `${article.artist} - ${article.song}`)
-    commit('setSongUrl', article.audio)
-  }
-}
+  selectTag({ state, commit, dispatch }, tag) {
+    commit('setActiveTag', tag)
+    commit('setArticles', [])
+    this.$router.push('/')
+  },
 
-export const getters = {
-  articles: state => {
-    return state.articles
+  resetTag({ state, commit, dispatch }) {
+    commit('setArticles', [])
+    commit('setActiveTag', null)
+  },
+
+  setActiveArticle({ state, commit, dispatch }, { article, more = false }) {
+    // Set active article, mainly for the audio player
+    commit('setActiveArticle', article)
+
+    // Scroll to article
+    if (more) {
+      const element = document.getElementById(article.slug)
+      const offset = 180
+      const bodyRect = document.body.getBoundingClientRect().top
+      const elementRect = element.getBoundingClientRect().top
+      const elementPosition = elementRect - bodyRect
+      const offsetPosition = elementPosition - offset
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
+    }
   }
 }

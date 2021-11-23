@@ -2,10 +2,11 @@
   <div>
     <div
       v-for="(article, i) in articles"
-      :key="`articles_${i}`">
-      <Observer @intersect="intersected(article.slug)"/>
+      :key="`articles_${i}`"
+      :id="article.slug">
       <Article :article="article" />
     </div>
+    <Observer @intersect="intersected()"/>
   </div>
 </template>
 <script>
@@ -19,17 +20,20 @@ export default {
   },
   computed: {
     articles() {
-      return this.$store.getters.articles
+      return this.$store.state.articles
     }
   },
-  mounted() {
-    this.getLatestArticles()
+  watch: {
+    article(newArticle) {
+      console.log(this.$refs)
+      // this.$refs['target-element'].scrollIntoView()
+    }
   },
   methods: {
-    async intersected(slug) {
-      this.getNextArticle(slug)
+    async intersected() {
+      this.getArticles()
     },
-    ...mapActions(['getLatestArticles', 'getNextArticle'])
+    ...mapActions(['getArticles'])
   }
 }
 </script>

@@ -4,8 +4,9 @@
     <div
       v-for="(navItem, i) in navigation"
       :key="`navigation_${i}`">
-      <!-- TODO: Change into nuxt links -->
-      {{ navItem.title }}
+      <nuxt-link :to="navItem.path">
+        {{ navItem.title }}
+      </nuxt-link>
     </div>
 
 

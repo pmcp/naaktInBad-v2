@@ -3,9 +3,12 @@
     <Song-Card
       v-for="(article, i) in articles"
       :article="article"
-      :key="`articles_${i}`"
+      :key="`navArticles_${i}`"
       centered
+      more
     />
+    <Observer
+      @intersect="intersected()"/>
   </div>
 </template>
 
@@ -15,8 +18,14 @@ import { mapActions } from 'vuex'
 export default {
   computed: {
     articles() {
-      return this.$store.getters.articles
+      return this.$store.state.articles
     }
+  },
+  methods: {
+    async intersected() {
+      this.getArticles()
+    },
+    ...mapActions(['getArticles'])
   }
 }
 </script>

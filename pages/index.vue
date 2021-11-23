@@ -1,21 +1,25 @@
 <template>
   <div>
-    <articles/>
+    <Filtered v-if="activeTag"/>
+    <Articles/>
   </div>
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
-  // Netlify script to identify user: TODO: maybe move to an admin page?
-  head() {
-    return {
-      link: [
-        {
-          rel: 'stylesheet',
-          href: 'https://unpkg.com/vue-plyr/dist/vue-plyr.css'
-        }
-      ]
+  computed: {
+    activeTag() {
+      return this.$store.state.activeTag
     }
+  },
+  methods: {
+    ...mapActions(['getArticles'])
   }
+  // async asyncData({ $content, params, error, store }) {
+  //   console.log('ASYNC')
+  //   // store.dispatch('getArticles')
+  // }
 }
 </script>

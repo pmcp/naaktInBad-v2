@@ -8,7 +8,7 @@ cover:
 tags:
   - Electro
   - Ghettotech
-  - Techno
+    - Techno
 audio: https://ucarecdn.com/dd3adde8-b74e-4416-8afe-ca436975f236/
 date: 2021-11-10T11:54:14.185Z
 ---

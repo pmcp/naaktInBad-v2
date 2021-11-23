@@ -14,7 +14,7 @@
           :src="article.cover[0]"
           :class="[centered ? 'p-5' : '']"
           class="object-contain"
-          @click="playSong(article)"
+          @click="clickArticle(article)"
         >
         <div
           v-else
@@ -30,9 +30,13 @@
           <div>{{ article.song }}</div>
           <div>{{ article.label }} ( {{ article.release }} )</div>
           <div>
+            <!-- TODO: Shouldn't do class cursor-pointer -->
             <span
               v-for="(t, key) in article.tags"
-              :key="`tag-${key}`">
+              :key="`tag-${key}`"
+              class="cursor-pointer"
+              @click="selectTag(t)"
+            >
               #{{ t }}
             </span>
           </div>
@@ -70,10 +74,19 @@ export default {
       default() {
         return false
       }
+    },
+    more: {
+      type: Boolean,
+      default() {
+        return false
+      }
     }
   },
   methods: {
-    ...mapActions(['playSong'])
+    clickArticle(article) {
+      this.setActiveArticle({ article, more: this.more })
+    },
+    ...mapActions(['setActiveArticle', 'selectTag'])
   }
 }
 </script>

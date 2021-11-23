@@ -1,7 +1,10 @@
 <template>
   <div>
+    <div
+      v-if="article"
+      class="w-full flex justify-end">{{ article.song }}</div>
     <vue-plyr
-      v-if="songUrl"
+      v-if="article"
       ref="plyr"
       :options="options">
       <audio>
@@ -15,10 +18,9 @@
 
 <script>
 export default {
-  computed: {
-    options() {
-      return {
-        controls: `<div class="plyr__controls flex">
+  data() {
+    return {
+      controls: `<div class="plyr__controls flex">
           <button type="button" class="plyr__control mr-2" aria-label="Play, {title}" data-plyr="play">
               <svg class="icon--pressed" role="presentation"><use xlink:href="#plyr-pause"></use></svg>
               <svg class="icon--not-pressed" role="presentation"><use xlink:href="#plyr-play"></use></svg>
@@ -26,7 +28,7 @@ export default {
               <span class="label--not-pressed plyr__tooltip" role="tooltip">Play</span>
           </button>
           <div class="flex-grow flex flex-col italic">
-            <div class="text-right">${this.songName}</div>
+            <div class="text-right"></div>
             <div class="plyr__progress">
                 <input data-plyr="seek" type="range" min="0" max="100" step="0.01" value="0" aria-label="Seek">
                   <progress class="plyr__progress__buffer" min="0" max="100" value="0">% buffered</progress>
@@ -38,23 +40,27 @@ export default {
             </div>
          </div>
       </div>`
+    }
+  },
+  computed: {
+    options() {
+      return {
+        controls: this.controls
       }
     },
-    songUrl() {
-      return this.$store.state.songUrl
-    },
-    songName() {
-      return this.$store.state.songName
+    article() {
+      return this.$store.state.activeArticle
     }
   },
   watch: {
-    songUrl(newUrl) {
+    article(newArticle) {
+      console.log('newArticle', newArticle)
       this.$nextTick().then(() => {
         this.$refs.plyr.player.source = {
           type: 'audio',
           sources: [
             {
-              src: newUrl,
+              src: newArticle.audio,
               type: 'audio/mp3'
             }
           ]

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="relative mb-10 w-full container mx-auto">
-      <button @click="toggleMore">More Columns</button>
+      <button @click="toggleMore">alle columns</button>
     </div>
     <custom-transition :id="1">
       <div
