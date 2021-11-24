@@ -56,6 +56,11 @@ module.exports = {
     }
   },
   //  Added by PMCP
+  //Nuxt Content options
+  content: {
+    // Define fields on which search is indexed
+    fullTextSearchFields: ['song', 'artist', 'release', 'text']
+  },
   target: 'static',
   components: true,
   buildModules: ['@nuxtjs/tailwindcss', '@vueuse/core/nuxt']

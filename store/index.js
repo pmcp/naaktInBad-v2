@@ -3,6 +3,7 @@ export const state = () => ({
   tags: [],
   activeTag: null,
   activeArticle: null,
+  searchResults: [],
   animationStyles: [
     {
       description: 'simple fade',
@@ -59,6 +60,9 @@ export const mutations = {
   setArticles(state, articles) {
     state.articles = [...articles]
     console.log('set aarticles', state.articles)
+  },
+  setSearchResults(state, articles) {
+    state.searchResults = [...articles]
   }
 }
 
@@ -131,6 +135,17 @@ export const actions = {
 
     commit('setTags', tags)
   },
+
+  async findArticles({ state, commit }, el) {
+    const searchString = el.target.value
+    console.log(`Searching for ${searchString}`)
+    const results = await this.$content('articles')
+      .search(searchString)
+      .fetch()
+    console.log(`Got search results`, results)
+    commit('setSearchResults', results)
+  },
+
   toggleMore({ state, commit }) {
     commit('setMore', !state.moreOpen)
   },

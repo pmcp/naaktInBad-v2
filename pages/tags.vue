@@ -4,8 +4,20 @@
     <div class="flex flex-row mt-5 mb-10">
       <input
         v-model="search"
-        class="border-b flex-grow">
+        class="border-b flex-grow"
+        @input="findArticles">
       <button class="text-lg">Zoek</button>
+    </div>
+
+    <div v-if="search != ''">
+      <div
+        v-for="(s, k) in searchResults"
+        :key="`searchResult-${k}`"
+        class="mb-5"
+      >
+        <div class="font-bold">{{ s.artist }}</div>
+        <div>{{ s.song }}</div>
+      </div>
     </div>
 
     <div v-if="tagsOrdened.length == 0">
@@ -39,6 +51,9 @@ export default {
     }
   },
   computed: {
+    searchResults() {
+      return this.$store.state.searchResults
+    },
     tags() {
       const tags = this.$store.state.tags
       if (this.search === '') return tags
@@ -64,7 +79,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions(['getTags', 'selectTag'])
+    ...mapActions(['getTags', 'selectTag', 'findArticles'])
   },
   async asyncData({ $content, params, error, store }) {
     store.dispatch('getTags')
