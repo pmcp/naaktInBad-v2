@@ -22,7 +22,7 @@
                   v-if="navOpen"
                   close
                   class="w-5 h-5 relative z-60"
-                  @close="navOpen = false"/>
+                  @clicked="navOpen = false"/>
                 <Icon
                   v-if="!navOpen"
                   open

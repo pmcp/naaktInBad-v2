@@ -171,6 +171,11 @@ export const actions = {
   },
 
   setActiveArticle({ state, commit, dispatch }, { article, more = false }) {
+    // If active article is the same, stop
+    if (state.activeArticle) {
+      if (state.activeArticle.slug === article.slug) return
+    }
+
     // Set active article, mainly for the audio player
     commit('setActiveArticle', article)
 

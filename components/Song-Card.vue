@@ -13,7 +13,7 @@
           v-if="article.cover[0]"
           :src="article.cover[0]"
           :class="[centered ? 'p-5' : '']"
-          class="object-contain"
+          class="object-contain cursor-pointer"
           @click="clickArticle(article)"
         >
         <div
@@ -48,6 +48,7 @@
         <Icon
           play
           class="w-10 h-10 mb-2"
+          @clicked="clickArticle(article)"
         />
         <Icon
           link

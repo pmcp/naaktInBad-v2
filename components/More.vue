@@ -14,7 +14,7 @@
             <Icon
               close
               class="w-5 h-5"
-              @close="toggleMore"/>
+              @clicked="toggleMore"/>
           </div>
           <More-Items />
         </div>

@@ -2,7 +2,7 @@
   <div>
     <button
       v-if="close"
-      @click="$emit('close')">
+      @click="$emit('clicked')">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -34,7 +34,7 @@
     </button>
     <button
       v-if="open"
-      @click="$emit('open')">
+      @click="$emit('clicked')">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -48,7 +48,9 @@
           d="M4 6h16M4 12h16M4 18h16" />
       </svg>
     </button>
-    <button v-if="link">
+    <button
+      v-if="link"
+      @click="$emit('clicked')">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -70,7 +72,9 @@
         />
       </svg>
     </button>
-    <button v-if="play">
+    <button
+      v-if="play"
+      @click="$emit('clicked')">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
