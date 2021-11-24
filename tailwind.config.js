@@ -14,7 +14,9 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       white: '#fff',
-      black: '#000'
+      black: '#000',
+      pink: '#FBBBDC',
+      orange: '#FBB401'
     },
     spacing: {
       px: '1px',

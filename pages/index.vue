@@ -1,7 +1,21 @@
 <template>
   <div>
-    <Filtered v-if="activeTag"/>
-    <Articles/>
+    <Filtered
+      v-if="activeTag"
+      class="hidden md:flex"
+    />
+    <!-- Mobile version -->
+    <div class="sticky pt-5 top-0 bg-white">
+      <Filtered
+        v-if="activeTag"
+        mobile
+        class="md:hidden mx-5 md:mx-0"
+      />
+      <div
+        v-if="activeTag"
+        class="md:hidden w-full border-b mb-5  "/>
+    </div>
+    <Articles class="mx-5 md:mx-0"/>
   </div>
 </template>
 

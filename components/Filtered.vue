@@ -1,9 +1,14 @@
 <template>
-  <div class="w-full flex justify-between pb-3 border-b mb-5">
-    <div class="text-sm">columns getagd met <span class="font-bold">#{{ activeTag.toLowerCase() }}</span></div>
-    <div
-      class="font-bold"
-      @click="resetTag">wis filter</div>
+  <div class="flex justify-between pb-3 md:border-b md:mb-5 ">
+    <div class="text-sm"><span class="hidden md:inline ">columns getagd met </span><span class="font-bold">#{{ activeTag.toLowerCase() }}</span></div>
+    <button
+      class="font-bold flex"
+      @click="resetTag">
+      wis filter
+      <Icon
+        close
+        class="pl-1 mt-1 w-3 h-5 items-center relative -top-1"/>
+    </button>
   </div>
 </template>
 
@@ -11,6 +16,14 @@
 import { mapActions } from 'vuex'
 
 export default {
+  props: {
+    mobile: {
+      type: Boolean,
+      default() {
+        return false
+      }
+    }
+  },
   computed: {
     activeTag() {
       return this.$store.state.activeTag

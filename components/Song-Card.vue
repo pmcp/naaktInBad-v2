@@ -2,7 +2,7 @@
   <div>
     <div
       v-if="article"
-      :class="[centered ? 'flex-wrap w-40' : 'flex-wrap gap-5 md:flex-nowrap']"
+      :class="[centered ? 'flex-wrap w-40  h-full' : 'flex-wrap gap-5 md:flex-nowrap']"
       class="flex ">
       <!-- Cover Image -->
       <div
@@ -25,16 +25,15 @@
       <div class="order-last md:order-1 w-full">
         <div
           :class="[centered ? 'text-center' : '']"
-          class="prose">
+          class="prose h-full flex flex-col">
           <div class="font-bold">{{ article.artist }}</div>
-          <div>{{ article.song }}</div>
-          <div>{{ article.label }} ( {{ article.release }} )</div>
+          <div class="flex-grow">{{ article.song }}</div>
           <div>
             <!-- TODO: Shouldn't do class cursor-pointer -->
             <span
               v-for="(t, key) in article.tags"
               :key="`tag-${key}`"
-              class="cursor-pointer"
+              class="cursor-pointer italic"
               @click="selectTag(t)"
             >
               #{{ t }}
@@ -46,8 +45,14 @@
       <div
         v-if="actions"
         class="order-2 flex flex-col flex-grow items-end">
-        <div class="w-10 h-10 bg-black mb-2"/>
-        <div class="w-10 h-10 bg-black"/>
+        <Icon
+          play
+          class="w-10 h-10 mb-2"
+        />
+        <Icon
+          link
+          class="w-10 h-10 mb-2"
+        />
       </div>
     </div>
     <div v-else>

@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1 class="text-2xl">Zoeken</h1>
+  <div class="mx-5 md:mx-0">
+    <h1 class="text-2xl pt-10">Zoeken</h1>
     <div class="flex flex-row mt-5 mb-10">
       <input
         v-model="search"

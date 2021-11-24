@@ -6,6 +6,15 @@ export const state = () => ({
   searchResults: [],
   animationStyles: [
     {
+      description: 'no animation',
+      enterActiveClass: '',
+      enterClass: '',
+      enterToClass: '',
+      leaveActiveClass: '',
+      leaveClass: '',
+      leaveToClass: ''
+    },
+    {
       description: 'simple fade',
       enterActiveClass: 'duration-200 ease-out',
       enterClass: '-translate-x-full opacity-0',
@@ -175,8 +184,7 @@ export const actions = {
       const offsetPosition = elementPosition - offset
 
       window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
+        top: offsetPosition
       })
     }
   }

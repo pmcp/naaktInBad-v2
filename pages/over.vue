@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="mx-5 md:mx-0">
+    <h1 class="text-2xl pt-10 md:pt-0">Over</h1>
     <nuxt-content
       :document="page"
       class="prose mt-10"

@@ -1,13 +1,21 @@
 <template>
   <div>
-    <div class="relative mb-10 w-full container mx-auto">
-      <button @click="toggleMore">alle columns</button>
+    <div class="relative mb-10 w-full mx-5">
+      <button
+        v-if="!open"
+        @click="toggleMore">alle columns</button>
     </div>
-    <custom-transition :id="1">
+    <custom-transition :id="0">
       <div
         v-if="open"
-        class="bg-white h-80 border-t-2">
-        <div class="container mx-auto">
+        class="bg-white h-96 border-t-2">
+        <div class="container mx-auto lg:px-10">
+          <div class="w-full flex justify-end mt-3">
+            <Icon
+              close
+              class="w-5 h-5"
+              @close="toggleMore"/>
+          </div>
           <More-Items />
         </div>
       </div>
