@@ -12,8 +12,10 @@ cover:
 tags:
   - Jungle
   - IDM
+  - hierzo
 audio: https://ucarecdn.com/771be724-2428-4830-8f1b-91739d3e9ecf/
 date: 2021-11-10T14:01:59.374Z
+url: https://bandcamp.co
 ---
 It’s the end of the ‘90s and trip hop is inescapable. The smoked-out samples are not that bad, in an uninspired-yet-comfortable way. But one more bar of that boom-bap beat and the boredom turns into unbearable suffering. 
 
