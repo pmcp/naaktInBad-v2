@@ -7,8 +7,10 @@ cover:
   - https://ucarecdn.com/88156f23-c6d9-4ba3-8fbb-fe5a2af5838e/
 tags:
   - Opera
+  - newtag
 audio: https://ucarecdn.com/fec6eafa-ae19-4f28-ae90-c67eaf7e618c/
 date: 2021-11-10T14:01:49.476Z
+url: https://bandcamp.co
 ---
 If there was ever a place a *saucisseke* wouldn’t *zweet*, it would surely be the Russian taiga. And if there was ever one thing to pique my curiosity, it was that time someone said: "You should listen to this. It’s a snow opera by a guy that looks a bit like an Eskimo." That Eskimo was Kola Beldy and he was actually of [Nanai](https://en.wikipedia.org/wiki/Nanai_people) descent, a people living in the most eastern parts of Siberia. 
 
