@@ -23,6 +23,19 @@ collections:
     format: 'frontmatter'
     create: true
     slug: '{{artist}}-{{song}}'
+    summary: "{{artist}} - {{song}} - {{commit_author}}"
+    view_filters:
+      - label: "Yannick"
+        field: commit_author
+        pattern: 'PMCP'
+      - label: Drafts
+        field: draft
+        pattern: true
+    view_groups:
+      - label: Year
+        field: date
+        # groups items based on the value matched by the pattern
+        pattern: \d{4}
     editor:
       preview: false
     fields:
@@ -49,16 +62,12 @@ collections:
           config:
             multiple: false,
             previewStep: false
-
-      - label: 'Tags'
-        name: 'tags'
-        widget: 'relation'
-        required: false
-        collection: 'tags'
-        search_fields: ['name']
-        value_field: 'name'
+      - name: 'tags'
+        label: 'Tags'
+        widget: 'create-select'
+        mode: 'plain'
+        url: 'content/tags.txt'
         multiple: true
-        display_fields: ['name']
 
       - label: 'Body'
         name: 'body'
@@ -68,12 +77,16 @@ collections:
         name: "audio"
         widget: "file"
         media_library:
-          config:
+            config:
             multiple: false
 
       - label: 'Publish Date'
         name: 'date'
         widget: 'datetime'
+
+      - label: 'Website'
+        name: 'url'
+        widget: 'string'
 
   - name: 'pages'
     label: 'Pages'
