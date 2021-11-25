@@ -62,11 +62,13 @@ collections:
           config:
             multiple: false,
             previewStep: false
+      # See https://github.com/Andful/netlify-cms-widget-create-select
+      # Tags file is in admin folder
       - name: 'tags'
         label: 'Tags'
         widget: 'create-select'
         mode: 'plain'
-        url: 'content/tags.txt'
+        url: 'tags.txt'
         multiple: true
 
       - label: 'Body'
