@@ -7,10 +7,11 @@ cover:
   - https://ucarecdn.com/e9ce094b-909c-4b3c-b155-7a73ead503c9/
 tags:
   - Electro
-  - Ghettotech
-    - Techno
+  - Ghettotech - Techno
+  - ddddd
 audio: https://ucarecdn.com/dd3adde8-b74e-4416-8afe-ca436975f236/
 date: 2021-11-10T11:54:14.185Z
+url: https://bandcamp.co
 ---
 What do Kevin Saunderson, Derrick May and Jeff Mills have in common? They’re all people of color. They’re all techno originators. And most importantly – for this column anyway - they’re all from Detroit. 
 
