@@ -170,11 +170,11 @@ export const actions = {
 
   setActiveArticle({ state, commit, dispatch }, { article, more = false }) {
     // If active article is the same, stop
-
+    commit('setActiveArticle', { article, more })
     if (state.activeArticle) {
       if (state.activeArticle.slug === article.slug) return
     }
-
+    console.log(article)
     // Scroll to article
     if (more) {
       const element = document.getElementById(article.slug)
