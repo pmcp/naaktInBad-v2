@@ -2,7 +2,7 @@
   <div>
     <!--    Mobile Mav-->
 
-    <div class="flex flex-col md:flex-row flex-wrap lg:px-10">
+    <div class="flex flex-col md:flex-row flex-wrap md:mx-5 lg:px-10">
       <!-- Navigation in desktop view -->
       <Navigation class="bg-white hidden md:flex sticky w-full h-44 pt-10  top-0 z-20"/>
       <div
@@ -10,8 +10,8 @@
         class="md:w-1/2"
       >
         <div class="md:fixed top-42 lg:mr-32 ">
-          <div class="mx-5 ">
-            <div class="container mx-auto flex justify-between items-center">
+          <div class="">
+            <div class="w-full px-5 md:px-0  flex justify-between items-center">
               <nuxt-link
                 to="/"
                 class="text-7xl py-10 md:py-0 md:text-left flex-grow ">
@@ -34,7 +34,7 @@
           <div class=" border-b md:border-b-0"/>
           <!-- Player in desktop view -->
           <Player
-            class="fixed md:relative bottom-0 border-t md:border-t-0 pt-2 z-40 w-full bg-white px-5 "
+            class="fixed md:relative bottom-0 border-t md:border-t-0 pt-2 z-40 w-full bg-white"
           />
           <div
             v-if="navOpen"
