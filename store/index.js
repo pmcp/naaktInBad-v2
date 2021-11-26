@@ -103,7 +103,6 @@ export const actions = {
       }`
     )
     if (state.activeTag) {
-      console.log('with tag', state.activeTag)
       articles = await this.$content('articles')
         .sortBy('date', 'asc')
         .where({ tags: { $contains: state.activeTag } })
@@ -124,7 +123,6 @@ export const actions = {
           console.log(err)
         })
     }
-    console.log('got articles', articles)
     const allArticles = [...state.articles, ...articles]
     commit('setArticles', allArticles)
   },

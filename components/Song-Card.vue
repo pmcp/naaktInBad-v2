@@ -25,10 +25,11 @@
       <div class="order-last md:order-1 w-full">
         <div
           :class="[centered ? 'text-center' : '']"
-          class="prose h-full flex flex-col">
+          class="h-full flex flex-col justify-start">
           <div class="font-bold">{{ article.artist }}</div>
-          <div class="flex-grow">{{ article.song }}</div>
-          <div>
+          <div>{{ article.song }}</div>
+          <div class="italic">{{ article.label }} ({{ article.release }})</div>
+          <div class="mt-2 text-sm">
             <!-- TODO: Shouldn't do class cursor-pointer -->
             <span
               v-for="(t, key) in article.tags"
