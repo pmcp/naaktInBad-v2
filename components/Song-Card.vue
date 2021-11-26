@@ -34,7 +34,7 @@
             <span
               v-for="(t, key) in article.tags"
               :key="`tag-${key}`"
-              class="cursor-pointer italic"
+              class="cursor-pointer italic hover:underline"
               @click="selectTag(t)"
             >
               #{{ t }}

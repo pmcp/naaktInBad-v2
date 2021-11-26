@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="relative mb-10 w-full mx-5">
+    <div class="relative mb-10 w-full">
       <button
         v-if="!open"
         @click="toggleMore">alle columns</button>
