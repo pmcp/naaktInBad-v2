@@ -172,7 +172,6 @@ export const actions = {
     // if (state.activeArticle) {
     //   if (state.activeArticle.slug === article.slug) return
     // }
-
     // Scroll to article
     if (more) {
       const element = document.getElementById(article.slug)
