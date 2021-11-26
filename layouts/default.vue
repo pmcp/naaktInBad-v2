@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!--    Mobile Mav-->
 
     <div class="flex flex-col md:flex-row flex-wrap md:mx-5 lg:px-10">
       <!-- Navigation in desktop view -->
@@ -27,7 +26,7 @@
                   v-if="!navOpen"
                   open
                   class="w-6 h-6 relative z-60"
-                  @open="navOpen = true"/>
+                  @clicked="navOpen = true"/>
               </div>
             </div>
           </div>
@@ -40,6 +39,7 @@
             v-if="navOpen"
             class="w-full h-full md:hidden">
             <div class="bg-white w-full h-full mx-auto container">
+              <!-- Mobile nav -->
               <Navigation mobile />
             </div>
           </div>
@@ -53,12 +53,6 @@
       v-if="$nuxt.$route.name == 'index'"
       class="hidden md:block fixed bottom-0 z-10 w-full"
     />
-
-    <!-- Player in mobile view -->
-    <!--    <Player-->
-    <!--      v-if="activeArticle"-->
-    <!--      key="mobilePlayer"-->
-    <!--      class="md:hidden sticky bottom-0 border-t pt-2 bg-white px-5"/>-->
   </div>
 </template>
 <script>
