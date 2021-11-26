@@ -33,7 +33,7 @@
           <div class=" border-b md:border-b-0"/>
           <!-- Player in desktop view -->
           <Player
-            class="fixed md:relative bottom-0 border-t md:border-t-0 pt-2 z-40 w-full bg-white"
+            class="fixed md:relative bottom-0 border-t md:border-t-0 pt-2 z-40 w-full bg-white pl-2 pr-5 md:pl-0 md:pr-0"
           />
           <div
             v-if="navOpen"
@@ -51,7 +51,7 @@
     </div>
     <More
       v-if="$nuxt.$route.name == 'index'"
-      class="hidden md:block fixed bottom-0 z-10 w-full"
+      class="hidden md:block fixed bottom-0 z-10 w-full md:mx-5 lg:px-10"
     />
   </div>
 </template>

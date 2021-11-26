@@ -2,7 +2,7 @@
   <div>
     <div
       v-if="article"
-      class="w-full flex justify-end relative top-5 z-10"
+      class="w-full flex justify-end relative top-5 z-10 "
     >{{ article.song }}</div>
     <vue-plyr
       v-if="article"
