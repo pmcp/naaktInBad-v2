@@ -169,12 +169,10 @@ export const actions = {
   },
 
   setActiveArticle({ state, commit, dispatch }, { article, more = false }) {
-    // If active article is the same, stop
-    commit('setActiveArticle', { article, more })
-    if (state.activeArticle) {
-      if (state.activeArticle.slug === article.slug) return
-    }
-    console.log(article)
+    // if (state.activeArticle) {
+    //   if (state.activeArticle.slug === article.slug) return
+    // }
+
     // Scroll to article
     if (more) {
       const element = document.getElementById(article.slug)
@@ -187,6 +185,8 @@ export const actions = {
       window.scrollTo({
         top: offsetPosition
       })
+    } else {
+      commit('setActiveArticle', article)
     }
   }
 }
