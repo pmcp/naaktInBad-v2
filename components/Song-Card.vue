@@ -50,10 +50,15 @@
           class="w-10 h-10 mb-2"
           @clicked="clickArticle(article)"
         />
-        <Icon
-          link
-          class="w-10 h-10 mb-2"
-        />
+        <a
+          v-if="article.url"
+          :href="article.url"
+          target="_blank">
+          <Icon
+            link
+            class="w-10 h-10 mb-2"
+          />
+        </a>
       </div>
     </div>
     <div v-else>

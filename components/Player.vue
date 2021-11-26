@@ -55,6 +55,7 @@ export default {
   },
   watch: {
     article(newArticle) {
+      console.log('newArticle triggerd', newArticle)
       this.$nextTick().then(() => {
         this.$refs.plyr.player.source = {
           type: 'audio',

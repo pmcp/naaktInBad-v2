@@ -33,7 +33,9 @@
           </div>
           <div class=" border-b md:border-b-0"/>
           <!-- Player in desktop view -->
-          <Player class="hidden md:block "/>
+          <Player
+            class="fixed md:relative bottom-0 border-t md:border-t-0 pt-2 z-40 w-full bg-white px-5 "
+          />
           <div
             v-if="navOpen"
             class="w-full h-full md:hidden">
@@ -53,9 +55,10 @@
     />
 
     <!-- Player in mobile view -->
-    <Player
-      v-if="activeArticle"
-      class="md:hidden sticky bottom-0 border-t pt-2 bg-white px-5"/>
+    <!--    <Player-->
+    <!--      v-if="activeArticle"-->
+    <!--      key="mobilePlayer"-->
+    <!--      class="md:hidden sticky bottom-0 border-t pt-2 bg-white px-5"/>-->
   </div>
 </template>
 <script>
