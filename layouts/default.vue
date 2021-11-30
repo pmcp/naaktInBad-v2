@@ -20,7 +20,7 @@
                 <Icon
                   v-if="navOpen"
                   close
-                  class="w-4 h-4 mb-1 mr-1 relative z-60"
+                  class="w-4 h-4  mb-1 mr-1 relative z-60"
                   @clicked="navOpen = false"/>
                 <Icon
                   v-if="!navOpen"

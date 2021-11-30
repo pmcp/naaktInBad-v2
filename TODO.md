@@ -1,5 +1,4 @@
 #DOING
-- Correct fonts
 
 #TODO
 - Fix both ontdek as go to article from search

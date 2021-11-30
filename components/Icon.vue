@@ -5,10 +5,9 @@
       @click="$emit('clicked')">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        x="0px"
-        y="0px"
-        viewBox="0 0 141.73 141.73"
+        width="24"
+        height="24"
+        viewBox="0 0 200 200"
         xml:space="preserve">
         <g>
           <line
@@ -38,7 +37,8 @@
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
-
+        width="24"
+        height="24"
         viewBox="0 0 24 24"
         stroke="currentColor">
         <path
