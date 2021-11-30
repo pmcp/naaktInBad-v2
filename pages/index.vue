@@ -4,8 +4,7 @@
       v-if="activeTag"
       class="hidden md:flex"
     />
-    <!-- Mobile version -->
-    <div class="sticky pt-5 top-0 bg-white">
+    <div class="sticky pt-10 md:pt-0 top-0 bg-white">
       <Filtered
         v-if="activeTag"
         mobile
