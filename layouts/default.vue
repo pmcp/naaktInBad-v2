@@ -13,19 +13,19 @@
             <div class="w-full px-5 md:px-0  flex justify-between items-center">
               <nuxt-link
                 to="/"
-                class="text-7xl py-10 md:py-0 md:text-left flex-grow ">
+                class="font-display text-3xl md:text-7xl py-10 md:py-0 md:text-left flex-grow hover:underline">
                 naakt in bad
               </nuxt-link>
               <div class="md:hidden">
                 <Icon
                   v-if="navOpen"
                   close
-                  class="w-5 h-5 relative z-60"
+                  class="w-4 h-4 mb-1 mr-1 relative z-60"
                   @clicked="navOpen = false"/>
                 <Icon
                   v-if="!navOpen"
                   open
-                  class="w-6 h-6 relative z-60"
+                  class="w-5 h-5 relative z-60"
                   @clicked="navOpen = true"/>
               </div>
             </div>

@@ -3,7 +3,9 @@
     <div class="relative mb-10 w-full">
       <button
         v-if="!open"
-        @click="toggleMore">alle columns</button>
+        class="font-display font-bold"
+        @click="toggleMore"
+      >alle columns</button>
     </div>
     <custom-transition :id="0">
       <div

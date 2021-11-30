@@ -240,7 +240,7 @@ module.exports = {
       DEFAULT: '1'
     },
     fontFamily: {
-      sans: [
+      body: [
         'ArnoPro',
         'ui-sans-serif',
         'system-ui',
@@ -257,13 +257,22 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"'
       ],
-      serif: [
-        'ui-serif',
-        'Georgia',
-        'Cambria',
-        '"Times New Roman"',
-        'Times',
-        'serif'
+      display: [
+        'Americana Std',
+        'ui-sans-serif',
+        'system-ui',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        '"Helvetica Neue"',
+        'Arial',
+        '"Noto Sans"',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"'
       ],
       mono: [
         'ui-monospace',
@@ -811,11 +820,6 @@ module.exports = {
       30: '30',
       40: '40',
       50: '50'
-    }
-  },
-  extend: {
-    fontFamily: {
-      serif: ['ArnoPro', 'Americana Std']
     }
   },
   variantOrder: [

@@ -2,8 +2,8 @@
   <div>
     <div
       v-if="article"
-      class="w-full flex justify-end relative top-5 z-10 "
-    >{{ article.song }}</div>
+      class="flex justify-end"
+    ><span class="relative z-10  top-5 z-10 text-base font-body italic">{{ article.song }}</span></div>
     <vue-plyr
       v-if="article"
       ref="plyr"
@@ -33,9 +33,9 @@ export default {
                   <progress class="plyr__progress__buffer" min="0" max="100" value="0">% buffered</progress>
                 <span role="tooltip" class="plyr__tooltip">00:00</span>
             </div>
-            <div class="flex justify-end relative -top-2">
-              <div class="plyr__time plyr__time--current mr-2" aria-label="Current time">00:00</div>
-              <div class="plyr__time plyr__time--duration" aria-label="Duration">00:00</div>
+            <div class="flex justify-end relative -top-1">
+              <div class="font-body text-base italic plyr__time plyr__time--current" aria-label="Current time">00:00</div>
+              <div class="font-body text-base italic plyr__time plyr__time--duration" aria-label="Duration">00:00</div>
             </div>
          </div>
       </div>`

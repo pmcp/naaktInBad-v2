@@ -1,23 +1,24 @@
 <template>
   <div class="mx-5 md:mx-0">
-    <h1 class="text-2xl pt-10">Zoeken</h1>
+    <h1 class="font-display text-xl font-bold pt-10 md:pt-0">zoeken</h1>
     <div class="flex flex-row mt-5 mb-10">
       <input
         v-model="search"
-        class="border-b flex-grow"
+        placeholder="geef een zoekterm in"
+        class="border-b flex-grow font-body"
         @input="findArticles">
-      <button class="text-lg">Zoek</button>
+      <button class="text-lg font-display font-extrabold relative ml-2 top-2">zoek</button>
     </div>
 
     <div v-if="search != ''">
       <div
         v-for="(s, k) in searchResults"
         :key="`searchResult-${k}`"
-        class="mb-5 cursor-pointer"
+        class="mb-5 cursor-pointer hover:underline"
         @click="clickArticle(s)"
       >
-        <div class="font-bold">{{ s.artist }}</div>
-        <div>{{ s.song }}</div>
+        <div class="font-bold font-display">{{ s.artist }}</div>
+        <div class="font-display">{{ s.song }}</div>
       </div>
     </div>
 
@@ -29,11 +30,11 @@
         v-for="letter in tagsOrdened"
         :key="`letter-${letter.group}`"
         class="w-1/3 mb-5">
-        <h2 class="text-lg font-bold">{{ letter.group }}</h2>
+        <h2 class="text-lg font-display font-bold">{{ letter.group }}</h2>
         <div
           v-for="tag in letter.children"
           :key="`tag-${tag}`"
-          class="cursor-pointer hover:underline"
+          class="cursor-pointer font-body hover:underline"
           @click="selectTag(tag)"
         >
           {{ tag }}

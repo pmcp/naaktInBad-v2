@@ -26,15 +26,24 @@
         <div
           :class="[centered ? 'text-center' : '']"
           class="h-full flex flex-col justify-start">
-          <div class="font-bold">{{ article.artist }}</div>
-          <div>{{ article.song }}</div>
-          <div class="italic">{{ article.label }} ({{ article.release }})</div>
-          <div class="mt-2 text-sm">
+          <div
+            :class="[centered ? 'text-sm' : '']"
+            class="font-display font-extrabold"
+          >{{ article.artist }}</div>
+          <div
+            :class="[centered ? 'text-sm' : '']"
+            class="font-display"
+          >{{ article.song }}</div>
+          <div
+            :class="[centered ? 'text-sm' : '']"
+            class="font-display italic"
+          >{{ article.label }} ({{ article.release }})</div>
+          <div class="mt-2">
             <!-- TODO: Shouldn't do class cursor-pointer -->
             <span
               v-for="(t, key) in article.tags"
               :key="`tag-${key}`"
-              class="cursor-pointer italic hover:underline"
+              class="cursor-pointer font-body italic hover:underline"
               @click="selectTag(t)"
             >
               #{{ t }}

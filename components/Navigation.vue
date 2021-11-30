@@ -11,13 +11,13 @@
         <nuxt-link
           :to="navItem.path"
           :class="[(navItem.path == 'ontdek') ? 'text-transparent bg-clip-text text-gradient bg-gradient-to-r from-pink to-orange': '']"
-          class="text-2xl hover:underline">
+          class="font-display font-extrabold hover:underline">
           {{ navItem.title }}
         </nuxt-link>
       </div>
       <nuxt-link
         to="alles"
-        class="text-2xl hover:underline">
+        class="font-display font-extrabold hover:underline ">
         Alle Columns
       </nuxt-link>
     </nav>
@@ -31,7 +31,7 @@
         <nuxt-link
           :to="navItem.path"
           :class="[(navItem.path == $nuxt.$route.name) ? 'underline' : '']"
-          class="hover:underline"
+          class="font-display font-extrabold hover:underline"
         >
           {{ navItem.title }}
         </nuxt-link>

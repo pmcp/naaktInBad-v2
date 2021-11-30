@@ -1,9 +1,9 @@
 #DOING
-- Fix both ontdek as go to article from search
-
+- Correct fonts
 
 #TODO
-
+- Fix both ontdek as go to article from search
+- Extrabold not showing
 
 #OPTIM
 - Use Grid, so player can move to any position (now using resizeobserver)

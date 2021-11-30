@@ -1,8 +1,8 @@
 <template>
   <div class="flex justify-between pb-3 md:border-b md:mb-5 ">
-    <div class="text-sm"><span class="hidden md:inline ">columns getagd met </span><span class="font-bold">#{{ activeTag.toLowerCase() }}</span></div>
+    <div class="font-body text-sm"><span class="hidden md:inline ">columns getagd met </span><span class="font-bold">#{{ activeTag.toLowerCase() }}</span></div>
     <button
-      class="font-bold flex"
+      class="font-display font-extrabold flex hover:underline"
       @click="resetTag">
       wis filter
       <Icon

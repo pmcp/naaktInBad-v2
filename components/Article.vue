@@ -6,7 +6,7 @@
     />
     <nuxt-content
       :document="article"
-      class="prose mt-10"
+      class="prose mt-10 font-body"
     />
   </div>
 </template>
