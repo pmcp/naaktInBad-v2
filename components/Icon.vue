@@ -53,7 +53,6 @@
       @click="$emit('clicked')">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
         x="0px"
         y="0px"
         viewBox="0 0 141.73 141.73"
@@ -77,7 +76,6 @@
       @click="$emit('clicked')">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
         x="0px"
         y="0px"
         viewBox="0 0 141.73 141.73"
