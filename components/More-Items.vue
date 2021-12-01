@@ -17,7 +17,7 @@
 
     <div
       v-else
-      class="flex gap-3 overflow-x-auto">
+      class="flex gap-3 overflow-x-auto overflow-y-hidden">
       <Song-Card
         v-for="(article, i) in articles"
         :article="article"

@@ -7,7 +7,7 @@
       <!-- Cover Image -->
       <div
         :class="[centered ? 'w-full' : 'w-1/2 md:w-48']"
-        class="order-0  h-auto  "
+        class="order-0 "
       >
         <img
           v-if="article.cover[0]"
@@ -22,7 +22,7 @@
         />
       </div>
       <!-- Text -->
-      <div class="order-last md:order-1 w-full">
+      <div class="order-last flex-grow h-full md:order-1 w-full">
         <div
           :class="[centered ? 'text-center' : '']"
           class="h-full flex flex-col justify-start">

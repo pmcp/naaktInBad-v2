@@ -22,3 +22,7 @@
   margin-right: 10px;
   margin-right: 0;
 }
+
+.plyr--audio .plyr__control.plyr__tab-focus, .plyr--audio .plyr__control:hover, .plyr--audio .plyr__control {
+  background: transparent;
+}

@@ -3,15 +3,15 @@
     <div class="relative mb-10 w-full">
       <button
         v-if="!open"
-        class="font-display font-bold"
+        class="font-display font-bold md:ml-5 lg:pl-10 hover:underline"
         @click="toggleMore"
       >alle columns</button>
     </div>
     <custom-transition :id="0">
       <div
         v-if="open"
-        class="bg-white h-96 border-t-2">
-        <div class="container mx-auto lg:px-10">
+        class="bg-white h-96 border-t">
+        <div class="md:mx-5 lg:px-10 lg:px-10">
           <div class="w-full flex justify-end mt-3">
             <Icon
               close

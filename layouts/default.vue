@@ -51,7 +51,7 @@
     </div>
     <More
       v-if="$nuxt.$route.name == 'index'"
-      class="hidden md:block fixed bottom-0 z-10 w-full md:mx-5 lg:px-10"
+      class="hidden md:block fixed bottom-0 z-10 w-full "
     />
   </div>
 </template>
