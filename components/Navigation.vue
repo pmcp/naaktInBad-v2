@@ -18,7 +18,7 @@
       <nuxt-link
         to="alles"
         class="font-display font-extrabold hover:underline ">
-        Alle Columns
+        alle Columns
       </nuxt-link>
     </nav>
     <!-- Normal Nav -->

@@ -3,7 +3,7 @@
     <div class="relative mb-10 w-full">
       <button
         v-if="!open"
-        class="font-display font-bold md:ml-5 lg:pl-10 hover:underline"
+        class="font-display font-bold ml-32 hover:underline"
         @click="toggleMore"
       >alle columns</button>
     </div>

@@ -14,7 +14,7 @@
         v-if="activeTag"
         class="md:hidden w-full border-b mb-5  "/>
     </div>
-    <Articles class="mx-5 md:mx-0"/>
+    <Articles class="mx-5 md:mx-0 "/>
   </div>
 </template>
 

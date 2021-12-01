@@ -43,9 +43,9 @@ export const state = () => ({
     }
   ],
   navigation: [
-    { title: 'Over', path: 'over' },
-    { title: 'Tags', path: 'tags' },
-    { title: 'Ontdek', path: 'ontdek' }
+    { title: 'over', path: 'over' },
+    { title: 'tags', path: 'tags' },
+    { title: 'ontdek', path: 'ontdek' }
   ],
   moreOpen: false
 })

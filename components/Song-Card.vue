@@ -2,43 +2,36 @@
   <div>
     <div
       v-if="article"
-      :class="[centered ? 'flex-wrap w-40  h-full' : 'flex-wrap gap-5 md:flex-nowrap']"
-      class="flex ">
-      <!-- Cover Image -->
-      <div
-        :class="[centered ? 'w-full' : 'w-1/2 md:w-48']"
-        class="order-0 "
+      :class="[centered ? 'flex-wrap w-24  h-full' : ' gap-6 flex-auto']"
+      class="flex">
+      <!-- C over Image -->
+      <img
+        v-if="article.cover[0]"
+        :src="article.cover[0]"
+        :class="[centered ? 'p-5' : '']"
+        class="w-24 w-24 object-contain cursor-pointer"
+        @click="clickArticle(article)"
       >
-        <img
-          v-if="article.cover[0]"
-          :src="article.cover[0]"
-          :class="[centered ? 'p-5' : '']"
-          class="object-contain cursor-pointer"
-          @click="clickArticle(article)"
-        >
-        <div
-          v-else
-          class="bg-black object-contain"
-        />
-      </div>
       <!-- Text -->
-      <div class="order-last flex-grow h-full md:order-1 w-full">
+      <div
+        class="order-last h-full md:order-1 w-full relative"
+        style="top:-2px">
         <div
-          :class="[centered ? 'text-center' : '']"
+          :class="[centered ? 'text-center' : 'leading-5']"
           class="h-full flex flex-col justify-start">
           <div
-            :class="[centered ? 'text-sm' : '']"
+            :class="[centered ? 'text-sm' : 'leading-5']"
             class="font-display font-extrabold"
           >{{ article.artist }}</div>
           <div
-            :class="[centered ? 'text-sm' : '']"
+            :class="[centered ? 'text-sm' : 'leading-5']"
             class="font-display"
           >{{ article.song }}</div>
           <div
-            :class="[centered ? 'text-sm' : '']"
-            class="font-display italic"
+            :class="[centered ? 'text-sm' : 'leading-5']"
+            class="font-display italic mb-2"
           >{{ article.label }} ({{ article.release }})</div>
-          <div class="mt-2">
+          <div>
             <!-- TODO: Shouldn't do class cursor-pointer -->
             <span
               v-for="(t, key) in article.tags"
@@ -57,7 +50,7 @@
         class="order-2 flex flex-col flex-grow items-end">
         <Icon
           play
-          class="w-10 h-10 mb-2"
+          class="w-7 h-7 mb-1"
           @clicked="clickArticle(article)"
         />
         <a
@@ -66,7 +59,7 @@
           target="_blank">
           <Icon
             link
-            class="w-10 h-10 mb-2"
+            class="w-7 h-7"
           />
         </a>
       </div>

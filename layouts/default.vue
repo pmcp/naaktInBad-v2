@@ -1,19 +1,19 @@
 <template>
   <div>
 
-    <div class="flex flex-col md:flex-row flex-wrap md:mx-5 lg:px-10">
+    <div class="flex flex-col md:flex-row flex-wrap mx-32">
       <!-- Navigation in desktop view -->
-      <Navigation class="bg-white hidden md:flex sticky w-full h-44 pt-10  top-0 z-20"/>
+      <Navigation class="bg-white hidden md:flex sticky w-full h-48 pt-16 top-0 z-20"/>
       <div
         :class="[navOpen ? 'fixed w-full h-full bg-white z-40' : '']"
         class="md:w-1/2"
       >
-        <div class="md:fixed top-42 lg:mr-32 ">
+        <div class="md:fixed m lg:mr-32">
           <div class="">
             <div class="w-full px-5 md:px-0  flex justify-between items-center">
               <nuxt-link
                 to="/"
-                class="font-display text-3xl md:text-7xl py-10 md:py-0 md:text-left flex-grow hover:underline">
+                class="font-display text-xl md:text-7xl py-10 md:py-0 md:text-left flex-grow hover:underline">
                 naakt in bad
               </nuxt-link>
               <div class="md:hidden">
@@ -45,13 +45,15 @@
           </div>
         </div>
       </div>
-      <main class="md:w-1/2 ">
-        <nuxt class="lg:ml-32 relative"/>
+      <main class="md:w-1/2 flex justify-end">
+        <nuxt
+          class="relative"
+          style="width:28rem"/>
       </main>
     </div>
     <More
       v-if="$nuxt.$route.name == 'index'"
-      class="hidden md:block fixed bottom-0 z-10 w-full "
+      class="hidden md:block fixed bottom-0 z-10 w-full"
     />
   </div>
 </template>
