@@ -68,7 +68,7 @@ export const mutations = {
   },
   setArticles(state, articles) {
     state.articles = [...articles]
-    console.log('set aarticles', state.articles)
+    console.log('set articles', state.articles)
   },
   setSearchResults(state, articles) {
     state.searchResults = [...articles]
@@ -76,7 +76,7 @@ export const mutations = {
 }
 
 export const actions = {
-  async getArticles({ state, commit }) {
+  async getArticles({ state, commit }, { id = null }) {
     // Scenarios
     // 1. Initial:
     //    - 10 articles (or less if less)
@@ -100,30 +100,49 @@ export const actions = {
     console.log(
       `Getting articles, skip = ${state.articles.length}, tag = ${
         state.activeTag
-      }`
+      }, id = ${id}`
     )
-    if (state.activeTag) {
-      articles = await this.$content('articles')
-        .sortBy('date', 'asc')
-        .where({ tags: { $contains: state.activeTag } })
-        .skip(loadedArticles)
-        .limit(10)
-        .fetch()
-        .catch(err => {
-          console.log(err)
-        })
+    if (id == null) {
+      if (state.activeTag) {
+        articles = await this.$content('articles')
+          .sortBy('date', 'asc')
+          .where({ tags: { $contains: state.activeTag } })
+          .skip(loadedArticles)
+          .limit(10)
+          .fetch()
+          .catch(err => {
+            console.log(err)
+          })
+      } else {
+        console.log('no tag', state.activeTag)
+        articles = await this.$content('articles')
+          .sortBy('date', 'asc')
+          .skip(loadedArticles)
+          .limit(10)
+          .fetch()
+          .catch(err => {
+            console.log(err)
+          })
+      }
     } else {
-      console.log('no tag', state.activeTag)
-      articles = await this.$content('articles')
+      // There is an Id, so we need to get the article based on id, and the next ten articles
+
+      // Article based on id:
+      const article = await this.$content('articles', id).fetch()
+      const allSurround = await this.$content('articles')
         .sortBy('date', 'asc')
-        .skip(loadedArticles)
-        .limit(10)
+        .surround(id, { before: 0, after: 10 })
         .fetch()
         .catch(err => {
           console.log(err)
         })
+      console.log(allSurround)
+
+      articles = [article, ...allSurround.filter(a => a != null)]
     }
+
     const allArticles = [...state.articles, ...articles]
+    console.log(allArticles)
     commit('setArticles', allArticles)
   },
   async getTags({ state, commit }) {
@@ -187,5 +206,35 @@ export const actions = {
     } else {
       commit('setActiveArticle', article)
     }
+  },
+
+  async getArticle({ state, commit, dispatch }, { id = null }) {
+    // Reset active tag if it is set
+    dispatch('resetTag')
+
+    if (id == null) {
+      console.log('no id')
+      //  No id, so get random song
+      // Get length of articles
+      // TODO: Get this out of here, calculate length on generate
+
+      const articles = await this.$content('articles')
+        .only(['slug'])
+        .fetch()
+        .catch(err => {
+          console.log(err)
+        })
+      const random = Math.floor(Math.random() * articles.length)
+
+      dispatch('getArticles', { id: articles[random].slug })
+
+      // get song based on id
+    } else {
+      dispatch('getArticles', { id })
+      // Get song based on id
+    }
+
+    // Go to homepage
+    await this.$router.push('/')
   }
 }

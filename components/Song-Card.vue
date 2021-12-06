@@ -2,36 +2,38 @@
   <div>
     <div
       v-if="article"
-      :class="[centered ? 'flex-wrap w-24  h-full' : ' gap-6 flex-auto']"
+      :class="[centered ? 'flex flex-col h-full items-center w-44' : ' gap-6 flex-auto']"
       class="flex">
       <!-- C over Image -->
       <img
         v-if="article.cover[0]"
         :src="article.cover[0]"
-        :class="[centered ? 'p-5' : '']"
-        class="w-24 w-24 object-contain cursor-pointer"
+        :class="[centered ? 'w-24 w-24 p-1' : 'w-24 w-24']"
+        class="  cursor-pointer"
         @click="clickArticle(article)"
       >
       <!-- Text -->
       <div
-        class="order-last h-full md:order-1 w-full relative"
+        class="order-last h-full md:order-1 w-full relative pt-3"
         style="top:-2px">
         <div
-          :class="[centered ? 'text-center' : 'leading-5']"
+          :class="[centered ? 'text-center leading-5' : 'leading-5']"
           class="h-full flex flex-col justify-start">
-          <div
-            :class="[centered ? 'text-sm' : 'leading-5']"
-            class="font-display font-extrabold"
-          >{{ article.artist }}</div>
-          <div
-            :class="[centered ? 'text-sm' : 'leading-5']"
-            class="font-display"
-          >{{ article.song }}</div>
-          <div
-            :class="[centered ? 'text-sm' : 'leading-5']"
-            class="font-display italic mb-2"
-          >{{ article.label }} ({{ article.release }})</div>
-          <div>
+          <div :class="[centered ? 'h-28' : '']">
+            <div
+              :class="[centered ? 'leading-5' : 'leading-5']"
+              class="font-display font-extrabold"
+            >{{ article.artist }}</div>
+            <div
+              :class="[centered ? 'leading-5' : 'leading-5']"
+              class="font-display"
+            >{{ article.song }}</div>
+            <div
+              :class="[centered ? 'leading-5' : 'leading-5']"
+              class="font-display italic mb-2"
+            >{{ article.label }} ({{ article.release }})</div>
+          </div>
+          <div class="leading-4">
             <!-- TODO: Shouldn't do class cursor-pointer -->
             <span
               v-for="(t, key) in article.tags"

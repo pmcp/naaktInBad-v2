@@ -15,7 +15,7 @@
         v-for="(s, k) in searchResults"
         :key="`searchResult-${k}`"
         class="mb-5 cursor-pointer hover:underline"
-        @click="clickArticle(s)"
+        @click="getArticle({ id: s.slug })"
       >
         <div class="font-bold font-display">{{ s.artist }}</div>
         <div class="font-display">{{ s.song }}</div>
@@ -29,7 +29,7 @@
       <div
         v-for="letter in tagsOrdened"
         :key="`letter-${letter.group}`"
-        class="w-1/3 mb-5">
+        class="w-1/4 mb-5">
         <h2 class="text-lg font-display font-bold">{{ letter.group }}</h2>
         <div
           v-for="tag in letter.children"
@@ -81,10 +81,16 @@ export default {
     }
   },
   methods: {
-    clickArticle(article) {
-      this.setActiveArticle({ article, more: true })
-    },
-    ...mapActions(['getTags', 'selectTag', 'findArticles', 'setActiveArticle'])
+    // clickArticle(article) {
+    //   this.setActiveArticle({ article, more: true })
+    // },
+    ...mapActions([
+      'getTags',
+      'selectTag',
+      'findArticles',
+      'setActiveArticle',
+      'getArticle'
+    ])
   },
   async asyncData({ $content, params, error, store }) {
     store.dispatch('getTags')

@@ -1,12 +1,14 @@
 <template>
-  <div class="border-b pb-20 mb-20">
+  <div
+    class="border-b mb-20"
+    style="padding-bottom:4.6rem">
     <Song-Card
       :article="article"
       actions
     />
     <nuxt-content
       :document="article"
-      class="prose mt-10 font-body text-body leading-1"
+      class="prose text-justify mt-10 font-body text-body leading-1"
     />
   </div>
 </template>
