@@ -76,7 +76,7 @@ export const mutations = {
 }
 
 export const actions = {
-  async getArticles({ state, commit }, { id = null }) {
+  async getArticles({ state, commit }, id) {
     // Scenarios
     // 1. Initial:
     //    - 10 articles (or less if less)
@@ -102,7 +102,8 @@ export const actions = {
         state.activeTag
       }, id = ${id}`
     )
-    if (id == null) {
+    console.log(id == undefined)
+    if (id == undefined) {
       if (state.activeTag) {
         articles = await this.$content('articles')
           .sortBy('date', 'asc')
@@ -129,6 +130,7 @@ export const actions = {
 
       // Article based on id:
       const article = await this.$content('articles', id).fetch()
+      console.log('got article', article)
       const allSurround = await this.$content('articles')
         .sortBy('date', 'asc')
         .surround(id, { before: 0, after: 10 })
@@ -136,9 +138,10 @@ export const actions = {
         .catch(err => {
           console.log(err)
         })
-      console.log(allSurround)
+      console.log(allSurround, state.articles)
 
       articles = [article, ...allSurround.filter(a => a != null)]
+      console.log(articles)
     }
 
     const allArticles = [...state.articles, ...articles]
@@ -213,7 +216,6 @@ export const actions = {
     dispatch('resetTag')
 
     if (id == null) {
-      console.log('no id')
       //  No id, so get random song
       // Get length of articles
       // TODO: Get this out of here, calculate length on generate
@@ -225,15 +227,13 @@ export const actions = {
           console.log(err)
         })
       const random = Math.floor(Math.random() * articles.length)
-
-      dispatch('getArticles', { id: articles[random].slug })
-
+      console.log('LLLL', random, articles[random].slug)
+      dispatch('getArticles', articles[random].slug)
       // get song based on id
     } else {
-      dispatch('getArticles', { id })
+      dispatch('getArticles', id)
       // Get song based on id
     }
-
     // Go to homepage
     await this.$router.push('/')
   }
