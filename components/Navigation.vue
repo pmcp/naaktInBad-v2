@@ -30,7 +30,7 @@
         :key="`navigation_${i}`">
         <nuxt-link
           :to="navItem.path"
-          :class="[(navItem.path == $nuxt.$route.name) ? 'underline' : '']"
+          :class="[(navItem.path == $nuxt.$route.name) ? 'underline' : '', (navItem.path == 'ontdek') ? 'hover:text-transparent bg-clip-text hover:text-gradient bg-gradient-to-r from-pink to-orange': '']"
           class="font-display font-extrabold hover:underline"
         >
           {{ navItem.title }}
