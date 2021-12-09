@@ -5,7 +5,8 @@
 - Load more on scroll when articles are filtered on tag
 
 #TODO
-- Fix ref2 error when loading new (Uncaught (in promise) TypeError: _ref2 is undefined)
+- Fix gradient issue safari
+- On click from "more", correct
 - Naakt in bad (links)
   - even breed als column
 - Alle columns
