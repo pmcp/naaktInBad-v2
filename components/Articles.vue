@@ -26,7 +26,8 @@ export default {
   methods: {
     async intersected(val) {
       if (this.articles.length === 0) return
-      this.getArticles()
+      //When intersect, pass the id (slug) of the last article
+      this.getArticles({ id: null, intersected: 'bottom' })
     },
     ...mapActions(['getArticles'])
   }

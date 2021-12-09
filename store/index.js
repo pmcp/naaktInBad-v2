@@ -76,72 +76,68 @@ export const mutations = {
 }
 
 export const actions = {
-  async getArticles({ state, commit }, id) {
-    // Scenarios
-    // 1. Initial:
-    //    - 10 articles (or less if less)
-    //    - ascending by date
+  async getArticles({ state, commit }, { id = null, intersected = null }) {
+    console.log('TRIGGERED', id, intersected)
 
-    // 2. Scrolling in page:
-    //    - Get 5 more articles
-
-    // 3. Click on article in More Nav:
-    //    - Scroll to article
-
-    // 4. Click a tag
-    //    - Remove all articles
-    //    - Get 10 articles with tag
-    //    - ascending by date
-
-    // 5. Scrolling in page with tag active
-    //    - Get 5 more articles
     const loadedArticles = state.articles.length
     let articles = []
-    console.log(
-      `Getting articles, skip = ${state.articles.length}, tag = ${
-        state.activeTag
-      }, id = ${id}`
-    )
-    console.log(id)
-    if (id == null) {
-      if (state.activeTag) {
-        articles = await this.$content('articles')
-          .sortBy('date', 'asc')
-          .where({ tags: { $contains: state.activeTag } })
-          .skip(loadedArticles)
-          .limit(10)
-          .fetch()
-          .catch(err => {
-            console.log(err)
-          })
-      } else {
-        console.log('no tag', state.activeTag)
-        articles = await this.$content('articles')
-          .sortBy('date', 'asc')
-          .skip(loadedArticles)
-          .limit(10)
-          .fetch()
-          .catch(err => {
-            console.log(err)
-          })
-      }
-    } else {
-      // There is an Id, so we need to get the article based on id, and the next ten articles
 
-      // Article based on id:
-      const article = await this.$content('articles', id).fetch()
-      console.log('got article', article)
+    if (intersected === 'bottom') {
+      //  add articles based on next articles of last item in articles
+      //  Get last item in articles
+      const lastArticle = state.articles.at(-1)
+      const lastArticleId = lastArticle.slug
+      console.log(lastArticleId)
       const allSurround = await this.$content('articles')
         .sortBy('date', 'asc')
-        .surround(id, { before: 0, after: 10 })
+        .surround(lastArticleId, { before: 0, after: 10 })
         .fetch()
         .catch(err => {
           console.log(err)
         })
-      console.log(allSurround, state.articles)
 
-      articles = [article, ...allSurround.filter(a => a != null)]
-      console.log(articles)
+      articles = [...allSurround.filter(a => a != null)]
+    } else {
+      if (id == null) {
+        if (state.activeTag) {
+          articles = await this.$content('articles')
+            .sortBy('date', 'asc')
+            .where({ tags: { $contains: state.activeTag } })
+            .skip(loadedArticles)
+            .limit(10)
+            .fetch()
+            .catch(err => {
+              console.log(err)
+            })
+        } else {
+          console.log('no tag', state.activeTag)
+          articles = await this.$content('articles')
+            .sortBy('date', 'asc')
+            .skip(loadedArticles)
+            .limit(10)
+            .fetch()
+            .catch(err => {
+              console.log(err)
+            })
+        }
+      } else {
+        // There is an Id, so we need to get the article based on id, and the next ten articles
+
+        // Article based on id:
+        const article = await this.$content('articles', id).fetch()
+        console.log('got article', article)
+        const allSurround = await this.$content('articles')
+          .sortBy('date', 'asc')
+          .surround(id, { before: 0, after: 10 })
+          .fetch()
+          .catch(err => {
+            console.log(err)
+          })
+        console.log(allSurround, state.articles)
+
+        articles = [article, ...allSurround.filter(a => a != null)]
+        console.log(articles)
+      }
     }
 
     const allArticles = [...state.articles, ...articles]
@@ -228,10 +224,10 @@ export const actions = {
         })
       const random = Math.floor(Math.random() * articles.length)
       console.log(articles[random].slug)
-      dispatch('getArticles', articles[random].slug)
+      dispatch('getArticles', { id: articles[random].slug, intersected: null })
       // get song based on id
     } else {
-      dispatch('getArticles', id)
+      dispatch('getArticles', { id: null, intersected: null })
       // Get song based on id
     }
     // Go to homepage
