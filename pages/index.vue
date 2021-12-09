@@ -26,13 +26,6 @@ export default {
     activeTag() {
       return this.$store.state.activeTag
     }
-  },
-  methods: {
-    ...mapActions(['getArticles'])
-  },
-  async asyncData({ $content, params, error, store }) {
-    console.log('ASYNC')
-    store.dispatch('getArticles')
   }
 }
 </script>

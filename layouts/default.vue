@@ -63,6 +63,8 @@
   </div>
 </template>
 <script>
+import { mapActions } from 'vuex'
+
 export default {
   data() {
     return {
@@ -85,6 +87,12 @@ export default {
     this.$nuxt.$on('closeNav', () => {
       this.navOpen = false
     })
+  },
+  mounted() {
+    this.getArticles({ id: null, intersected: null })
+  },
+  methods: {
+    ...mapActions(['getArticles'])
   }
 }
 </script>
