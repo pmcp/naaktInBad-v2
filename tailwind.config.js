@@ -1,5 +1,14 @@
 module.exports = {
-  purge: ['./layouts/*.vue', './store/*.js', './components/*.vue'],
+  purge: {
+    content: ['./layouts/*.vue', './store/*.js', './components/*.vue'],
+    safelist: [
+      'bg-clip-text',
+      'hover:text-gradient',
+      'bg-gradient-to-r',
+      'from-pink',
+      'to-orange'
+    ]
+  },
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -54,7 +63,7 @@ module.exports = {
       72: '18rem',
       80: '20rem',
       96: '24rem',
-      112: '28rem',
+      112: '28rem'
     },
     animation: {
       none: 'none',
