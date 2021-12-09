@@ -1,13 +1,6 @@
 module.exports = {
   purge: {
-    content: ['./layouts/*.vue', './store/*.js', './components/*.vue'],
-    safelist: [
-      'bg-clip-text',
-      'hover:text-gradient',
-      'bg-gradient-to-r',
-      'from-pink',
-      'to-orange'
-    ]
+    content: ['./layouts/*.vue', './store/*.js', './components/*.vue']
   },
   presets: [],
   darkMode: false, // or 'media' or 'class'
