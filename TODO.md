@@ -6,7 +6,6 @@
 
 #TODO
 - Fix gradient issue safari
-- On click from "more", correct
 - Naakt in bad (links)
   - even breed als column
 - Alle columns

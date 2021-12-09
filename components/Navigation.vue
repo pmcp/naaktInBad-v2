@@ -11,14 +11,12 @@
         <button
           v-if="navItem.path == 'ontdek'"
           :class="[(navItem.path == $nuxt.$route.name) ? 'underline' : '']"
-          class="font-display font-extrabold hover:underline text-transparent bg-clip-text text-gradient bg-gradient-to-r from-pink to-orange"
           @click="closeAndGo()">
-          {{ navItem.title }}
+          <span class="font-display font-extrabold hover:underline text-transparent bg-clip-text text-gradient bg-gradient-to-r from-pink to-orange">{{ navItem.title }}</span>
         </button>
         <nuxt-link
           v-else
           :to="navItem.path"
-          :class="[(navItem.path == 'ontdek') ? 'text-transparent bg-clip-text text-gradient bg-gradient-to-r from-pink to-orange': '']"
           class="font-display font-extrabold hover:underline">
           {{ navItem.title }}
         </nuxt-link>
@@ -39,10 +37,9 @@
         <button
           v-if="navItem.path == 'ontdek'"
           :class="[(navItem.path == $nuxt.$route.name) ? 'underline' : '']"
-          class="font-display font-extrabold hover:underline hover:text-transparent bg-clip-text hover:text-gradient bg-gradient-to-r from-pink to-orange"
-          @click="getArticle(null)"
+          @click="getArticle"
         >
-          {{ navItem.title }}
+          <span class="font-display font-extrabold hover:underline hover:text-transparent bg-clip-text hover:text-gradient bg-gradient-to-r from-pink to-orange">{{ navItem.title }}</span>
         </button>
         <nuxt-link
           v-else
@@ -77,7 +74,7 @@ export default {
   methods: {
     closeAndGo() {
       this.$nuxt.$emit('closeNav')
-      this.getArticle(null)
+      this.getArticle()
     },
     ...mapActions(['getArticle'])
   }
