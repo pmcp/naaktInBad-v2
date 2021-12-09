@@ -76,7 +76,7 @@ export const mutations = {
 }
 
 export const actions = {
-  async getArticles({ state, commit }, { id = null, intersected = null }) {
+  async getArticles({ state, commit }, { id, intersected }) {
     console.log('TRIGGERED', id, intersected)
 
     const loadedArticles = state.articles.length
@@ -178,6 +178,8 @@ export const actions = {
   selectTag({ state, commit, dispatch }, tag) {
     commit('setActiveTag', tag)
     commit('setArticles', [])
+    dispatch('getArticles', { id: null, intersected: null })
+
     this.$router.push('/')
   },
 
