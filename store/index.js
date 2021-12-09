@@ -235,6 +235,6 @@ export const actions = {
       // Get song based on id
     }
     // Go to homepage
-    // await this.$router.push('/')
+    await this.$router.push('/')
   }
 }
