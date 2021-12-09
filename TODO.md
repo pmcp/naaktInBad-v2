@@ -2,7 +2,7 @@
 - Heb column eens uitgevuld in de breedte (justify)
 
 #DOING
-- Fix both ontdek as go to article from search
+- Load more on scroll when articles are filtered on tag
 
 #TODO
 - Fix ref2 error when loading new (Uncaught (in promise) TypeError: _ref2 is undefined)
