@@ -8,13 +8,13 @@
       <img
         v-if="article.cover[0]"
         :src="article.cover[0]"
-        :class="[centered ? 'w-24 w-24 p-1' : 'w-24 w-24']"
-        class="  cursor-pointer"
+        :class="[centered ? 'p-1' : '']"
+        class="cursor-pointer w-24 h-24"
         @click="clickArticle(article)"
       >
       <!-- Text -->
       <div
-        class="order-last h-full md:order-1 w-full relative pt-3"
+        class=" h-full md:order-1 w-full relative"
         style="top:-2px">
         <div
           :class="[centered ? 'text-center leading-5' : 'leading-5']"

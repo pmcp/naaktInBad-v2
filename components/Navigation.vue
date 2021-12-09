@@ -8,7 +8,15 @@
         v-for="(navItem, i) in navigation"
         :key="`navigation_${i}`"
         class="pb-5">
+        <button
+          v-if="navItem.path == 'ontdek'"
+          :class="[(navItem.path == $nuxt.$route.name) ? 'underline' : '']"
+          class="font-display font-extrabold hover:underline text-transparent bg-clip-text text-gradient bg-gradient-to-r from-pink to-orange"
+          @click="closeAndGo()">
+          {{ navItem.title }}
+        </button>
         <nuxt-link
+          v-else
           :to="navItem.path"
           :class="[(navItem.path == 'ontdek') ? 'text-transparent bg-clip-text text-gradient bg-gradient-to-r from-pink to-orange': '']"
           class="font-display font-extrabold hover:underline">
@@ -32,7 +40,7 @@
           v-if="navItem.path == 'ontdek'"
           :class="[(navItem.path == $nuxt.$route.name) ? 'underline' : '']"
           class="font-display font-extrabold hover:underline hover:text-transparent bg-clip-text hover:text-gradient bg-gradient-to-r from-pink to-orange"
-          @click="getArticle"
+          @click="getArticle(null)"
         >
           {{ navItem.title }}
         </button>
@@ -67,6 +75,10 @@ export default {
     }
   },
   methods: {
+    closeAndGo() {
+      this.$nuxt.$emit('closeNav')
+      this.getArticle(null)
+    },
     ...mapActions(['getArticle'])
   }
 }

@@ -23,14 +23,9 @@ export default {
       return this.$store.state.articles
     }
   },
-  watch: {
-    article(newArticle) {
-      console.log(this.$refs)
-      // this.$refs['target-element'].scrollIntoView()
-    }
-  },
   methods: {
-    async intersected() {
+    async intersected(val) {
+      if (this.articles.length === 0) return
       this.getArticles()
     },
     ...mapActions(['getArticles'])

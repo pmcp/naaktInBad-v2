@@ -7,7 +7,8 @@
     <vue-plyr
       v-if="article"
       ref="plyr"
-      :options="options">
+      :options="options"
+      class="mt-4">
       <audio>
         <source
           src=""

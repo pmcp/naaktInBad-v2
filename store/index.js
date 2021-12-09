@@ -102,8 +102,8 @@ export const actions = {
         state.activeTag
       }, id = ${id}`
     )
-    console.log(id == undefined)
-    if (id == undefined) {
+    console.log(id)
+    if (id == null) {
       if (state.activeTag) {
         articles = await this.$content('articles')
           .sortBy('date', 'asc')
@@ -211,10 +211,10 @@ export const actions = {
     }
   },
 
-  async getArticle({ state, commit, dispatch }, { id = null }) {
+  async getArticle({ state, commit, dispatch }, id) {
     // Reset active tag if it is set
+    console.log(id)
     dispatch('resetTag')
-
     if (id == null) {
       //  No id, so get random song
       // Get length of articles
@@ -227,7 +227,7 @@ export const actions = {
           console.log(err)
         })
       const random = Math.floor(Math.random() * articles.length)
-      console.log('LLLL', random, articles[random].slug)
+      console.log(articles[random].slug)
       dispatch('getArticles', articles[random].slug)
       // get song based on id
     } else {
@@ -235,6 +235,6 @@ export const actions = {
       // Get song based on id
     }
     // Go to homepage
-    await this.$router.push('/')
+    // await this.$router.push('/')
   }
 }

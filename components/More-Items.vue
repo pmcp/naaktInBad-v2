@@ -50,6 +50,7 @@ export default {
   },
   methods: {
     async intersected() {
+      console.log('triggered from observer')
       this.getArticles()
     },
     ...mapActions(['getArticles'])

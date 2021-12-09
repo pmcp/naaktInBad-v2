@@ -29,10 +29,10 @@ export default {
   },
   methods: {
     ...mapActions(['getArticles'])
+  },
+  async asyncData({ $content, params, error, store }) {
+    console.log('ASYNC')
+    store.dispatch('getArticles')
   }
-  // async asyncData({ $content, params, error, store }) {
-  //   console.log('ASYNC')
-  //   // store.dispatch('getArticles')
-  // }
 }
 </script>
