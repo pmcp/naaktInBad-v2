@@ -4,7 +4,7 @@
     <div class="flex flex-col md:flex-row flex-wrap md:mx-32">
       <!-- Navigation in desktop view -->
       <Navigation
-        class="bg-white hidden md:flex sticky w-full h-48 pt-16 top-0 z-20"
+        class="bg-white hidden md:flex sticky w-full h-48 pt-16 top-0 z-20 md:mb-1"
       />
       <div
         :class="[navOpen ? 'fixed w-full h-full bg-white z-40' : '']"
@@ -12,10 +12,10 @@
       >
         <div class="md:fixed lg:mr-32">
 
-          <div class="w-full px-5 md:px-0  flex justify-between items-center">
+          <div class="w-full px-10 md:px-0  flex justify-between items-center">
             <nuxt-link
               to="/"
-              class="relative  pb-4 pt-3"
+              class="relative md:pb-10 md:-mt-2"
             >
               <Logo />
 
@@ -26,12 +26,14 @@
               <Icon
                 v-if="navOpen"
                 close
-                class="w-4 h-4  mb-1 mr-1 relative"
+                class=" relative"
+                style="padding-top:0.23rem;left:-0.1rem;width:.9rem;height:.9rem;"
                 @clicked="navOpen = false"/>
               <Icon
                 v-if="!navOpen"
                 open
                 class="w-5 h-5 relative z-60"
+                style="top: .2rem;"
                 @clicked="navOpen = true"/>
             </div>
           </div>
@@ -39,7 +41,7 @@
           <div class=" border-b md:border-b-0"/>
           <!-- Player in desktop view -->
           <Player
-            class="fixed md:relative bottom-0 border-t md:border-t-0 z-40 w-full bg-white pl-5 pr-5 md:pl-0 md:pr-0"
+            class="fixed md:relative bottom-0 border-t md:border-t-0 z-40 w-full bg-white px-10 md:pl-0 md:pr-0"
           />
           <div
             v-if="navOpen"

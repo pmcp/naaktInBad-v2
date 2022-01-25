@@ -8,13 +8,13 @@
       <Filtered
         v-if="activeTag"
         mobile
-        class="md:hidden mx-5 md:mx-0"
+        class="md:hidden mx-10 md:mx-0"
       />
       <div
         v-if="activeTag"
         class="md:hidden w-full border-b mb-5  "/>
     </div>
-    <Articles class="mx-5 md:mx-0 "/>
+    <Articles class=" md:mx-0 "/>
   </div>
 </template>
 

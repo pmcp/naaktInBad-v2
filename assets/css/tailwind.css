@@ -26,3 +26,8 @@
 .plyr--audio .plyr__control.plyr__tab-focus, .plyr--audio .plyr__control:hover, .plyr--audio .plyr__control {
   background: transparent;
 }
+
+.plyr--full-ui input[type="range"]::-moz-range-thumb, .plyr--full-ui input[type="range"]::-webkit-slider-thumb {
+  width: .66rem;
+  height: .66rem;
+}

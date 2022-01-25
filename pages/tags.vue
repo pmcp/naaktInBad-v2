@@ -1,13 +1,13 @@
 <template>
-  <div class="mx-5 md:mx-0">
-    <h1 class="font-display text-xl font-bold pt-10 md:pt-0">zoeken</h1>
-    <div class="flex flex-row mt-5 mb-10">
+  <div class="mx-10 md:mx-0">
+    <h1 class="hidden md:block font-display text-xl font-bold pt-10 md:pt-0">zoeken</h1>
+    <div class="flex flex-row mt-12 md:mt-5 mb-14">
       <input
         v-model="search"
         placeholder="geef een zoekterm in"
-        class="border-b flex-grow font-body"
+        class="border-b flex-grow font-body text-mobileSize1 rounded-none "
         @input="findArticles">
-      <button class="text-lg font-display font-extrabold relative ml-2 top-2">zoek</button>
+      <button class="text-mobileSize1 font-display font-bold relative ml-2 top-2">zoek</button>
     </div>
 
     <div v-if="search != ''">
@@ -29,12 +29,13 @@
       <div
         v-for="letter in tagsOrdened"
         :key="`letter-${letter.group}`"
-        class="w-1/4 mb-5">
-        <h2 class="text-lg font-display font-bold">{{ letter.group }}</h2>
+        class="w-1/3 mb-12">
+        <h2 class="text-2xl font-display font-bold">{{ letter.group }}</h2>
         <div
           v-for="tag in letter.children"
           :key="`tag-${tag}`"
-          class="cursor-pointer font-body hover:underline"
+          class="cursor-pointer font-body hover:underline text-xl md:text-body"
+          style="text-indent: -0.4rem;padding-left:0.4rem "
           @click="selectTag(tag)"
         >
           {{ tag }}

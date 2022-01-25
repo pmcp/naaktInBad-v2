@@ -1,7 +1,8 @@
 <template>
-  <div class="relative group">
+  <div
+    class="relative group w-specific1 h-24 md:w-full md:-top-5">
     <svg
-      class="h-auto opacity-0 group-hover:opacity-100 w-80 h-auto md:w-112"
+      class="opacity-0 group-hover:opacity-100 w-full h-full md:w-112"
       width="129"
       height="17"
       viewBox="0 0 129 17"
@@ -12,7 +13,7 @@
         fill="black"/>
     </svg>
     <svg
-      class="h-auto absolute top-0 left-0 opacity-100 group-hover:opacity-0 w-80 md:w-112"
+      class=" absolute top-0 left-0 opacity-100 group-hover:opacity-0 h-full w-full md:w-112"
       width="128"
       height="16"
       viewBox="0 0 128 16"

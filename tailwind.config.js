@@ -56,7 +56,9 @@ module.exports = {
       72: '18rem',
       80: '20rem',
       96: '24rem',
-      112: '28rem'
+      112: '28rem',
+      specific1: '16.5rem',
+      specific2: '4,6rem',
     },
     animation: {
       none: 'none',
@@ -302,7 +304,10 @@ module.exports = {
       '7xl': ['4.5rem', { lineHeight: '1' }],
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
-      body: ['1.1rem', { lineHeight: '1.6rem' }]
+      body: ['1.1rem', { lineHeight: '1.6rem' }],
+      mobileSize1: ['1.3rem', { lineHeight: '1.6rem' }],
+      mobileSize2: ['1.2rem', { lineHeight: '1.8rem' },
+      ]
     },
     fontWeight: {
       thin: '100',

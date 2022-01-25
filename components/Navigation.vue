@@ -3,27 +3,27 @@
     <!-- Mobile Nav -->
     <nav
       v-if="mobile"
-      class="w-full bg-white mx-5 pt-10">
+      class="w-full bg-white mx-10 pt-5">
       <div
         v-for="(navItem, i) in navigation"
         :key="`navigation_${i}`"
-        class="pb-5">
+        class="pb-4 text-2xl">
         <button
           v-if="navItem.path == 'ontdek'"
           :class="[(navItem.path == $nuxt.$route.name) ? 'underline' : '']"
           @click="closeAndGo()">
-          <span class="font-display font-extrabold hover:underline text-transparent bg-clip-text text-gradient bg-gradient-to-r from-pink to-orange">{{ navItem.title }}</span>
+          <span class="font-display hover:underline text-transparent bg-clip-text text-gradient bg-gradient-to-r from-pink to-orange">{{ navItem.title }}</span>
         </button>
         <nuxt-link
           v-else
           :to="navItem.path"
-          class="font-display font-extrabold hover:underline">
+          class="font-display hover:underline pb-4">
           {{ navItem.title }}
         </nuxt-link>
       </div>
       <nuxt-link
         to="alles"
-        class="font-display font-extrabold hover:underline ">
+        class="font-display hover:underline text-2xl">
         alle Columns
       </nuxt-link>
     </nav>

@@ -3,42 +3,42 @@
     <div
       v-if="article"
       :class="[centered ? 'flex flex-col h-full items-center w-44' : ' gap-6 flex-auto']"
-      class="flex">
-      <!-- C over Image -->
+      class="flex flex-wrap md:flex-nowrap">
+      <!-- Cover Image -->
       <img
         v-if="article.cover[0]"
         :src="article.cover[0]"
         :class="[centered ? 'p-1' : '']"
-        class="cursor-pointer w-24 h-24"
+        class="cursor-pointer w-40 h-40  md:w-24 md:h-24"
         @click="clickArticle(article)"
       >
       <!-- Text -->
       <div
-        class=" h-full md:order-1 w-full relative"
+        class=" h-full order-last md:order-1 w-full relative"
         style="top:-2px">
         <div
           :class="[centered ? 'text-center leading-5' : 'leading-5']"
           class="h-full flex flex-col justify-start">
           <div :class="[centered ? 'h-28' : '']">
             <div
-              :class="[centered ? 'leading-5' : 'leading-5']"
-              class="font-display font-extrabold"
+              :class="[centered ? 'md:leading-5' : 'md:leading-5']"
+              class="font-display font-extrabold text-mobileSize1"
             >{{ article.artist }}</div>
             <div
-              :class="[centered ? 'leading-5' : 'leading-5']"
-              class="font-display"
+              :class="[centered ? 'md:leading-5' : 'md:leading-5']"
+              class="font-display text-mobileSize1"
             >{{ article.song }}</div>
             <div
-              :class="[centered ? 'leading-5' : 'leading-5']"
-              class="font-display italic mb-2"
+              :class="[centered ? 'md:leading-5' : 'md:leading-5']"
+              class="font-display italic mb-2 text-mobileSize1 "
             >{{ article.label }} ({{ article.release }})</div>
           </div>
-          <div class="leading-4">
+          <div class="leading-4 md:w-full w-40 pt-2 pb-4">
             <!-- TODO: Shouldn't do class cursor-pointer -->
             <span
               v-for="(t, key) in article.tags"
               :key="`tag-${key}`"
-              class="cursor-pointer font-body italic hover:underline"
+              class="cursor-pointer font-body italic hover:underline text-mobileSize2"
               @click="selectTag(t)"
             >
               #{{ t }}
@@ -49,10 +49,10 @@
       <!-- Action Buttons -->
       <div
         v-if="actions"
-        class="order-2 flex flex-col flex-grow items-end">
+        class="order-2 w-10 flex flex-col flex-grow items-end">
         <Icon
           play
-          class="w-7 h-7 mb-1"
+          class="w-10 h-10 md:w-7 md:h-7 mb-1 md:pb-8"
           @clicked="clickArticle(article)"
         />
         <a
@@ -61,7 +61,7 @@
           target="_blank">
           <Icon
             link
-            class="w-7 h-7"
+            class="w-10 h-10 mt-1 md:w-7 md:h-7"
           />
         </a>
       </div>

@@ -5,6 +5,7 @@
 - Load more on scroll when articles are filtered on tag
 
 #TODO
+- Hamburger menu better design (check yannick)
 - Fix gradient issue safari
 - Naakt in bad (links)
   - even breed als column

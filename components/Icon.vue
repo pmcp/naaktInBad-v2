@@ -13,7 +13,7 @@
           <line
             fill="none"
             stroke="#000000"
-            stroke-width="14.1239"
+            stroke-width="10"
             stroke-miterlimit="10"
             x1="8.591"
             y1="8.598"
@@ -22,7 +22,7 @@
           <line
             fill="none"
             stroke="#000000"
-            stroke-width="14.1239"
+            stroke-width="10"
             stroke-miterlimit="10"
             x1="133.14"
             y1="8.598"
@@ -42,9 +42,7 @@
         viewBox="0 0 24 24"
         stroke="currentColor">
         <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
+          stroke-width="1.14"
           d="M4 6h16M4 12h16M4 18h16" />
       </svg>
     </button>
@@ -52,6 +50,7 @@
       v-if="link"
       @click="$emit('clicked')">
       <svg
+        class="w-10 h-10 md:w-8 md:h-8"
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
@@ -77,6 +76,7 @@
       v-if="play"
       @click="$emit('clicked')">
       <svg
+        class="w-10 h-10 md:w-8 md:h-8"
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
