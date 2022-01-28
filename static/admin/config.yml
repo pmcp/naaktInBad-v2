@@ -74,13 +74,12 @@ collections:
       - label: 'Body'
         name: 'body'
         widget: 'markdown'
-
       - label: "Audio"
         name: "audio"
         widget: "file"
         media_library:
             config:
-            multiple: false
+              multiple: false
 
       - label: 'Publish Date'
         name: 'date'
