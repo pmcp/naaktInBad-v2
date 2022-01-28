@@ -1,11 +1,11 @@
 todos: |-
-  #REMARKS
+  # REMARKS
   - Heb column eens uitgevuld in de breedte (justify)
 
-  #DOING
+  # DOING
   - Load more on scroll when articles are filtered on tag
 
-  #TODO
+  # TODO
   - Hamburger menu better design (check yannick)
   - Fix gradient issue safari
   - Naakt in bad (links)
@@ -18,11 +18,11 @@ todos: |-
   - filter tags
     - lettertype van de tag klopt niet
 
-  #OPTIM
+  # OPTIM
   - Use Grid, so player can move to any position (now using resizeobserver)
   - Move out css of player (in nuxt.config head), in favor of own css / tailwind
   - Change icons (play and pause) on hover to hover:fill etc"
 
-  #QUESTIONS
+  # QUESTIONS
   - Two nav buttons in diff places for mobile?
   - Better icon for hamburger
