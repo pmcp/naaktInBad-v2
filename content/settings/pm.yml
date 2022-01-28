@@ -1,19 +1,18 @@
 todos: |-
-  # # REMARKS
-  - Heb column eens uitgevuld in de breedte (justify)
+  ## REMARKS
 
   ## DOING
-  - Load more on scroll when articles are filtered on tag
 
   ## TODO
-  - Hamburger menu better design (check yannick)
-  - Fix gradient issue safari
-  - Naakt in bad (links)
-    - even breed als column
+
+  * Hamburger menu better design (check yannick)
+  * Fix gradient issue safari
+  * test
 
   ## OPTIM
-  - Use Grid, so player can move to any position (now using resizeobserver)
-  - Move out css of player (in nuxt.config head), in favor of own css / tailwind
-  - Change icons (play and pause) on hover to hover:fill etc"
+
+  * Use Grid, so player can move to any position (now using resizeobserver)
+  * Move out css of player (in nuxt.config head), in favor of own css / tailwind
+  * Change icons (play and pause) on hover to hover:fill etc"
 
   ## QUESTIONS
