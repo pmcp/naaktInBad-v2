@@ -1,1 +1,11 @@
-todos: test
+todos: |-
+  # DOING
+
+
+
+  ## TODO
+
+  * Test todo\
+    Met meer uitleg
+  * Test andere todo\
+    Nog enzo
