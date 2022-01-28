@@ -1,25 +1,18 @@
 todos: |-
   ## REMARKS
 
-
-
   ## DOING
-
-
 
   ## TODO
 
   * Hamburger menu better design (check yannick)
   * Fix gradient issue safari
-
-
+  * test
 
   ## OPTIM
 
   * Use Grid, so player can move to any position (now using resizeobserver)
   * Move out css of player (in nuxt.config head), in favor of own css / tailwind
   * Change icons (play and pause) on hover to hover:fill etc"
-
-
 
   ## QUESTIONS
