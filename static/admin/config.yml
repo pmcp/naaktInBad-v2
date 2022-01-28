@@ -142,3 +142,11 @@ collections:
         fields:
           # TODO: add all social stuff
           - { label: Test, name: test, widget: string }
+
+      - label: 'Project Management'
+        name: 'pm'
+        editor:
+          preview: false
+        file: 'content/settings/pm.yml'
+        fields:
+          - { label: 'Todos', name: 'todos', widget: 'markdown' }
