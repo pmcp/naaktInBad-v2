@@ -1,13 +1,5 @@
 todos: >-
-  ## REMARKS
-
-
-  ## DOING
-
-
   ## TODO
-
-
 
 
   **Desktop**
@@ -22,70 +14,65 @@ todos: >-
   *Logo Naakt in bad*
 
 
-  * ~~ 5% kleiner zetten ~~
+  * 5% kleiner zetten
 
-  * ~~ stuk van afgesneden bovenaan (door witte band denk ik)
+  * stuk van afgesneden bovenaan (door witte band denk ik)
 
-  * ~~ hover: mag onderlijnd worden ipv switch naar outlines. Dikte onderlijn identiek aan de lijn tussen twee columns ~~
+  * hover: mag onderlijnd worden ipv switch naar outlines. Dikte onderlijn identiek aan de lijn tussen twee columns
 
 
   *Player*
 
 
-  * ~~ staat iets te laag. Om positie te bepalen: de tekst boven de horizontale lijn (“NTS - 15/01/2018”) mag gecentreerd worden op de onderste lijn van de album art ~~
+  * staat iets te laag. Om positie te bepalen: de tekst boven de horizontale lijn (“NTS - 15/01/2018”) mag gecentreerd worden op de onderste lijn van de album art
 
-  * ~~ Play knop iets groter (25%), pauze knop zelfde grootte als play ~~
+  * Play knop iets groter (25%), pauze knop zelfde grootte als play
 
-  * ~~ grootte tekst (“NTS - 15/01/2018” + tijdsaanduiding) identiek aan tekstgrootte tags in columns ~~
+  * grootte tekst (“NTS - 15/01/2018” + tijdsaanduiding) identiek aan tekstgrootte tags in columns
 
 
   *Home*
 
 
-  * ~~ volgorde buttons mag aangepast worden: Ontdek - Over - Tags ~~
+  * volgorde buttons mag aangepast worden: Ontdek - Over - Tags
 
-  * ~~ naam artiest + release + label: 20% kleiner ~~
+  * naam artiest + release + label: 20% kleiner
 
-  * ~~ tags: 10% kleiner ~~
+  * tags: 10% kleiner
 
 
   *Alle columns*
 
 
-  * **bovenste lijn van footer staat wat te dicht bij player (footer wat lager?)**
-  Kan je hier screenshot van sturen?
+  * **bovenste lijn van footer staat wat te dicht bij player (footer wat lager?)** Kan je hier screenshot van sturen?
 
-  * ~~ links + rechts laten stoppen waar de denkbeeldige lijnen van de homepage zijn ~~
+  * links + rechts laten stoppen waar de denkbeeldige lijnen van de homepage zijn
 
-  * **evenredig verdelen over de beschikbare breedte**
-  Dit is nogal scherm breedte gevoelig, denk niet dat er een propere manier is om dit te doen. Te bespreken.
+  * **evenredig verdelen over de beschikbare breedte** Dit is nogal scherm breedte gevoelig, denk niet dat er een propere manier is om dit te doen. Te bespreken.
 
-  * ~~ album covers even groot als in de column ~~
+  * album covers even groot als in de column
 
-  * ~~ naam artiest + release + label + tags: exact dezelfde grootte + interlinie als in columns ~~
+  * naam artiest + release + label + tags: exact dezelfde grootte + interlinie als in columns
 
 
   *Over*
 
-  * ** tekst (waar op home de columns staan) wat meer naar links laten beginnen (komt niet overeen met de kolom van de columns) **
-  Da's een beetje lastig, moeten we eens over nadenken: de reden waarom dat dat inspringt is omdat er een scrollbalk bijkomt (althans, denk dat dat is wat je bedoelt).
 
-  *Tags*
+  *  **tekst (waar op home de columns staan) wat meer naar links laten beginnen (komt niet overeen met de kolom van de columns)**  Da's een beetje lastig, moeten we eens over nadenken: de reden waarom dat dat inspringt is omdat er een scrollbalk bijkomt (althans, denk dat dat is wat je bedoelt).
+    *Tags*
+  * Indien mogelijk, mogen op desktop wel 4 kolommen tags naast elkaar staan (ipv 3 op mobiel)
 
-  * ~~ Indien mogelijk, mogen op desktop wel 4 kolommen tags naast elkaar staan (ipv 3 op mobiel) ~~
+  * Hoofdletters 15 à 20% kleiner
 
-  * ~~ Hoofdletters 15 à 20% kleiner ~~
-
-  * ** Tags zelf: 30% minder interlinie **
-  Beetje op goed geluk gedaan, check es.
+  *  **Tags zelf: 30% minder interlinie**  Beetje op goed geluk gedaan, check es.
 
 
   *Zoeken*
 
 
-  * ~~ tekst “zoeken”: mag weg (alles wat naar boven, zodat de lijn van het zoekvak uitgelijnd is op het midden van logo NIB) ~~
+  * tekst “zoeken”: mag weg (alles wat naar boven, zodat de lijn van het zoekvak uitgelijnd is op het midden van logo NIB)
 
-  * ~~ naam artiest + release: 30% groter ~~
+  * naam artiest + release: 30% groter
 
 
   *Zoeken (indien zoekresultaten weergegeven worden)*
@@ -93,26 +80,19 @@ todos: >-
 
   * tekst “geen artikels gevonden in zelfde fontgrootte als zoekterm zelf
 
-  * ** niets laten verschijnen als er geen resultaat is **
-  Gaat dit niet in tegen puntje hierboven?
+  *  **niets laten verschijnen als er geen resultaat is**  Gaat dit niet in tegen puntje hierboven?
 
-  * ** indien wel resultaat: mogelijkheid om tekst te previewen (zin waar zoekwoord instaat)? **
-  Voor ik hieraan begin, want wel wat werk: hoe zie je dat? Want nu reageert ie meteen als ik een letter intyp. Dus met andere woorden: als ik de "n" intyp, dan gaat ie zo goed als alles artikels en letters terug geven.
-  Misschien vanaf een x aantal letters? Maar is dat nog het gedrag dat je wil? Want wat bijvoorbeeld met "dj"? etc etc :)
-
+  *  **indien wel resultaat: mogelijkheid om tekst te previewen (zin waar zoekwoord instaat)?**  Voor ik hieraan begin, want wel wat werk: hoe zie je dat? Want nu reageert ie meteen als ik een letter intyp. Dus met andere woorden: als ik de "n" intyp, dan gaat ie zo goed als alles artikels en letters terug geven. Misschien vanaf een x aantal letters? Maar is dat nog het gedrag dat je wil? Want wat bijvoorbeeld met "dj"? etc etc :)
 
 
   *Ontdek*
 
-  * naam mag wijzigen naar “een gok” (SVG stuur ik door)
-  Ik mis nog de SVGs. Je had gemaild, maar zat niets in.
 
-  * ~~ lijkt nog niet te  werken? ~~
+  * naam mag wijzigen naar “een gok” (SVG stuur ik door) Ik mis nog de SVGs. Je had gemaild, maar zat niets in.
 
-  * ** ‘Ontdek’ (button) in kleur zetten als je op de pagina in kwestie bent **
-  Beetje irritant, moet ik wat hercoderen, want dit is eigenlijk dezelfde pagina als home. Effe over nadenken.
+  * lijkt nog niet te  werken?
 
-
+  *  **‘Ontdek’ (button) in kleur zetten als je op de pagina in kwestie bent**  Beetje irritant, moet ik wat hercoderen, want dit is eigenlijk dezelfde pagina als home. Effe over nadenken.
 
 
   **Mobiel**
@@ -121,17 +101,17 @@ todos: >-
   *Algemeen*
 
 
-  * ~~ 30% minder padding voorzien links & rechts ~~
+  * 30% minder padding voorzien links & rechts
 
-  * ~~ Logo naakt in bad mag zelfde grootte behouden, maar hamburger kan zo iets meer naar rechts ~~
+  * Logo naakt in bad mag zelfde grootte behouden, maar hamburger kan zo iets meer naar rechts
 
-  * Het lijkt nu nog niet zo te zijn dat logo + hamburger verschijnen als ge naar boven scrollt? **
+  * Het lijkt nu nog niet zo te zijn dat logo + hamburger verschijnen als ge naar boven scrollt?
 
 
   *Hamburger*
 
 
-  * ~~ toch in midden van witruimte uitlijnen, op midden van logo naakt in bad ~~
+  * toch in midden van witruimte uitlijnen, op midden van logo naakt in bad
 
 
   *Player*
@@ -182,14 +162,6 @@ todos: >-
   * Kruis: even groot als de R van “wis filteR”
 
 
-
-
-
-
-
-
-
-
   ## OPTIM
 
 
@@ -198,6 +170,3 @@ todos: >-
   * Move out css of player (in nuxt.config head), in favor of own css / tailwind
 
   * Change icons (play and pause) on hover to hover:fill etc"
-
-
-  ## QUESTIONS
