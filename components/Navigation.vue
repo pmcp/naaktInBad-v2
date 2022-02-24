@@ -7,25 +7,28 @@
       <div
         v-for="(navItem, i) in navigation"
         :key="`navigation_${i}`"
-        class="pb-4 text-2xl">
+        class="pb-4 text-3xl">
         <button
           v-if="navItem.path == 'ontdek'"
           :class="[(navItem.path == $nuxt.$route.name) ? 'underline' : '']"
           @click="closeAndGo()">
-          <span class="font-display hover:underline text-transparent bg-clip-text text-gradient bg-gradient-to-r from-pink to-orange">{{ navItem.title }}</span>
+          <span class="font-display font-bold hover:underline text-transparent bg-clip-text text-gradient bg-gradient-to-r from-pink to-orange">{{ navItem.title }}</span>
         </button>
         <nuxt-link
           v-else
           :to="navItem.path"
-          class="font-display hover:underline pb-4">
+          class="font-display font-bold hover:underline">
           {{ navItem.title }}
         </nuxt-link>
       </div>
-      <nuxt-link
-        to="alles"
-        class="font-display hover:underline text-2xl">
-        alle Columns
-      </nuxt-link>
+      <div class="pt-1">
+        <nuxt-link
+          to="alles"
+          class="font-display font-bold hover:underline text-3xl">
+          alle Columns
+        </nuxt-link>
+      </div>
+
     </nav>
     <!-- Normal Nav -->
     <nav

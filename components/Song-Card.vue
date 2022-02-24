@@ -30,7 +30,7 @@
               class="font-display italic mb-2 text-base md:leading-5"
             >{{ article.label }} ({{ article.release }})</div>
           </div>
-          <div class="leading-4 md:w-full w-40 pt-2 pb-4">
+          <div class="leading-4 pt-2 pb-4">
             <!-- TODO: Shouldn't do class cursor-pointer -->
             <span
               v-for="(t, key) in article.tags"

@@ -4,11 +4,13 @@
       v-if="activeTag"
       class="hidden md:flex"
     />
-    <div class="sticky pt-10 md:pt-0 top-0 bg-white">
+    <div
+      :class="[activeTag ? '' : 'mt-5']"
+      class="sticky md:mt-10 md:pt-0 top-0 bg-white">
       <Filtered
         v-if="activeTag"
         mobile
-        class="md:hidden mx-7 md:mx-0"
+        class="md:hidden pt-2 mx-7 md:mx-0"
       />
       <div
         v-if="activeTag"

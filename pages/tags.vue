@@ -1,8 +1,8 @@
 <template>
-  <div class="mx-7 md:mx-0">
+  <div class="mx-7 md:mx-0 mb-20">
     <!--    <h1 class="hidden md:block font-display text-xl font-bold pt-10 md:pt-0">zoeken</h1>-->
-    <div class="flex flex-row mb-14 relative -top-1">
-      <input
+    <div class="flex flex-row mb-14 relative top-5 md:-top-1">
+      <input 
         v-model="search"
         placeholder="geef een zoekterm in"
         class="border-b flex-grow font-body text-mobileSize1 rounded-none "

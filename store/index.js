@@ -43,7 +43,7 @@ export const state = () => ({
     }
   ],
   navigation: [
-    { title: 'ontdek', path: 'ontdek' },
+    { title: 'een gok', path: 'ontdek' },
     { title: 'over', path: 'over' },
     { title: 'tags', path: 'tags' }
   ],

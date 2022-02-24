@@ -7,7 +7,7 @@
         class="bg-white hidden md:flex sticky w-full h-48 pt-16 top-0 z-20 md:mb-1"
       />
       <div
-        :class="[navOpen ? 'fixed w-full h-full bg-white z-40' : '']"
+        :class="navClasses"
         class="md:w-1/2"
       >
         <div class="md:fixed lg:mr-32">
@@ -44,7 +44,6 @@
           <div
             v-if="navOpen"
             class="w-full h-full md:hidden">
-
             <div class="bg-white w-full h-full mx-auto container">
               <!-- Mobile nav -->
               <Navigation mobile />
@@ -69,12 +68,23 @@ import { mapActions } from 'vuex'
 export default {
   data() {
     return {
-      navOpen: false
+      navOpen: false,
+      scrollOffset: 0,
+      lastScrollPosition: 0,
+      showHeader: true
     }
   },
   computed: {
     activeArticle() {
       return this.$store.state.activeArticle
+    },
+    navClasses() {
+      if (this.navOpen) return 'fixed w-full h-full bg-white z-40'
+      if (this.showHeader) {
+        return 'sticky z-40 bg-white top-0'
+      } else {
+        return 'sticky bg-white -top-20'
+      }
     }
   },
   watch: {
@@ -89,10 +99,28 @@ export default {
       this.navOpen = false
     })
   },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.onScroll)
+  },
   mounted() {
+    this.lastScrollPosition = window.pageYOffset
+    window.addEventListener('scroll', this.onScroll)
     this.getArticles({ id: null, intersected: null })
   },
   methods: {
+    onScroll() {
+      if (window.pageYOffset < 0) {
+        return
+      }
+      if (
+        Math.abs(window.pageYOffset - this.lastScrollPosition) <
+        this.scrollOffset
+      ) {
+        return
+      }
+      this.showHeader = window.pageYOffset < this.lastScrollPosition
+      this.lastScrollPosition = window.pageYOffset
+    },
     ...mapActions(['getArticles'])
   }
 }

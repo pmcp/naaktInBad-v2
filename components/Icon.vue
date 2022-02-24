@@ -8,6 +8,7 @@
         width="24"
         height="24"
         viewBox="0 0 200 200"
+        class="w-full h-full"
         xml:space="preserve">
         <g>
           <line

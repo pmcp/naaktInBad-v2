@@ -1,13 +1,14 @@
 <template>
-  <div class="flex justify-between pb-3 md:border-b md:mb-5 ">
-    <div class="font-body"><span class="hidden md:inline ">columns getagd met </span><span class="font-bold">#{{ activeTag.toLowerCase() }}</span></div>
+  <div class="flex justify-between pb-1 md:border-b md:mb-5 ">
+    <div class="font-body"><span class="hidden md:inline text-mobileSize1 md:text-body">columns getagd met </span><span class="font-bold text-mobileSize1 md:text-body">#{{ activeTag.toLowerCase() }}</span></div>
     <button
-      class="font-display font-extrabold flex hover:underline"
+      class="font-display font-extrabold items-center flex hover:underline"
       @click="resetTag">
       wis filter
       <Icon
         close
-        class="pl-1 mt-1 w-3 h-5 items-center relative -top-1"/>
+        class="ml-1 w-4 h-4 items-center relative"
+        style="top:.1rem"/>
     </button>
   </div>
 </template>

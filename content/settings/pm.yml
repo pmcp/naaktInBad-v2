@@ -104,8 +104,8 @@ todos: >-
 
   *Ontdek*
 
-  * naam mag wijzigen naar “een gok” (SVG stuur ik door)
-  Ik mis nog de SVGs. Je had gemaild, maar zat niets in.
+  * ~~ naam mag wijzigen naar “een gok” (SVG stuur ik door) ~~
+
 
   * ~~ lijkt nog niet te  werken? ~~
 
@@ -137,49 +137,49 @@ todos: >-
   *Player*
 
 
-  * tekst: 20% groter
+  * ~~ tekst: 20% groter ~~
 
-  * bol: 25% groter
+  * ~~ bol: 25% groter ~~
 
-  * geen outlines gebruiken op mobiel (hover state hoeft niet duidelijk te zijn)
+  * ~~ geen outlines gebruiken op mobiel (hover state hoeft niet duidelijk te zijn) ~~
 
 
   *Home*
 
 
-  * Tags: hoeven niet zo vroeg te stoppen, laat maar doorlopen tot einde rechterkolom
+  * ~~ Tags: hoeven niet zo vroeg te stoppen, laat maar doorlopen tot einde rechterkolom ~~
 
 
   *Menu*
 
 
-  * ’Tekst: +20% groter en t zou toch echt goed zijn als de tekst hier in bold kan staan. Indien niet mogelijk: SVG’s van maken?
+  * ~~ ’Tekst: +20% groter en t zou toch echt goed zijn als de tekst hier in bold kan staan. Indien niet mogelijk: SVG’s van maken? ~~
 
-  * Volgorde buttons mag aangepast worden: Ontdek - Over - Tags
+  * ~~ Volgorde buttons mag aangepast worden: Ontdek - Over - Tags ~~
 
 
   *Tags*
 
 
-  * Wat witruimte voorzien onderaan pagina, zodat laatste tags niet onder player vallen en er wat ademruimte is
+  * ~~ Wat witruimte voorzien onderaan pagina, zodat laatste tags niet onder player vallen en er wat ademruimte is ~~
 
-  * Hoofdletters + “zoek”: idem tekst in bold . Indien niet mogelijk: SVG’s van maken?
+  * ~~ Hoofdletters + “zoek”: idem tekst in bold . Indien niet mogelijk: SVG’s van maken? ~~
 
 
   *Ontdek*
 
 
-  * naam mag wijzigen naar “een gok” (SVG stuur ik door)
+  * ~~ naam mag wijzigen naar “een gok” (SVG stuur ik door) ~~
 
 
   *Indien filter (= tag) geselecteerd*
 
 
-  * Hoogte wit vak: 40% kleiner
+  * ~~ Hoogte wit vak: 40% kleiner ~~
 
-  * Tekstgroote tag: even groot als grootte van de tekst in een column
+  * ~~ Tekstgroote tag: even groot als grootte van de tekst in een column ~~
 
-  * Kruis: even groot als de R van “wis filteR”
+  * ~~ Kruis: even groot als de R van “wis filteR” ~~
 
 
 
