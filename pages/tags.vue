@@ -1,7 +1,7 @@
 <template>
-  <div class="mx-10 md:mx-0">
-    <h1 class="hidden md:block font-display text-xl font-bold pt-10 md:pt-0">zoeken</h1>
-    <div class="flex flex-row mt-12 md:mt-5 mb-14">
+  <div class="mx-7 md:mx-0">
+    <!--    <h1 class="hidden md:block font-display text-xl font-bold pt-10 md:pt-0">zoeken</h1>-->
+    <div class="flex flex-row mb-14 relative -top-1">
       <input
         v-model="search"
         placeholder="geef een zoekterm in"
@@ -17,30 +17,33 @@
         class="mb-5 cursor-pointer hover:underline"
         @click="getArticle({ id: s.slug })"
       >
-        <div class="font-bold font-display">{{ s.artist }}</div>
-        <div class="font-display">{{ s.song }}</div>
+        <div class="font-bold font-display text-xl">{{ s.artist }}</div>
+        <div class="font-display text-xl">{{ s.song }}</div>
       </div>
     </div>
 
-    <div v-if="tagsOrdened.length == 0">
+    <div v-if="searchResults.length == 0">
       Geen artikels gevonden
     </div>
     <div class="flex flex-row flex-wrap">
       <div
         v-for="letter in tagsOrdened"
         :key="`letter-${letter.group}`"
-        class="w-1/3 mb-12">
-        <h2 class="text-2xl font-display font-bold">{{ letter.group }}</h2>
+        class="w-1/3 md:w-1/4 mb-12">
+        <h2 class="text-xl font-display font-bold">{{ letter.group }}</h2>
         <div
           v-for="tag in letter.children"
           :key="`tag-${tag}`"
-          class="cursor-pointer font-body hover:underline text-xl md:text-body"
-          style="text-indent: -0.4rem;padding-left:0.4rem "
+          class="cursor-pointer font-body hover:underline text-xl md:text-body leading-5"
+          style="text-indent: -0.4rem;padding-left:0.4rem;line-height: 1.4rem"
           @click="selectTag(tag)"
         >
           {{ tag }}
         </div>
       </div>
+    </div>
+    <div v-if="tagsOrdened.length == 0">
+      Geen tags gevonden
     </div>
   </div>
 </template>

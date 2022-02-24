@@ -43,11 +43,12 @@ export const state = () => ({
     }
   ],
   navigation: [
+    { title: 'ontdek', path: 'ontdek' },
     { title: 'over', path: 'over' },
-    { title: 'tags', path: 'tags' },
-    { title: 'ontdek', path: 'ontdek' }
+    { title: 'tags', path: 'tags' }
   ],
-  moreOpen: false
+  moreOpen: false,
+  discovery: false
 })
 
 export const mutations = {
@@ -72,13 +73,14 @@ export const mutations = {
   },
   setSearchResults(state, articles) {
     state.searchResults = [...articles]
+  },
+  setDiscovery(state, val) {
+    state.discovery = val
   }
 }
 
 export const actions = {
   async getArticles({ state, commit }, { id, intersected }) {
-    console.log('TRIGGERED', id, intersected)
-
     const loadedArticles = state.articles.length
     let articles = []
 
@@ -168,6 +170,8 @@ export const actions = {
       .search(searchString)
       .fetch()
     console.log(`Got search results`, results)
+
+    // Going to get all instances where this shows up)
     commit('setSearchResults', results)
   },
 
@@ -211,9 +215,11 @@ export const actions = {
 
   async getArticle({ state, commit, dispatch }, id) {
     // Reset active tag if it is set
-    console.log(id)
     dispatch('resetTag')
     if (id == null) {
+      // User is in discovery mode, so set discovery to true
+      // commit('setDiscovery', true)
+
       //  No id, so get random song
       // Get length of articles
       // TODO: Get this out of here, calculate length on generate
@@ -225,11 +231,11 @@ export const actions = {
           console.log(err)
         })
       const random = Math.floor(Math.random() * articles.length)
-      console.log(articles[random].slug)
       dispatch('getArticles', { id: articles[random].slug, intersected: null })
       // get song based on id
     } else {
       dispatch('getArticles', { id: null, intersected: null })
+
       // Get song based on id
     }
     // Go to homepage

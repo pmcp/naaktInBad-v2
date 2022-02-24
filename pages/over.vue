@@ -1,8 +1,8 @@
 <template>
-  <div class="mx-10 md:mx-0 pt-10 md:pt-0">
+  <div class="mx-7 md:mx-0 pt-10 md:pt-0">
     <nuxt-content
       :document="page"
-      class="prose font-body text-mobileSize1 md:text-body "
+      class=" font-body text-mobileSize1 md:text-body "
     />
   </div>
 </template>

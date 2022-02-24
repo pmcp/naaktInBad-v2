@@ -12,17 +12,15 @@
       >
         <div class="md:fixed lg:mr-32">
 
-          <div class="w-full px-10 md:px-0  flex justify-between items-center">
+          <div class="w-full px-7 md:px-0  flex h-16">
+
             <nuxt-link
               to="/"
-              class="relative md:pb-10 md:-mt-2"
+              class="relative md:pb-10 md:-mt-2 w-full"
             >
               <Logo />
-
-
-
             </nuxt-link>
-            <div class="md:hidden">
+            <div class="md:hidden mt-4">
               <Icon
                 v-if="navOpen"
                 close
@@ -46,6 +44,7 @@
           <div
             v-if="navOpen"
             class="w-full h-full md:hidden">
+
             <div class="bg-white w-full h-full mx-auto container">
               <!-- Mobile nav -->
               <Navigation mobile />

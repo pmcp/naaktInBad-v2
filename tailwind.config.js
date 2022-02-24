@@ -57,8 +57,9 @@ module.exports = {
       80: '20rem',
       96: '24rem',
       112: '28rem',
-      specific1: '16.5rem',
-      specific2: '4,6rem',
+      specific1: '15.675rem',
+      specific2: '4.6rem',
+      specific3: '26rem'
     },
     animation: {
       none: 'none',
@@ -306,7 +307,7 @@ module.exports = {
       '9xl': ['8rem', { lineHeight: '1' }],
       body: ['1.1rem', { lineHeight: '1.6rem' }],
       mobileSize1: ['1.3rem', { lineHeight: '1.6rem' }],
-      mobileSize2: ['1.2rem', { lineHeight: '1.8rem' },
+      mobileSize2: ['1.08rem', { lineHeight: '1.3rem' },
       ]
     },
     fontWeight: {

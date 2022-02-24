@@ -3,7 +3,7 @@
     <!-- Mobile Nav -->
     <nav
       v-if="mobile"
-      class="w-full bg-white mx-10 pt-5">
+      class="w-full bg-white mx-7 pt-5">
       <div
         v-for="(navItem, i) in navigation"
         :key="`navigation_${i}`"
@@ -37,9 +37,11 @@
         <button
           v-if="navItem.path == 'ontdek'"
           :class="[(navItem.path == $nuxt.$route.name) ? 'underline' : '']"
-          @click="getArticle"
+          @click="getArticle(null)"
         >
-          <span class="font-display font-extrabold hover:underline hover:text-transparent bg-clip-text hover:text-gradient bg-gradient-to-r from-pink to-orange">{{ navItem.title }}</span>
+          <span
+            :class="[(discovery && $nuxt.$route.path === '/') ? 'text-transparent text-gradient' : '']"
+            class="font-display font-extrabold hover:text-transparent bg-clip-text hover:text-gradient bg-gradient-to-r from-pink to-orange">{{ navItem.title }}</span>
         </button>
         <nuxt-link
           v-else
@@ -69,6 +71,9 @@ export default {
   computed: {
     navigation() {
       return this.$store.state.navigation
+    },
+    discovery() {
+      return this.$store.state.discovery
     }
   },
   methods: {

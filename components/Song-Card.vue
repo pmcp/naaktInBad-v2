@@ -8,7 +8,7 @@
       <img
         v-if="article.cover[0]"
         :src="article.cover[0]"
-        :class="[centered ? 'p-1' : '']"
+        :class="[centered ? '' : '']"
         class="cursor-pointer w-40 h-40  md:w-24 md:h-24"
         @click="clickArticle(article)"
       >
@@ -17,20 +17,17 @@
         class=" h-full order-last md:order-1 w-full relative"
         style="top:-2px">
         <div
-          :class="[centered ? 'text-center leading-5' : 'leading-5']"
-          class="h-full flex flex-col justify-start">
-          <div :class="[centered ? 'h-28' : '']">
+          :class="[centered ? 'text-center mt-6' : '']"
+          class="h-full flex flex-col justify-start md:leading-5">
+          <div :class="[centered ? '' : '']">
             <div
-              :class="[centered ? 'md:leading-5' : 'md:leading-5']"
-              class="font-display font-extrabold text-mobileSize1"
+              class="font-display font-extrabold text-base md:leading-5"
             >{{ article.artist }}</div>
             <div
-              :class="[centered ? 'md:leading-5' : 'md:leading-5']"
-              class="font-display text-mobileSize1"
+              class="font-display text-base md:leading-5"
             >{{ article.song }}</div>
             <div
-              :class="[centered ? 'md:leading-5' : 'md:leading-5']"
-              class="font-display italic mb-2 text-mobileSize1 "
+              class="font-display italic mb-2 text-base md:leading-5"
             >{{ article.label }} ({{ article.release }})</div>
           </div>
           <div class="leading-4 md:w-full w-40 pt-2 pb-4">
@@ -53,6 +50,7 @@
         <Icon
           play
           class="w-10 h-10 md:w-7 md:h-7 mb-1 md:pb-8"
+          style="width:1.96rem"
           @clicked="clickArticle(article)"
         />
         <a
@@ -62,6 +60,7 @@
           <Icon
             link
             class="w-10 h-10 mt-1 md:w-7 md:h-7"
+            style="width:1.96rem"
           />
         </a>
       </div>

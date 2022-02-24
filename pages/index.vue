@@ -8,7 +8,7 @@
       <Filtered
         v-if="activeTag"
         mobile
-        class="md:hidden mx-10 md:mx-0"
+        class="md:hidden mx-7 md:mx-0"
       />
       <div
         v-if="activeTag"

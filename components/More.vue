@@ -11,7 +11,7 @@
       <div
         v-if="open"
         class="bg-white h-96 border-t">
-        <div class="md:mx-5 lg:px-10 lg:px-10">
+        <div class="md:mx-32">
           <div class="w-full flex justify-end mt-3">
             <Icon
               close
