@@ -2,14 +2,14 @@
   <div>
 
     <div class="flex flex-col md:flex-row flex-wrap md:mx-32">
+
       <!-- Navigation in desktop view -->
       <Navigation
         class="bg-white hidden md:flex sticky w-full h-48 pt-16 top-0 z-20 md:mb-1"
       />
       <div
         :class="navClasses"
-        class="md:w-1/2"
-      >
+        class="md:w-1/2">
         <div class="md:fixed lg:mr-32">
 
           <div class="w-full px-7 md:px-0  flex h-16">
@@ -79,11 +79,11 @@ export default {
       return this.$store.state.activeArticle
     },
     navClasses() {
-      if (this.navOpen) return 'fixed w-full h-full bg-white z-40'
+      if (this.navOpen) return 'fixed w-full h-full bg-white z-40 '
       if (this.showHeader) {
-        return 'sticky z-40 bg-white top-0'
+        return 'sticky z-40 md:z-0 bg-white top-0 '
       } else {
-        return 'sticky bg-white -top-20'
+        return 'sticky z-40 md:z-0 bg-white -top-24 '
       }
     }
   },
@@ -109,9 +109,7 @@ export default {
   },
   methods: {
     onScroll() {
-      if (window.pageYOffset < 0) {
-        return
-      }
+      // if (document.documentElement.clientWidth > 768) return
       if (
         Math.abs(window.pageYOffset - this.lastScrollPosition) <
         this.scrollOffset
