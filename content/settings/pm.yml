@@ -14,85 +14,55 @@ todos: >-
   *Logo Naakt in bad*
 
 
-  * 5% kleiner zetten
+  * 't staat nu wat te klein. Ik denk dat ik vorige keer iets van 5% kleiner zei, omdat het anders opvalt in de denkbeeldige driehoek tussen logo NIB, button over en artwork. Idealiter staat het logo bijna even groot als de breedte van de column, maar dan een tikkel kleiner, zonder dat het opvalt :) Als dat teveel gedoe is, echt niet essentieel dit. Zet dan maar gewoon even breed als de column.
 
-  * stuk van afgesneden bovenaan (door witte band denk ik)
-
-  * hover: mag onderlijnd worden ipv switch naar outlines. Dikte onderlijn identiek aan de lijn tussen twee columns
+  * hover: onderlijn wat hoger (mag er quasi tegen plakken, zoals bij de kleinere buttons 'over', 'tags,' etc...) 
 
 
   *Player*
 
 
-  * staat iets te laag. Om positie te bepalen: de tekst boven de horizontale lijn (“NTS - 15/01/2018”) mag gecentreerd worden op de onderste lijn van de album art
+  * terug een beetje laten zakken (met dat de tekst groter staat, is er wat te weinig ademruimte met logo). Pak nog 30-40% erbij
 
-  * Play knop iets groter (25%), pauze knop zelfde grootte als play
-
-  * grootte tekst (“NTS - 15/01/2018” + tijdsaanduiding) identiek aan tekstgrootte tags in columns
-
-
-  *Home*
-
-
-  * volgorde buttons mag aangepast worden: Ontdek - Over - Tags
-
-  * naam artiest + release + label: 20% kleiner
-
-  * tags: 10% kleiner
+  * lijkt afgesneden (de lijn stopt ter hoogte van de N van IN)
 
 
   *Alle columns*
 
 
-  * **bovenste lijn van footer staat wat te dicht bij player (footer wat lager?)** Kan je hier screenshot van sturen?
+  * **bovenste lijn van footer staat wat te dicht bij player (footer wat lager?)** Kan je hier screenshot van sturen? ***Anders zien wat dit geeft als de player opnieuw zakt?***
 
-  * links + rechts laten stoppen waar de denkbeeldige lijnen van de homepage zijn
+  * **evenredig verdelen over de beschikbare breedte** Dit is nogal scherm breedte gevoelig, denk niet dat er een propere manier is om dit te doen. Te bespreken. ***OK, we kunnen hier eens over chatten anders?***
 
-  * **evenredig verdelen over de beschikbare breedte** Dit is nogal scherm breedte gevoelig, denk niet dat er een propere manier is om dit te doen. Te bespreken.
-
-  * album covers even groot als in de column
-
-  * naam artiest + release + label + tags: exact dezelfde grootte + interlinie als in columns
+  * Kunnen de tags telkens op dezelfde hoogte starten? Ze gaan dan losgekoppeld zijn van naam artiest, release, etc... Maar dat gaat het gevoel van een lijntje geven, waardoor alles wat rustiger wordt. Mag gebeuren waar nu *\#Pop #Rock* staat, bij Cindy Lee.
 
 
   *Over*
 
 
-  *  **tekst (waar op home de columns staan) wat meer naar links laten beginnen (komt niet overeen met de kolom van de columns)**  Da's een beetje lastig, moeten we eens over nadenken: de reden waarom dat dat inspringt is omdat er een scrollbalk bijkomt (althans, denk dat dat is wat je bedoelt).
+  * **tekst (waar op home de columns staan) wat meer naar links laten beginnen (komt niet overeen met de kolom van de columns)**  Da's een beetje lastig, moeten we eens over nadenken: de reden waarom dat dat inspringt is omdat er een scrollbalk bijkomt (althans, denk dat dat is wat je bedoelt). ***Nee, 't is iets anders: zie screenshot "Over (tekst naar links)"***
     *Tags*
-  * Indien mogelijk, mogen op desktop wel 4 kolommen tags naast elkaar staan (ipv 3 op mobiel)
-
-  * Hoofdletters 15 à 20% kleiner
-
-  *  **Tags zelf: 30% minder interlinie**  Beetje op goed geluk gedaan, check es.
+  * 4 kolommen zijn goed, kunnen die verdeeld worden over de breedte tot rechterkant knop *Zoeken?*
 
 
-  *Zoeken*
-
-
-  * tekst “zoeken”: mag weg (alles wat naar boven, zodat de lijn van het zoekvak uitgelijnd is op het midden van logo NIB)
-
-  * naam artiest + release: 30% groter
 
 
   *Zoeken (indien zoekresultaten weergegeven worden)*
 
 
-  * tekst “geen artikels gevonden in zelfde fontgrootte als zoekterm zelf
+  * tekst “geen artikels gevonden" in zelfde fontgrootte als zoekterm zelf
 
-  *  **niets laten verschijnen als er geen resultaat is**  Gaat dit niet in tegen puntje hierboven?
+  * **niets laten verschijnen als er geen resultaat is**  Gaat dit niet in tegen puntje hierboven? ***Ge hebt gelijk, skip maar***
 
-  *  **indien wel resultaat: mogelijkheid om tekst te previewen (zin waar zoekwoord instaat)?**  Voor ik hieraan begin, want wel wat werk: hoe zie je dat? Want nu reageert ie meteen als ik een letter intyp. Dus met andere woorden: als ik de "n" intyp, dan gaat ie zo goed als alles artikels en letters terug geven. Misschien vanaf een x aantal letters? Maar is dat nog het gedrag dat je wil? Want wat bijvoorbeeld met "dj"? etc etc :)
+  * **indien wel resultaat: mogelijkheid om tekst te previewen (zin waar zoekwoord instaat)?**  Voor ik hieraan begin, want wel wat werk: hoe zie je dat? Want nu reageert ie meteen als ik een letter intyp. Dus met andere woorden: als ik de "n" intyp, dan gaat ie zo goed als alles artikels en letters terug geven. Misschien vanaf een x aantal letters? Maar is dat nog het gedrag dat je wil? Want wat bijvoorbeeld met "dj"? etc etc :) Wat mij betreft hoeft er niet meteen gereageerd te worden. ***Ik zou wel liefst preview tekst hebben, omdat dat context geeft. Wat mij betreft dus goed vanaf een aantal letters, bvb 2?*** 
 
 
   *Ontdek*
 
 
-  * naam mag wijzigen naar “een gok” (SVG stuur ik door) Ik mis nog de SVGs. Je had gemaild, maar zat niets in.
+  * **‘Ontdek’ (button) in kleur zetten als je op de pagina in kwestie bent**  Beetje irritant, moet ik wat hercoderen, want dit is eigenlijk dezelfde pagina als home. Effe over nadenken. ***Weet ge, laat anders maar zo. Het idee is toch dat er geen "een gok" pagina is, maar dat elke klik op een gok resulteert in een nieuwe pagina = column.*** 
 
-  * lijkt nog niet te  werken?
 
-  *  **‘Ontdek’ (button) in kleur zetten als je op de pagina in kwestie bent**  Beetje irritant, moet ik wat hercoderen, want dit is eigenlijk dezelfde pagina als home. Effe over nadenken.
 
 
   **Mobiel**
@@ -101,27 +71,7 @@ todos: >-
   *Algemeen*
 
 
-  * 30% minder padding voorzien links & rechts
-
-  * Logo naakt in bad mag zelfde grootte behouden, maar hamburger kan zo iets meer naar rechts
-
-  * Het lijkt nu nog niet zo te zijn dat logo + hamburger verschijnen als ge naar boven scrollt?
-
-
-  *Hamburger*
-
-
-  * toch in midden van witruimte uitlijnen, op midden van logo naakt in bad
-
-
-  *Player*
-
-
-  * tekst: 20% groter
-
-  * bol: 25% groter
-
-  * geen outlines gebruiken op mobiel (hover state hoeft niet duidelijk te zijn)
+  * Logo naakt in bad= wat meer witruimte boven en onder (mag het dubbel zijn van wat het nu is)
 
 
   *Home*
@@ -133,33 +83,13 @@ todos: >-
   *Menu*
 
 
-  * ’Tekst: +20% groter en t zou toch echt goed zijn als de tekst hier in bold kan staan. Indien niet mogelijk: SVG’s van maken?
-
-  * Volgorde buttons mag aangepast worden: Ontdek - Over - Tags
-
-
-  *Tags*
-
-
-  * Wat witruimte voorzien onderaan pagina, zodat laatste tags niet onder player vallen en er wat ademruimte is
-
-  * Hoofdletters + “zoek”: idem tekst in bold . Indien niet mogelijk: SVG’s van maken?
-
-
-  *Ontdek*
-
-
-  * naam mag wijzigen naar “een gok” (SVG stuur ik door)
+  * ’Tekst: +20% groter en t zou toch echt goed zijn als de tekst hier in bold kan staan. Want nu staat het nog in extra bold, kan dat?
 
 
   *Indien filter (= tag) geselecteerd*
 
 
-  * Hoogte wit vak: 40% kleiner
-
-  * Tekstgroote tag: even groot als grootte van de tekst in een column
-
-  * Kruis: even groot als de R van “wis filteR”
+  * Kruis: qua hoogte in midden uitgelijnd op woord "wis filter"
 
 
   ## OPTIM
