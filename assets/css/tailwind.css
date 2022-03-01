@@ -19,7 +19,6 @@
 
 .plyr__time + .plyr__time::before {
   content: '/';
-  margin-right: 10px;
   margin-right: 0;
 }
 

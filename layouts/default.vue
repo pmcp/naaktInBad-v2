@@ -57,7 +57,7 @@
       </main>
     </div>
     <More
-      v-if="$nuxt.$route.name == 'index'"
+      v-if="$nuxt.$route.name === 'index'"
       class="hidden md:block fixed bottom-0 z-10 w-full"
     />
   </div>
@@ -89,7 +89,7 @@ export default {
   },
   watch: {
     // Close navigation when route changes
-    $route(to, from) {
+    $route() {
       this.navOpen = false
     }
   },

@@ -307,8 +307,7 @@ module.exports = {
       '9xl': ['8rem', { lineHeight: '1' }],
       body: ['1.1rem', { lineHeight: '1.6rem' }],
       mobileSize1: ['1.3rem', { lineHeight: '1.6rem' }],
-      mobileSize2: ['1.08rem', { lineHeight: '1.3rem' },
-      ]
+      mobileSize2: ['1.08rem', { lineHeight: '1.3rem' }]
     },
     fontWeight: {
       thin: '100',

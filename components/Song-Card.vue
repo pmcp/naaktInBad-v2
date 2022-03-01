@@ -7,6 +7,7 @@
       <!-- Cover Image -->
       <img
         v-if="article.cover[0]"
+        :alt="`Cover art for ${article.song} by ${article.artist}`"
         :src="article.cover[0]"
         :class="[centered ? '' : '']"
         class="cursor-pointer w-40 h-40  md:w-24 md:h-24"
