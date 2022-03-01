@@ -39,7 +39,7 @@
           <div class=" border-b md:border-b-0"/>
           <!-- Player in desktop view -->
           <Player
-            class="fixed md:relative bottom-0 border-t md:border-t-0 z-40 w-full bg-white px-10 md:pl-0 md:pr-0"
+            class="fixed md:relative bottom-0 border-t md:border-t-0 z-40 w-full bg-white px-7 md:pl-0 md:pr-0"
           />
           <div
             v-if="navOpen"
