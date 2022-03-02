@@ -18,8 +18,8 @@
     <svg
       class=" absolute top-0 left-0 opacity-100 border-b border-white group-hover:border-black h-full w-full md:w-specific3"
       width="128"
-      height="16"
-      viewBox="0 0 128 16"
+      height="8"
+      viewBox="0 0 128 8"
       fill="none"
       xmlns="http://www.w3.org/2000/svg">
       <path

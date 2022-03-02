@@ -32,8 +32,6 @@ export default {
                 <svg class="absolute hover:hidden" style="transform: scale(1.1);" width="99" height="142" viewBox="0 0 99 142" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32.847 0H0V141.152H32.847V0Z" fill="black"/><path d="M98.523 0H65.684V141.152H98.523V0Z" fill="black"/></svg>
                 <svg class="absolute opacity-0 md:opacity-1 hidden hover:block" style="transform: scale(1.1);" width="107" height="150" viewBox="0 0 107 150" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M37.594 5H5V145.064H37.594V5Z" stroke="black" stroke-width="8.0121" stroke-miterlimit="10"/><path d="M102.763 5H70.178V145.064H102.763V5Z" stroke="black" stroke-width="8.0121" stroke-miterlimit="10"/></svg>
               </div>
-
-
           </button>
           <div class="flex-grow flex flex-col italic">
             <div class="text-right"></div>

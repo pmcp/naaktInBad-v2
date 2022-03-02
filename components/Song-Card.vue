@@ -20,7 +20,7 @@
         <div
           :class="[centered ? 'text-center mt-6' : '']"
           class="h-full flex flex-col justify-start md:leading-5">
-          <div :class="[centered ? '' : '']">
+          <div :class="[centered ? 'h-28' : '']">
             <div
               class="font-display font-extrabold text-base md:leading-5"
             >{{ article.artist }}</div>
