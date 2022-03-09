@@ -2,7 +2,7 @@
   <div>
     <div
       v-if="article"
-      :class="[centered ? 'flex flex-col h-full items-center w-44' : ' gap-6 flex-auto']"
+      :class="[centered ? 'flex flex-col h-full items-center w-44 ' : ' gap-6 flex-auto']"
       class="flex flex-wrap md:flex-nowrap">
       <!-- Cover Image -->
       <img

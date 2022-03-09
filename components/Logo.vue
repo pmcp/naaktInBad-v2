@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative group w-specific1 h-14 md:h-24 md:w-full md:-top-5">
+    class="relative group w-specific1 h-14 md:h-24 md:w-112 md:-top-5">
     <!-- Outline logo, not being used -->
     <!--    <svg-->
     <!--      class="opacity-0 group-hover:opacity-100 w-full h-full md:w-specific3 relative"-->
@@ -16,7 +16,7 @@
     <!--    </svg>-->
 
     <svg
-      class=" absolute top-0 left-0 opacity-100 border-b border-white group-hover:border-black h-full w-full md:w-specific3"
+      class=" absolute top-0 left-0 opacity-100 border-b border-white group-hover:border-black h-full w-full"
       width="128"
       height="8"
       viewBox="0 0 128 8"

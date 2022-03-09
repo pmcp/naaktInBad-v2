@@ -18,7 +18,18 @@
               class="w-5 h-5"
               @clicked="toggleMore"/>
           </div>
-          <More-Items />
+          <div class="flex flex-row w-full">
+            <div class="flex items-center  ">
+              <Icon
+                arrow
+                rotate/>
+            </div>
+
+            <More-Items class="flex-grow"/>
+            <div class="flex items-center  ">
+              <Icon arrow/>
+            </div>
+          </div>
         </div>
       </div>
     </custom-transition>

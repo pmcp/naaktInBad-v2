@@ -10,10 +10,8 @@
       <div
         :class="navClasses"
         class="md:w-1/2">
-        <div class="md:fixed md:w-specific3">
+        <div class="wmd:fixed w-full md:w-112">
           <div class="w-full px-7 md:px-0  flex h-16 mb-2">
-
-
             <nuxt-link
               to="/"
               class="relative md:pb-10 md:-mt-4 w-full"
@@ -37,9 +35,9 @@
           </div>
 
           <div class=" border-b md:border-b-0"/>
-          <!-- Player in desktop view -->
           <Player
-            class=" md:relative bottom-0 border-t md:border-t-0 z-40 w-full bg-white px-7 md:px-0"
+            class="fixed bottom-0 md:relative bottom-0 border-t md:border-t-0 z-40 bg-white px-7 md:px-0 md:mt-5"
+            style="width:inherit"
           />
           <div
             v-if="navOpen"

@@ -68,7 +68,6 @@ todos: >-
 
 
 
-  > I AM HERE
 
 
 
@@ -91,6 +90,7 @@ todos: >-
 
 
   * ’Tekst: +20% groter en t zou toch echt goed zijn als de tekst hier in bold kan staan. Want nu staat het nog in extra bold, kan dat?
+  -> Staat wel degelijk in bold
 
 
   *Indien filter (= tag) geselecteerd*
@@ -98,12 +98,3 @@ todos: >-
 
   * Kruis: qua hoogte in midden uitgelijnd op woord "wis filter"
 
-
-  ## OPTIM
-
-
-  * Use Grid, so player can move to any position (now using resizeobserver)
-
-  * Move out css of player (in nuxt.config head), in favor of own css / tailwind
-
-  * Change icons (play and pause) on hover to hover:fill etc"

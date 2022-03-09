@@ -21,14 +21,15 @@
         <div class="font-display text-xl">{{ s.song }}</div>
       </div>
     </div>
-
     <div
-      v-if="searchResults.length == 0"
+      v-if="searchResults.length == 0 && search != ''"
       class="font-body text-mobileSize1"
     >
       Geen artikels gevonden
     </div>
-    <div class="flex flex-row flex-wrap">
+    <div
+      v-if="search == ''"
+      class="flex flex-row flex-wrap">
       <div
         v-for="letter in tagsOrdened"
         :key="`letter-${letter.group}`"

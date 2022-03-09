@@ -98,6 +98,22 @@
         </g>
       </svg>
     </button>
+    <button
+      v-if="arrow"
+      :class="[rotate ? 'transform rotate-180' : '']"
+      @click="$emit('clicked')">
+      <svg
+        class="w-5 h-5 md:w-4 md:h-4"
+        width="122"
+        height="132"
+        viewBox="0 0 122 132"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0 0L121.919 65.933L0 131.879V0Z"
+          fill="black" />
+      </svg>
+    </button>
   </div>
 </template>
 
@@ -123,6 +139,18 @@ export default {
       }
     },
     play: {
+      type: Boolean,
+      default() {
+        return false
+      }
+    },
+    arrow: {
+      type: Boolean,
+      default() {
+        return false
+      }
+    },
+    rotate: {
       type: Boolean,
       default() {
         return false

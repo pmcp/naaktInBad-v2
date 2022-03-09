@@ -14,14 +14,14 @@
       <Observer
         @intersect="intersected()"/>
     </div>
-
     <div
       v-else
-      class="flex gap-10 overflow-x-auto overflow-y-hidden">
+      class="flex justify-between overflow-y-hidden overflow-x-auto">
       <Song-Card
         v-for="(article, i) in articles"
         :article="article"
         :key="`navArticles_${i}`"
+        class="w-1/4"
         centered
         more
       />
