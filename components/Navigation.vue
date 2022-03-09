@@ -7,7 +7,7 @@
       <div
         v-for="(navItem, i) in navigation"
         :key="`navigation_${i}`"
-        class="pb-4 text-3xl">
+        class="pb-4 text-specificFont1">
         <button
           v-if="navItem.path == 'ontdek'"
           :class="[(navItem.path == $nuxt.$route.name) ? 'underline' : '']"
@@ -24,7 +24,7 @@
       <div class="pt-1">
         <nuxt-link
           to="alles"
-          class="font-display font-bold hover:underline text-3xl">
+          class="font-display font-bold hover:underline text-specificFont1">
           alle Columns
         </nuxt-link>
       </div>
