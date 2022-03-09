@@ -5,47 +5,10 @@ todos: >-
   **Desktop**
 
 
-  *Algemeen*
-
-
-  * Favicon aanpassen (ik stuur u een dikke & dunne N door, zie maar wat beste past)
-
-
-  *Logo Naakt in bad*
-
-
-  * 't staat nu wat te klein. Ik denk dat ik vorige keer iets van 5% kleiner zei, omdat het anders opvalt in de denkbeeldige driehoek tussen logo NIB, button over en artwork. Idealiter staat het logo bijna even groot als de breedte van de column, maar dan een tikkel kleiner, zonder dat het opvalt :) Als dat teveel gedoe is, echt niet essentieel dit. Zet dan maar gewoon even breed als de column.
-
-  * hover: onderlijn wat hoger (mag er quasi tegen plakken, zoals bij de kleinere buttons 'over', 'tags,' etc...)
-
-
-  *Player*
-
-
-  * terug een beetje laten zakken (met dat de tekst groter staat, is er wat te weinig ademruimte met logo). Pak nog 30-40% erbij
-
-
-  * lijkt afgesneden (de lijn stopt ter hoogte van de N van IN)
-
-
   *Alle columns*
 
 
-  * **bovenste lijn van footer staat wat te dicht bij player (footer wat lager?)** Kan je hier screenshot van sturen? ***Anders zien wat dit geeft als de player opnieuw zakt?***
-
   * **evenredig verdelen over de beschikbare breedte** Dit is nogal scherm breedte gevoelig, denk niet dat er een propere manier is om dit te doen. Te bespreken. ***OK, we kunnen hier eens over chatten anders?***
-
-  * Kunnen de tags telkens op dezelfde hoogte starten? Ze gaan dan losgekoppeld zijn van naam artiest, release, etc... Maar dat gaat het gevoel van een lijntje geven, waardoor alles wat rustiger wordt. Mag gebeuren waar nu *\#Pop #Rock* staat, bij Cindy Lee.
-
-
-  *Over*
-
-
-  * **tekst (waar op home de columns staan) wat meer naar links laten beginnen (komt niet overeen met de kolom van de columns)**  Da's een beetje lastig, moeten we eens over nadenken: de reden waarom dat dat inspringt is omdat er een scrollbalk bijkomt (althans, denk dat dat is wat je bedoelt). ***Nee, 't is iets anders: zie screenshot "Over (tekst naar links)"***
-
-
-    *Tags*
-  * 4 kolommen zijn goed, kunnen die verdeeld worden over de breedte tot rechterkant knop *Zoeken?* -> Dat is het geval, maar de tekst is nu niet lang genoeg de breedte uit te vullen. Met andere woorden, het vakske is zo breed, maar uw tekst niet.
 
 
 
@@ -53,20 +16,7 @@ todos: >-
   *Zoeken (indien zoekresultaten weergegeven worden)*
 
 
-  * tekst “geen artikels gevonden" in zelfde fontgrootte als zoekterm zelf
-
-
-  * **niets laten verschijnen als er geen resultaat is**  Gaat dit niet in tegen puntje hierboven? ***Ge hebt gelijk, skip maar***
-
   * **indien wel resultaat: mogelijkheid om tekst te previewen (zin waar zoekwoord instaat)?**  Voor ik hieraan begin, want wel wat werk: hoe zie je dat? Want nu reageert ie meteen als ik een letter intyp. Dus met andere woorden: als ik de "n" intyp, dan gaat ie zo goed als alles artikels en letters terug geven. Misschien vanaf een x aantal letters? Maar is dat nog het gedrag dat je wil? Want wat bijvoorbeeld met "dj"? etc etc :) Wat mij betreft hoeft er niet meteen gereageerd te worden. ***Ik zou wel liefst preview tekst hebben, omdat dat context geeft. Wat mij betreft dus goed vanaf een aantal letters, bvb 2?***
-
-
-  *Ontdek*
-
-
-  * **‘Ontdek’ (button) in kleur zetten als je op de pagina in kwestie bent**  Beetje irritant, moet ik wat hercoderen, want dit is eigenlijk dezelfde pagina als home. Effe over nadenken. ***Weet ge, laat anders maar zo. Het idee is toch dat er geen "een gok" pagina is, maar dat elke klik op een gok resulteert in een nieuwe pagina = column.***
-
-
 
 
 
@@ -86,15 +36,17 @@ todos: >-
   * Tags: hoeven niet zo vroeg te stoppen, laat maar doorlopen tot einde rechterkolom
 
 
-  *Menu*
-
-
-  * ’Tekst: +20% groter en t zou toch echt goed zijn als de tekst hier in bold kan staan. Want nu staat het nog in extra bold, kan dat?
-  -> Staat wel degelijk in bold
-
-
   *Indien filter (= tag) geselecteerd*
 
 
   * Kruis: qua hoogte in midden uitgelijnd op woord "wis filter"
 
+
+  ## OPTIM
+
+
+  * Use Grid, so player can move to any position (now using resizeobserver)
+
+  * Move out css of player (in nuxt.config head), in favor of own css / tailwind
+
+  * Change icons (play and pause) on hover to hover:fill etc"
