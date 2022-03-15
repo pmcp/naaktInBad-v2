@@ -1,7 +1,7 @@
 ---
 song: Dans La Ville
 artist: Roger 3000
-label: Self-released
+label: Eigen beheer
 release: "2019"
 cover:
   - https://ucarecdn.com/a6e66ca9-4524-44f3-9b3a-52bf8807e7b3/
