@@ -12,7 +12,7 @@ audio: https://ucarecdn.com/008d2c82-52d9-4db8-92e5-971fd3ec2118/
 date: 2022-03-16T18:16:17.460Z
 url: https://nautic.bandcamp.com/album/navy-blue
 ---
-Nathan Jenkins ofte Bullion houdt van pop. In de discografie van zijn label DEEK vind je een resem compilaties van pop covers waaronder *Extraordinary Renditions*, met Gwilym Gold’s heerlijk trage versie van D’Angelo’s "The Root". Nog een aanrader: de gigantische Pop-not-slop playlist, ideaal om te verkennen wat nu juist onder pop verstaan wordt en wat het allemaal zou kunnen zijn. 
+Nathan Jenkins ofte Bullion houdt van pop. In de discografie van zijn label DEEK vind je een resem compilaties van pop covers waaronder *Extraordinary Renditions*, met Gwilym Gold’s heerlijk trage versie van D’Angelo’s "The Root". Nog een aanrader: de gigantische [Pop-not-slop playlist](http://www.deekrecordings.co.uk/pop-not-slop/), ideaal om te verkennen wat nu juist onder pop verstaan wordt en wat het allemaal zou kunnen zijn. 
 
 Formularische pop komt meestal neer op makkelijk luisterbare muziek. Je weet instinctief dat er na de strofe een refrein komt. Je weet dat dit waarschijnlijk nog twee à drie keer gaat gebeuren. Waarna je er geld op kan inzetten dat er een modulatie volgt om dan richting fade-out te gaan. Makkelijk luisterbaar als in: geen bruuskerende surprises. Een eufemisme voor een voorspelbare formule, voor risicoaverse muziek. 
 
