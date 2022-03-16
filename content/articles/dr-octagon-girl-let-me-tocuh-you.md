@@ -1,5 +1,5 @@
 ---
-song: Girl Let Me Tocuh You
+song: Girl Let Me Touch You
 artist: Dr. Octagon
 label: Bulk
 release: "1996"
