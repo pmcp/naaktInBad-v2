@@ -1,8 +1,8 @@
 ---
 song: Om Shanti Om
 artist: Don Cherry
-label: "2020"
-release: Black Sweat
+label: Black Sweat
+release: "2020"
 cover:
   - https://ucarecdn.com/bc5ce2e0-158b-48b4-a278-bf631b3425f2/
 tags:
