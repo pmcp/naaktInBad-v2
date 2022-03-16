@@ -18,6 +18,6 @@ Op het deken is een grote draaimolen geborduurd, waarop een eindeloos aantal and
 
 \- Een meer, warm en donker\
 - De Grundtvigskerk in Kopenhagen, maar dan vier keer zo klein als haar ware grootte\
-- Tevreden arbeiders, haring etend op een stoeprand\\
+- Tevreden arbeiders, haring etend op een stoeprand\
 - Bladerloze bomen op een milde ochtend\
 - Een verlaten eg, niet verroest
