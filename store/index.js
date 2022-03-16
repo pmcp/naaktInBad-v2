@@ -183,7 +183,6 @@ export const actions = {
     commit('setActiveTag', tag)
     commit('setArticles', [])
     dispatch('getArticles', { id: null, intersected: null })
-
     this.$router.push('/')
   },
 
