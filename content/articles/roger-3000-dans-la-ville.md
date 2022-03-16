@@ -13,4 +13,4 @@ url: https://roger3000.bandcamp.com/album/dans-la-ville
 ---
 Roger 3000 maakt weinig kabaal. Hij zingt zachtjes, tokkelt liefdevol op zijn gitaar. Zijn songs lijken simpel. Een beetje zoals een gekrabbelde schets basic kan ogen, tot je er van dichterbij naar kijkt, en een bescheiden complexiteit ontwaart, een intiem kluwen van pennenstreken.
 
-Af en toe haalt hij er een fluit bij, een warm zoemende synth of een extra laag gitaar. Soms zelfs alle drie voorgenoemde elementen samen. Toch neemt zijn muziek zelden veel plaats in. Misschien voelt ze net daarom zo intiem aan zonder ooit pathetisch te worden.
+Af en toe haalt hij er een fluit bij, een warm zoemende synth of een extra laag gitaar. Soms zelfs alle drie voornoemde elementen samen. Toch neemt zijn muziek zelden veel plaats in. Misschien voelt ze net daarom zo intiem aan zonder ooit pathetisch te worden.
