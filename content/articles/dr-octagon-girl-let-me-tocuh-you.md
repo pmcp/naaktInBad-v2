@@ -15,6 +15,7 @@ Dr Octagon is een fictief personage, een gynaecoloog-chirurg van een andere plan
 
 Rappers die over seks fantaseren… er zijn er duizend in een dozijn. Het eindresultaat landt meestal ergens tussen puberaal gepronk en vrouwonvriendelijk geblaf. Heel af en toe doet iemand de kunst van het pornografische proza echter eer aan. Op "Girl Let Me Touch You" komt een vrouwelijke patiënt Octagons prakijk binnengelopen. Woordspel en fetisj gaan elkaar te lijf terwijl Keith, op eloquente wijze, lekker concrete taferelen visualiseert. Perversie van de bovenste plank, van een Boon uit de Bronx.
 
+\
 *It's morning, 7 o'clock, you at my clinic*\
 *It's me your orthopedic, gynecologyst*\
 *You looking pretty and fine, go ahead blow my mind*\
@@ -32,39 +33,29 @@ Rappers die over seks fantaseren… er zijn er duizend in een dozijn. Het eindre
 
 *< chorus >*
 
-*Sipping Manischewitz smooth—you’re cute—drinking Hennessy*
-
-*Jokin' 'bout two girls, your friend double-teamin' me*
-
-*I got the office closed, you ready for the pros*
-
-*Suckers ain't no good, sticking coke up in your nose*
-
-*My style is wild at home and on the kitchen table*
-
-*Porno-flicks in stacks, Playboy on the TV cable*
-
-*I'd rather sign my address on your application*
-
-*You can call late nights for lonely information*
-
-*Where you come when it's boring? A place—where to go?*
-
-*I want you in a two-piece, and freaky, for a private show*
-
+*Sipping Manischewitz smooth—you’re cute—drinking Hennessy*\
+*Jokin' 'bout two girls, your friend double-teamin' me*\
+*I got the office closed, you ready for the pros*\
+*Suckers ain't no good, sticking coke up in your nose*\
+*My style is wild at home and on the kitchen table*\
+*Porno-flicks in stacks, Playboy on the TV cable*\
+*I'd rather sign my address on your application*\
+*You can call late nights for lonely information*\
+*Where you come when it's boring? A place—where to go?*\
+*I want you in a two-piece, and freaky, for a private show*\
 *You got my number, address—you know the rest*
 
 *< chorus >*
 
-*Only 18, bikini-body bad and mean
-Do you have cards? In fact, I will take Medicaid
-Your panties are wet—take it easy, don't sweat
-You want some birth-control? You can smoke a cigarette
-Relax, lay back, your buns feel good to smack
-You think you're pregnant—your test show negative
-I got a movie camera film that is positive
-Turn around for me, girl, take a picture
-This is the way with 24 flicks on Kodak
-Them young boys ain't ready, so let me show them how to act
-I put you in thongs and six-inch high shoes
-You strut your stuff in latex, my strategy is rough*
+*Only 18, bikini-body bad and mean*\
+*Do you have cards? In fact, I will take Medicaid*\
+*Your panties are wet—take it easy, don't sweat*\
+*You want some birth-control? You can smoke a cigarette*\
+*Relax, lay back, your buns feel good to smack*\
+*You think you're pregnant—your test show negative*\
+*I got a movie camera film that is positive*\
+*Turn around for me, girl, take a picture*\
+*This is the way with 24 flicks on Kodak*\
+*Them young boys ain't ready, so let me show them how to act*\
+*I put you in thongs and six-inch high shoes*\
+*You strut your stuff in latex, my strategy is rough*
