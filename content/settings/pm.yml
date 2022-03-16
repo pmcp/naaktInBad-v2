@@ -8,11 +8,29 @@ todos: >-
   *Algemeen*
 
 
-  * Favicon aanpassen
+  * Favicon aanpassen (zwarte bol met witte N, zie mail)
 
   * Logo NIB + player verdwijnen bij scroll
 
-  * Een gok: telkens terugbrengen naar begin bovenste column (schermpositie blijft nu waar je ervoor was)
+  * Een gok: telkens terugbrengen naar het begin van de bovenste (= meest recent geuploade) column (de schermpositie blijft nu waar je ervoor was, bvb ergens in een scroll in het midden)
+
+  * click op logo NIB: altijd naar home met meest recent geuploade column bovenaan
+
+  * Columns zo laten verschijnen dat de recentst geuploade column bovenaan verschijnt. (De nu reeds aanwezige columns mogen wel blijven staan in onderstaande volgorde, van bovenste naar onderste)
+
+    * Cindy Lee
+    * Roger 3000
+    * Don Cherry
+    * Christian Henning
+    * Ashtar Lavanda
+    * Nautic
+    * Merope
+    * Dr Octagon
+    * Brannten Schnure
+    * Ben Bondy
+    * Patrick Shiroishi
+    * José Mauro
+
 
 
   *Alle columns*
@@ -35,6 +53,8 @@ todos: >-
   * **indien wel resultaat: mogelijkheid om tekst te previewen (zin waar zoekwoord instaat)?**  Voor ik hieraan begin, want wel wat werk: hoe zie je dat? Want nu reageert ie meteen als ik een letter intyp. Dus met andere woorden: als ik de "n" intyp, dan gaat ie zo goed als alles artikels en letters terug geven. Misschien vanaf een x aantal letters? Maar is dat nog het gedrag dat je wil? Want wat bijvoorbeeld met "dj"? etc etc :) Wat mij betreft hoeft er niet meteen gereageerd te worden. ***Ik zou wel liefst preview tekst hebben, omdat dat context geeft. Wat mij betreft dus goed vanaf een aantal letters, bvb 2?***
 
   * klik op zoekresultaat leidt altijd naar dezelfde (bovenste) column
+
+
 
 
   **Mobiel**
