@@ -8,9 +8,9 @@ cover:
 tags:
   - Electro
   - Detroit techno
-audio: https://www.mixcloud.com/NTSRadio/ashtar-lavanda-15th-january-2018/
+audio: https://ucarecdn.com/4db71c4f-70af-4a34-859e-54ec43888925/
 date: 2022-03-15T21:37:17.270Z
-url: https://www.mixcloud.com/NTSRadio/ashtar-lavanda-15th-january-2018/
+url: https://www.nts.live/shows/guests/episodes/ashtar-lavanda-15th-january-2018
 ---
 Wat hebben Kevin Saunderson, Derrick May en Jeff Mills met elkaar gemeen? Ze hebben alle drie een kleurtje, krijgen met recht en rede de status van technogrondlegger toebedeeld en… komen allen uit Detroit.  
 
