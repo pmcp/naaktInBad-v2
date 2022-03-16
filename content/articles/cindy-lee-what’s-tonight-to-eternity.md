@@ -11,7 +11,7 @@ audio: https://ucarecdn.com/509b1138-3904-48ee-8f6d-708978cd1f5f/
 date: 2022-03-15T20:58:06.150Z
 url: https://cindylee.bandcamp.com/album/whats-tonight-to-eternity
 ---
-Binnen een afgebakend thema blijven werkt. Neem nu de Italiaanse keuken: dé veilige keuze voor zowat elke culinaire context, van een luie doordeweekse maaltijd tot pseudocreatieve pocherij. Eerlijk is eerlijk, het is geen klein bier om zo’n reputatie op te bouwen. En we gaan niet flauw doen: de efficiëntie waarmee een handvol ingrediënten keer op keer voor smaakbombardementen zorgen is ronduit indrukwekkend.
+Binnen een afgebakend thema blijven werkt. Neem nu de Italiaanse keuken: dé veilige keuze voor zowat elke culinaire context, van een luie doordeweekse maaltijd tot pseudocreatief gepronk. Eerlijk is eerlijk, het is geen klein bier om zo’n reputatie op te bouwen. En we gaan niet flauw doen: het potentieel om met een handvol ingrediënten keer op keer voor smaakbombardementen te zorgen is ronduit indrukwekkend.
 
 Maar er is meer aan de hand. Mensen houden niet enkel van Italiaans omdat het zo lekker is maar ook omdat het zo veilig is. Je weet wat je op je bord gaat krijgen. Ok, af en toe varieer je eens tussen mozzarella met basilicum of aubergine parmigiana. Of je gaat vanavond eens voor pasta cacio e pepe in plaats van carbonara. Maar diep vanbinnen weet je dat dit enkel minieme variaties zijn op aloude thema’s. Net daarom is [Vitello Tonnato](https://www.greatitalianchefs.com/recipes/vitello-tonnato-recipe) zo’n vreemde eend in de bijt. Een surf-and-turf rariteit met kalfsvlees in een zoutige saus op basis van ansjovis en tonijn. Vis en vlees, room en kappertjes… Waar kwam dat opeens vandaan? 
 
