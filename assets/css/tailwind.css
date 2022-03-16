@@ -30,3 +30,25 @@
   width: .66rem;
   height: .66rem;
 }
+/*https://triangle.designyourcode.io/*/
+.arrow-swiper {
+  position: absolute;
+  display: inline-block;
+  width: 14px;
+  height: 15px;
+  top: 50%;
+  margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+  z-index: 10;
+  cursor: pointer;
+
+}
+
+.arrow-swiper:before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7.5px 14px 7.5px 0;
+  border-color: transparent black transparent transparent;
+}

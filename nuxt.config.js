@@ -59,7 +59,8 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    standalone: true
   },
   //  Added by PMCP
   //Nuxt Content options

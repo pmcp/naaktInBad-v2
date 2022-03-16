@@ -14,11 +14,12 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxt/content": "^1.15.0",
-    "@vueuse/core": "^6.8.0",
+    "@nuxt/content": "^1.15.1",
+    "@vueuse/core": "^6.9.2",
     "cross-env": "^5.2.0",
     "netlify-identity-widget": "^1.9.2",
     "nuxt": "^2.0.0",
+    "swiper": "^7.2.0",
     "vue-plyr": "^7.0.0",
     "vuex": "^3.6.2"
   },

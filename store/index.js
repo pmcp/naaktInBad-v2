@@ -103,7 +103,7 @@ export const actions = {
       if (id == null) {
         if (state.activeTag) {
           articles = await this.$content('articles')
-            .sortBy('date', 'asc')
+            .sortBy('date', 'desc')
             .where({ tags: { $contains: state.activeTag } })
             .skip(loadedArticles)
             .limit(10)
