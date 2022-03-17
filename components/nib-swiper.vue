@@ -2,30 +2,27 @@
   <div class="relative">
     <div class="arrow-swiper arrow-swiper-prev"/>
     <div class="mx-8">
-      <client-only>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div
-              v-for="(article, i) in articles"
-              :key="i"
-              :class="`slide--${i}`"
-              class="swiper-slide"
-            >
-              <Song-Card
-                :article="article"
-                :key="`navArticles_${i}`"
-                class="w-1/4 slider-content"
-                centered
-                more
-              />
-            </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div
+            v-for="(article, i) in articles"
+            :key="i"
+            :class="`slide--${i}`"
+            class="swiper-slide"
+          >
+            <Song-Card
+              :article="article"
+              :key="`navArticles_${i}`"
+              class="w-1/4 slider-content"
+              centered
+              more
+            />
           </div>
         </div>
-      </client-only>
+      </div>
     </div>
     <div class="arrow-swiper arrow-swiper-next transform rotate-180 right-0"/>
   </div>
-
 </template>
 
 <script>
@@ -42,7 +39,7 @@ export default {
   },
   computed: {
     articles() {
-      return this.$store.state.articles
+      return this.$store.state.navArticles
     }
   },
   mounted() {

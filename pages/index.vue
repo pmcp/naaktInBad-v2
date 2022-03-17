@@ -24,6 +24,9 @@
 import { mapActions } from 'vuex'
 
 export default {
+  // async fetch({ i18n, context, params, store, store: { dispatch, getters } }) {
+  //   await dispatch('getPrevNext', params)
+  // },
   computed: {
     activeTag() {
       return this.$store.state.activeTag

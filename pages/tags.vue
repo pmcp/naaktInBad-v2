@@ -96,15 +96,15 @@ export default {
     //   this.setActiveArticle({ article, more: true })
     // },
     ...mapActions([
-      'getTags',
+      // 'getTags',
       'selectTag',
       'findArticles',
       'setActiveArticle',
       'getArticle'
     ])
-  },
-  async asyncData({ $content, params, error, store }) {
-    store.dispatch('getTags')
   }
+  // async asyncData({ $content, params, error, store }) {
+  //   store.dispatch('getTags')
+  // }
 }
 </script>

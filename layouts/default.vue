@@ -64,6 +64,13 @@
 import { mapActions } from 'vuex'
 
 export default {
+  async asyncData({ $content }) {
+    const allArticles = await $content('articles').fetch()
+
+    return {
+      allArticles
+    }
+  },
   data() {
     return {
       navOpen: false,

@@ -1,5 +1,6 @@
 export const state = () => ({
   articles: [],
+  navArticles: [],
   tags: [],
   activeTag: null,
   activeArticle: null,
@@ -74,12 +75,58 @@ export const mutations = {
   setSearchResults(state, articles) {
     state.searchResults = [...articles]
   },
-  setDiscovery(state, val) {
-    state.discovery = val
+  setNavArticles(state, val) {
+    state.navArticles = val
   }
 }
 
 export const actions = {
+  async nuxtServerInit({ commit }, { app }) {
+    // Getting all articles for navigation.
+    // TODO: For now am just getting all articles.
+    const navArticles = await this.$content('articles')
+      .sortBy('date', 'desc')
+      .only([
+        'cover',
+        'tags',
+        'label',
+        'song',
+        'release',
+        'slug',
+        'label',
+        'artist'
+      ])
+      .fetch()
+      .catch(err => {
+        console.log(err)
+      })
+    commit('setNavArticles', navArticles)
+
+    // Getting 10 first articles for content
+    const allArticles = await this.$content('articles')
+      .sortBy('date', 'desc')
+      .limit(10)
+      .fetch()
+      .catch(err => {
+        console.log(err)
+      })
+    commit('setArticles', allArticles)
+
+    // Get all tags
+    const articles = await this.$content('articles')
+      .only(['tags'])
+      .fetch()
+
+    const tags = articles.reduce((acc, article) => {
+      article.tags.forEach(tag => {
+        if (!acc.includes(tag)) {
+          acc.push(tag)
+        }
+      })
+      return acc
+    }, [])
+    commit('setTags', tags)
+  },
   async getArticles({ state, commit }, { id, intersected }) {
     const loadedArticles = state.articles.length
     let articles = []
@@ -89,9 +136,8 @@ export const actions = {
       //  Get last item in articles
       const lastArticle = state.articles.at(-1)
       const lastArticleId = lastArticle.slug
-      console.log(lastArticleId)
       const allSurround = await this.$content('articles')
-        .sortBy('date', 'asc')
+        .sortBy('date', 'desc')
         .surround(lastArticleId, { before: 0, after: 10 })
         .fetch()
         .catch(err => {
@@ -112,9 +158,8 @@ export const actions = {
               console.log(err)
             })
         } else {
-          console.log('no tag', state.activeTag)
           articles = await this.$content('articles')
-            .sortBy('date', 'asc')
+            .sortBy('date', 'desc')
             .skip(loadedArticles)
             .limit(10)
             .fetch()
@@ -124,10 +169,8 @@ export const actions = {
         }
       } else {
         // There is an Id, so we need to get the article based on id, and the next ten articles
-
         // Article based on id:
         const article = await this.$content('articles', id).fetch()
-        console.log('got article', article)
         const allSurround = await this.$content('articles')
           .sortBy('date', 'asc')
           .surround(id, { before: 0, after: 10 })
@@ -135,33 +178,29 @@ export const actions = {
           .catch(err => {
             console.log(err)
           })
-        console.log(allSurround, state.articles)
-
         articles = [article, ...allSurround.filter(a => a != null)]
-        console.log(articles)
       }
     }
 
     const allArticles = [...state.articles, ...articles]
-    console.log(allArticles)
     commit('setArticles', allArticles)
   },
-  async getTags({ state, commit }) {
-    const articles = await this.$content('articles')
-      .only(['tags'])
-      .fetch()
-
-    const tags = articles.reduce((acc, article) => {
-      article.tags.forEach(tag => {
-        if (!acc.includes(tag)) {
-          acc.push(tag)
-        }
-      })
-      return acc
-    }, [])
-
-    commit('setTags', tags)
-  },
+  // async getTags({ state, commit }) {
+  //   const articles = await this.$content('articles')
+  //     .only(['tags'])
+  //     .fetch()
+  //
+  //   const tags = articles.reduce((acc, article) => {
+  //     article.tags.forEach(tag => {
+  //       if (!acc.includes(tag)) {
+  //         acc.push(tag)
+  //       }
+  //     })
+  //     return acc
+  //   }, [])
+  //
+  //   commit('setTags', tags)
+  // },
 
   async findArticles({ state, commit }, el) {
     const searchString = el.target.value
