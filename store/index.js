@@ -65,9 +65,9 @@ export const mutations = {
   setActiveTag(state, val) {
     state.activeTag = val
   },
-  addArticles(state, newArticles) {
-    state.articles = [...state.articles, ...filteredArticles]
-  },
+  // addArticles(state, newArticles) {
+  //   state.articles = [...state.articles, ...newArticles]
+  // },
   setArticles(state, articles) {
     state.articles = [...articles]
     console.log('set articles', state.articles)
@@ -81,7 +81,7 @@ export const mutations = {
 }
 
 export const actions = {
-  async nuxtServerInit({ commit }, { app }) {
+  async nuxtServerInit({ commit }) {
     // Getting all articles for navigation.
     // TODO: For now am just getting all articles.
     const navArticles = await this.$content('articles')
@@ -225,15 +225,18 @@ export const actions = {
     this.$router.push('/')
   },
 
-  resetTag({ state, commit, dispatch }) {
+  resetTag({ commit }) {
     commit('setArticles', [])
     commit('setActiveTag', null)
   },
 
-  goHome({ state, commit, dispatch }) {
+  goHome({ commit, dispatch }) {
     commit('setArticles', [])
     commit('setActiveTag', null)
     dispatch('getArticles', { id: null, intersected: null })
+    window.scrollTo({
+      top: 0
+    })
   },
 
   setActiveArticle({ state, commit, dispatch }, { article, more = false }) {
