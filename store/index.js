@@ -80,6 +80,77 @@ export const mutations = {
 }
 
 export const actions = {
+  async getArticles({ state, commit }, { id, intersected }) {
+    const loadedArticles = state.articles.length
+    let articles = []
+
+    if (intersected === 'bottom') {
+      //  add articles based on next articles of last item in articles
+      //  Get last item in articles
+      let allSurround = []
+      const lastArticle = state.articles.at(-1)
+      const lastArticleId = lastArticle.slug
+
+      // If there is a tag selected, only get articles with this tag
+      if (state.activeTag) {
+        allSurround = await this.$content('articles')
+          .sortBy('date', 'desc')
+          .where({ tags: { $contains: state.activeTag } })
+          .surround(lastArticleId, { before: 0, after: 10 })
+          .fetch()
+          .catch(err => {
+            console.log(err)
+          })
+      } else {
+        allSurround = await this.$content('articles')
+          .sortBy('date', 'desc')
+          .surround(lastArticleId, { before: 0, after: 10 })
+          .fetch()
+          .catch(err => {
+            console.log(err)
+          })
+      }
+      articles = [...allSurround.filter(a => a != null)]
+    } else {
+      if (id == null) {
+        if (state.activeTag) {
+          articles = await this.$content('articles')
+            .sortBy('date', 'desc')
+            .where({ tags: { $contains: state.activeTag } })
+            .skip(loadedArticles)
+            .limit(10)
+            .fetch()
+            .catch(err => {
+              console.log(err)
+            })
+        } else {
+          articles = await this.$content('articles')
+            .sortBy('date', 'desc')
+            .skip(loadedArticles)
+            .limit(10)
+            .fetch()
+            .catch(err => {
+              console.log(err)
+            })
+        }
+      } else {
+        // There is an Id, so we need to get the article based on id, and the next ten articles
+        // Article based on id:
+        const article = await this.$content('articles', id).fetch()
+        const allSurround = await this.$content('articles')
+          .sortBy('date', 'asc')
+          .surround(id, { before: 0, after: 10 })
+          .fetch()
+          .catch(err => {
+            console.log(err)
+          })
+        articles = [article, ...allSurround.filter(a => a != null)]
+      }
+    }
+
+    const allArticles = [...state.articles, ...articles]
+    commit('setArticles', allArticles)
+  },
   async nuxtServerInit({ commit }) {
     // Getting all articles for navigation.
     // TODO: For now am just getting all articles.
@@ -125,65 +196,6 @@ export const actions = {
       return acc
     }, [])
     commit('setTags', tags)
-  },
-  async getArticles({ state, commit }, { id, intersected }) {
-    const loadedArticles = state.articles.length
-    let articles = []
-
-    if (intersected === 'bottom') {
-      console.log('here', intersected, id)
-      //  add articles based on next articles of last item in articles
-      //  Get last item in articles
-      const lastArticle = state.articles.at(-1)
-      const lastArticleId = lastArticle.slug
-      const allSurround = await this.$content('articles')
-        .sortBy('date', 'desc')
-        .surround(lastArticleId, { before: 0, after: 10 })
-        .fetch()
-        .catch(err => {
-          console.log(err)
-        })
-
-      articles = [...allSurround.filter(a => a != null)]
-    } else {
-      if (id == null) {
-        if (state.activeTag) {
-          articles = await this.$content('articles')
-            .sortBy('date', 'desc')
-            .where({ tags: { $contains: state.activeTag } })
-            .skip(loadedArticles)
-            .limit(10)
-            .fetch()
-            .catch(err => {
-              console.log(err)
-            })
-        } else {
-          articles = await this.$content('articles')
-            .sortBy('date', 'desc')
-            .skip(loadedArticles)
-            .limit(10)
-            .fetch()
-            .catch(err => {
-              console.log(err)
-            })
-        }
-      } else {
-        // There is an Id, so we need to get the article based on id, and the next ten articles
-        // Article based on id:
-        const article = await this.$content('articles', id).fetch()
-        const allSurround = await this.$content('articles')
-          .sortBy('date', 'asc')
-          .surround(id, { before: 0, after: 10 })
-          .fetch()
-          .catch(err => {
-            console.log(err)
-          })
-        articles = [article, ...allSurround.filter(a => a != null)]
-      }
-    }
-
-    const allArticles = [...state.articles, ...articles]
-    commit('setArticles', allArticles)
   },
   // async getTags({ state, commit }) {
   //   const articles = await this.$content('articles')

@@ -16,10 +16,6 @@ todos: >-
 
   * Een gok: telkens terugbrengen naar het begin van de bovenste (= meest recent geuploade) column (de schermpositie blijft nu waar je ervoor was, bvb ergens in een scroll in het midden)
 
-  * Bij aanklikken tag op home wordt filter ingeschakeld, maar eronder verschijnen nog steeds alle andere columns (ook die met een andere tag)
-
-  * Cover art lijkt samengedrukt op home
-
   * Columns zo laten verschijnen dat de recentst geuploade column bovenaan verschijnt. (De nu reeds aanwezige columns mogen wel blijven staan in onderstaande volgorde, van bovenste naar onderste)
 
     * Cindy Lee
