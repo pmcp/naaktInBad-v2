@@ -14,7 +14,7 @@ todos: >-
 
   * click op logo NIB: altijd naar home met meest recent geuploade column bovenaan
 
-  * Een gok: telkens terugbrengen naar het begin van de bovenste (= meest recent geuploade) column (de schermpositie blijft nu waar je ervoor was, bvb ergens in een scroll in het midden)
+  * Een gok: telkens terugbrengen naar helemaal bovenaan de tekstkolom (nu blijft de schermpositie hangen waar je ervoor was, bvb ergens in een scroll in het midden van de tekstkolom)
 
   * Columns zo laten verschijnen dat de recentst geuploade column bovenaan verschijnt. (De nu reeds aanwezige columns mogen wel blijven staan in onderstaande volgorde, van bovenste naar onderste)
 
