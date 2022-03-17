@@ -8,7 +8,7 @@ cover:
 tags:
   - Musique concrète
   - Field recordings
-audio: https://www.youtube.com/watch?v=nvz9ch4eKAI
+audio: https://ucarecdn.com/b75ddaae-6d94-4209-8523-84688e781196/
 date: 2022-03-15T21:31:25.696Z
 url: https://www.soundohm.com/product/requiem-of-art-fluxorum-o
 ---
