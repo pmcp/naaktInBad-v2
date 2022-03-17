@@ -8,7 +8,7 @@ cover:
 tags:
   - Drone
   - Dark folk
-audio: https://ucarecdn.com/711339c6-1317-468d-9810-6b9278ff65c0/
+audio: https://ucarecdn.com/746c9be5-a4d5-4d35-be30-d682843d3403/
 date: 2022-03-16T18:34:19.154Z
 url: https://www.discogs.com/release/13111522-Brannten-Schn%C3%BCre-Erinnerungen-An-Gesichter
 ---
