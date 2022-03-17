@@ -3,6 +3,7 @@
     <div class="relative mb-10 w-full">
       <button
         v-if="!open"
+        value="Toon alle columns"
         class="font-display font-bold ml-32 hover:underline"
         @click="toggleMore"
       >alle columns</button>

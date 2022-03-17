@@ -2,6 +2,7 @@
   <div>
     <button
       v-if="close"
+      value="Sluit"
       @click="$emit('clicked')">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -34,6 +35,7 @@
     </button>
     <button
       v-if="open"
+      value="Open navigatie menu"
       @click="$emit('clicked')">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -49,6 +51,7 @@
     </button>
     <button
       v-if="link"
+      value="Ga naar externe website over dit nummer"
       @click="$emit('clicked')">
       <svg
         class="w-10 h-10 md:w-8 md:h-8"
@@ -75,6 +78,7 @@
     </button>
     <button
       v-if="play"
+      value="Pauseer nummer"
       @click="$emit('clicked')">
       <svg
         class="w-10 h-10 md:w-8 md:h-8"
@@ -101,6 +105,7 @@
     <button
       v-if="arrow"
       :class="[rotate ? 'transform rotate-180' : '']"
+      :value="[rotate ? 'Volgende artikels' : 'Vorige artikels']"
       @click="$emit('clicked')">
       <svg
         class="w-5 h-5 md:w-4 md:h-4"

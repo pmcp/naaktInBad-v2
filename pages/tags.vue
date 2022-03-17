@@ -7,7 +7,10 @@
         placeholder="geef een zoekterm in"
         class="border-b flex-grow font-body text-mobileSize1 rounded-none "
         @input="findArticles">
-      <button class="text-mobileSize1 font-display font-bold relative ml-2 top-2">zoek</button>
+      <button
+        class="text-mobileSize1 font-display font-bold relative ml-2 top-2"
+        value="Zoek"
+      >zoek</button>
     </div>
 
     <div v-if="search != ''">

@@ -2,6 +2,7 @@
   <div class="flex justify-between pb-1 md:border-b md:mb-5">
     <div class="font-body"><span class="hidden md:inline text-mobileSize1 md:text-body">columns getagd met </span><span class="font-bold text-mobileSize1 md:text-body">#{{ activeTag.toLowerCase() }}</span></div>
     <button
+      value="Wis filter"
       class="font-display font-extrabold items-center flex hover:underline"
       @click="removeFilter">
       wis filter
