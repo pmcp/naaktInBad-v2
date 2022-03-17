@@ -70,7 +70,6 @@ export const mutations = {
   // },
   setArticles(state, articles) {
     state.articles = [...articles]
-    console.log('set articles', state.articles)
   },
   setSearchResults(state, articles) {
     state.searchResults = [...articles]
@@ -132,6 +131,7 @@ export const actions = {
     let articles = []
 
     if (intersected === 'bottom') {
+      console.log('here', intersected, id)
       //  add articles based on next articles of last item in articles
       //  Get last item in articles
       const lastArticle = state.articles.at(-1)
@@ -234,6 +234,7 @@ export const actions = {
     commit('setArticles', [])
     commit('setActiveTag', null)
     dispatch('getArticles', { id: null, intersected: null })
+    this.$router.push('/')
     window.scrollTo({
       top: 0
     })

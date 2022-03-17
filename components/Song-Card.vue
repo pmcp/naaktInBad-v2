@@ -2,8 +2,8 @@
   <div>
     <div
       v-if="article"
-      :class="[centered ? 'flex flex-col h-full items-center w-44 ' : ' gap-6 flex-auto']"
-      class="flex flex-wrap md:flex-nowrap">
+      :class="[centered ? 'flex flex-col h-full items-center w-44 ' : ' gap-6 flex-auto', fullpage ? '' : 'flex-wrap']"
+      class="flex md:flex-nowrap">
       <!-- Cover Image -->
       <img
         v-if="article.cover[0]"
@@ -13,7 +13,6 @@
         class="cursor-pointer w-40 h-40  md:w-24 md:h-24"
         @click="clickArticle(article)"
       >
-      <!-- Text -->
       <div
         class=" h-full order-last md:order-1 w-full relative"
         style="top:-2px">
@@ -96,11 +95,17 @@ export default {
       default() {
         return false
       }
+    },
+    fullpage: {
+      type: Boolean,
+      default() {
+        return false
+      }
     }
   },
   computed: {
     uploadCareURL() {
-      return `${this.article.cover[0]}/-/resize/32x320/`
+      return `${this.article.cover[0]}/-/resize/320x320/`
     }
   },
   methods: {

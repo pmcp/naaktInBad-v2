@@ -9,10 +9,9 @@
         :key="`navArticles_${i}`"
         class="flex-grow"
         centered
+        fullpage
         more
       />
-      <Observer
-        @intersect="intersected()"/>
     </div>
     <div
       v-else
