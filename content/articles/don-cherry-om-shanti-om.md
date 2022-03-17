@@ -8,7 +8,7 @@ cover:
 tags:
   - Spiritual jazz
   - Avant-folk
-audio: https://ucarecdn.com/efabcfde-a4c3-4e84-86e7-7b6d9ed28945/
+audio: https://ucarecdn.com/350657c1-890e-49db-9737-f41477a2f2fd/
 date: 2022-03-15T21:15:22.123Z
 url: https://blacksweat.bandcamp.com/album/om-shanti-om
 ---
