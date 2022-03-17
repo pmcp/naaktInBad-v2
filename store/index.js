@@ -230,6 +230,12 @@ export const actions = {
     commit('setActiveTag', null)
   },
 
+  goHome({ state, commit, dispatch }) {
+    commit('setArticles', [])
+    commit('setActiveTag', null)
+    dispatch('getArticles', { id: null, intersected: null })
+  },
+
   setActiveArticle({ state, commit, dispatch }, { article, more = false }) {
     // if (state.activeArticle) {
     //   if (state.activeArticle.slug === article.slug) return
@@ -261,20 +267,11 @@ export const actions = {
       //  No id, so get random song
       // Get length of articles
       // TODO: Get this out of here, calculate length on generate
-
-      const articles = await this.$content('articles')
-        .only(['slug'])
-        .fetch()
-        .catch(err => {
-          console.log(err)
-        })
+      const articles = state.navArticles
       const random = Math.floor(Math.random() * articles.length)
       dispatch('getArticles', { id: articles[random].slug, intersected: null })
-      // get song based on id
     } else {
       dispatch('getArticles', { id: null, intersected: null })
-
-      // Get song based on id
     }
     // Go to homepage
     await this.$router.push('/')

@@ -12,12 +12,12 @@
         class="md:w-1/2">
         <div class="md:fixed w-full md:w-112">
           <div class="w-full px-7 md:px-0  flex h-16 mb-2">
-            <nuxt-link
-              to="/"
+            <button
               class="relative md:pb-10 md:-mt-4 w-full"
+              @click="goHome"
             >
               <Logo />
-            </nuxt-link>
+            </button>
             <div class="md:hidden mt-4">
               <Icon
                 v-if="navOpen"
@@ -124,7 +124,7 @@ export default {
       this.showHeader = window.pageYOffset < this.lastScrollPosition
       this.lastScrollPosition = window.pageYOffset
     },
-    ...mapActions(['getArticles'])
+    ...mapActions(['getArticles', 'goHome'])
   }
 }
 </script>
