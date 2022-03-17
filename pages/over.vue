@@ -2,7 +2,7 @@
   <div class="mx-7 md:mx-0 pt-10 md:pt-0">
     <nuxt-content
       :document="page"
-      class=" font-body text-mobileSize1 md:text-body "
+      class="prose font-body text-mobileSize1 md:text-body "
     />
   </div>
 </template>

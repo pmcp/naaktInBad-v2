@@ -60,7 +60,7 @@ export const mutations = {
     state.activeArticle = val
   },
   setTags(state, val) {
-    state.tags = val
+    state.tags = val.sort()
   },
   setActiveTag(state, val) {
     state.activeTag = val
@@ -82,11 +82,10 @@ export const mutations = {
 export const actions = {
   async getArticles({ state, commit }, { id, intersected }) {
     const loadedArticles = state.articles.length
+    console.log(loadedArticles, id, intersected, state.activeTag)
     let articles = []
 
     if (intersected === 'bottom') {
-      //  add articles based on next articles of last item in articles
-      //  Get last item in articles
       let allSurround = []
       const lastArticle = state.articles.at(-1)
       const lastArticleId = lastArticle.slug
@@ -102,13 +101,29 @@ export const actions = {
             console.log(err)
           })
       } else {
-        allSurround = await this.$content('articles')
-          .sortBy('date', 'desc')
-          .surround(lastArticleId, { before: 0, after: 10 })
-          .fetch()
-          .catch(err => {
-            console.log(err)
-          })
+        //If id is set, this means we loaded a specific article. In that case, we want to add the first ten articles, without the one that is already loaded
+        if (id) {
+          const allSurroundUnfiltered = await this.$content('articles')
+            .sortBy('date', 'desc')
+            .limit(10)
+            .fetch()
+            .catch(err => {
+              console.log(err)
+            })
+          console.log(id)
+          allSurround = allSurroundUnfiltered.filter(
+            article => article.slug !== id
+          )
+        } else {
+          allSurround = await this.$content('articles')
+            .sortBy('date', 'desc')
+            .skip(loadedArticles)
+            .surround(lastArticleId, { before: 0, after: 10 })
+            .fetch()
+            .catch(err => {
+              console.log(err)
+            })
+        }
       }
       articles = [...allSurround.filter(a => a != null)]
     } else {
@@ -287,7 +302,8 @@ export const actions = {
       const random = Math.floor(Math.random() * articles.length)
       dispatch('getArticles', { id: articles[random].slug, intersected: null })
     } else {
-      dispatch('getArticles', { id: null, intersected: null })
+      console.log('here', id)
+      dispatch('getArticles', { id: id.id, intersected: null })
     }
     // Go to homepage
     await this.$router.push('/')
