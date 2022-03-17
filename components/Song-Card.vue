@@ -100,7 +100,7 @@ export default {
   },
   computed: {
     uploadCareURL() {
-      return `${this.article.cover[0]}/-/resize/200x200/`
+      return `${this.article.cover[0]}/-/resize/32x320/`
     }
   },
   methods: {
