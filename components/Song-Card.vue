@@ -8,7 +8,7 @@
       <img
         v-if="article.cover[0]"
         :alt="`Cover art for ${article.song} by ${article.artist}`"
-        :src="article.cover[0]"
+        :src="uploadCareURL"
         :class="[centered ? '' : '']"
         class="cursor-pointer w-40 h-40  md:w-24 md:h-24"
         @click="clickArticle(article)"
@@ -96,6 +96,11 @@ export default {
       default() {
         return false
       }
+    }
+  },
+  computed: {
+    uploadCareURL() {
+      return `${this.article.cover[0]}/-/resize/200x200/`
     }
   },
   methods: {

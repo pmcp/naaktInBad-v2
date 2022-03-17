@@ -64,13 +64,6 @@
 import { mapActions } from 'vuex'
 
 export default {
-  async asyncData({ $content }) {
-    const allArticles = await $content('articles').fetch()
-
-    return {
-      allArticles
-    }
-  },
   data() {
     return {
       navOpen: false,
@@ -114,7 +107,6 @@ export default {
   },
   methods: {
     onScroll() {
-      // if (document.documentElement.clientWidth > 768) return
       if (
         Math.abs(window.pageYOffset - this.lastScrollPosition) <
         this.scrollOffset
