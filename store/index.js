@@ -115,11 +115,14 @@ export const actions = {
       .fetch()
 
     const tags = articles.reduce((acc, article) => {
-      article.tags.forEach(tag => {
-        if (!acc.includes(tag)) {
-          acc.push(tag)
-        }
-      })
+      console.log(article.tags)
+      if(article.tags) {
+        article.tags.forEach(tag => {
+          if(!acc.includes(tag)) {
+            acc.push(tag)
+          }
+        })
+      }
       return acc
     }, [])
     commit('setTags', tags)
