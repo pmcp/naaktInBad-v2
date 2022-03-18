@@ -80,6 +80,50 @@ export const mutations = {
 }
 
 export const actions = {
+  async nuxtServerInit({ commit }) {
+    const navArticles = await this.$content('articles')
+      .sortBy('date', 'desc')
+      .only([
+        'cover',
+        'tags',
+        'label',
+        'song',
+        'release',
+        'slug',
+        'label',
+        'artist'
+      ])
+      .fetch()
+      .catch(err => {
+        console.log(err)
+      })
+    commit('setNavArticles', navArticles)
+
+    // Getting 10 first articles for content
+    const allArticles = await this.$content('articles')
+      .sortBy('date', 'desc')
+      .limit(10)
+      .fetch()
+      .catch(err => {
+        console.log(err)
+      })
+    commit('setArticles', allArticles)
+
+    // Get all tags
+    const articles = await this.$content('articles')
+      .only(['tags'])
+      .fetch()
+
+    const tags = articles.reduce((acc, article) => {
+      article.tags.forEach(tag => {
+        if (!acc.includes(tag)) {
+          acc.push(tag)
+        }
+      })
+      return acc
+    }, [])
+    commit('setTags', tags)
+  },
   async getArticles({ state, commit }, { id, intersected }) {
     const loadedArticles = state.articles.length
     console.log(loadedArticles, id, intersected, state.activeTag)
@@ -166,68 +210,6 @@ export const actions = {
     const allArticles = [...state.articles, ...articles]
     commit('setArticles', allArticles)
   },
-  async nuxtServerInit({ commit }) {
-    // Getting all articles for navigation.
-    // TODO: For now am just getting all articles.
-    const navArticles = await this.$content('articles')
-      .sortBy('date', 'desc')
-      .only([
-        'cover',
-        'tags',
-        'label',
-        'song',
-        'release',
-        'slug',
-        'label',
-        'artist'
-      ])
-      .fetch()
-      .catch(err => {
-        console.log(err)
-      })
-    commit('setNavArticles', navArticles)
-
-    // Getting 10 first articles for content
-    const allArticles = await this.$content('articles')
-      .sortBy('date', 'desc')
-      .limit(10)
-      .fetch()
-      .catch(err => {
-        console.log(err)
-      })
-    commit('setArticles', allArticles)
-
-    // Get all tags
-    const articles = await this.$content('articles')
-      .only(['tags'])
-      .fetch()
-
-    const tags = articles.reduce((acc, article) => {
-      article.tags.forEach(tag => {
-        if (!acc.includes(tag)) {
-          acc.push(tag)
-        }
-      })
-      return acc
-    }, [])
-    commit('setTags', tags)
-  },
-  // async getTags({ state, commit }) {
-  //   const articles = await this.$content('articles')
-  //     .only(['tags'])
-  //     .fetch()
-  //
-  //   const tags = articles.reduce((acc, article) => {
-  //     article.tags.forEach(tag => {
-  //       if (!acc.includes(tag)) {
-  //         acc.push(tag)
-  //       }
-  //     })
-  //     return acc
-  //   }, [])
-  //
-  //   commit('setTags', tags)
-  // },
 
   async findArticles({ state, commit }, el) {
     const searchString = el.target.value
