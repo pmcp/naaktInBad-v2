@@ -1,3 +1,42 @@
 todos: >-
   ## TODO
 
+
+  **Algemeen**
+
+
+  * favicon veranderen
+
+
+
+
+  **Home**
+
+
+  * de columns staan omgekeerd, kunnen ze in deze volgorde staan:
+
+  *
+
+
+
+
+  **Alle columns**
+
+
+  * tonen dat alles aanklikbaar is (onderlijnen bij hover?)
+
+
+
+
+  **Een gok**
+
+
+  * bij aanklikken zorgen dat de gegokte column helemaal van het begin getoond wordt (nu blijf je bvb midden in de tekstkolom staan, als je al naar beneden was gescrolld)
+
+
+
+
+  **Tags**
+
+
+  * iets meer witruimte tussen de kolommen
