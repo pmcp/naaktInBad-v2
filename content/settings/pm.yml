@@ -8,6 +8,9 @@ todos: >-
   * favicon veranderen
 
 
+  ### ***DESKTOP***
+
+
   **Home**
 
 
@@ -39,14 +42,10 @@ todos: >-
   12. José Mauro (onderste)
 
 
-
-
   **Alle columns**
 
 
   * tonen dat alles aanklikbaar is (onderlijnen bij hover?)
-
-
 
 
   **Een gok**
@@ -55,9 +54,44 @@ todos: >-
   * bij aanklikken zorgen dat de gegokte column helemaal van het begin getoond wordt (nu blijf je bvb midden in de tekstkolom staan, als je al naar beneden was gescrolld)
 
 
+  **Tags**
+
+
+  * iets meer witruimte tussen de kolommen
+
+
+
+
+
+
+  ### ***Mobiel***
+
+
+  **Home**
+
+
+  * de column staat uitgevuld over de volledige breedte. Dat geeft goed op desktop, maar minder op mobiel. Mag uitgezet worden (zowel op desk als mobiel)
+
+  * Artiest, release & label (jaar) 
+
+    * Iets minder witruimte tussen de drie 
+    * Tekst mag ook een klein beetje groter.
+  * Header: 
+
+    * witruimte boven logo NIB is goed, witruimte eronder even groot. 
+    * Hamburger uitlijnen op midden logo NIB. 
+
+  **Menu**
+
+
+  * alle Columns zonder hoofdletter -> alle columns (+ lijkt terug in extra bold te staan, of hadden we dat zo afgesproken vorige keer?)
+
+  * kan de X eens je in het menu zit even groot als het symbool van hamburger?
+
+
 
 
   **Tags**
 
 
-  * iets meer witruimte tussen de kolommen
+  * één van de tags is onderlijnd, mag gewoon zoals de rest staan
