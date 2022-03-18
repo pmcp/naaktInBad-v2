@@ -115,10 +115,9 @@ export const actions = {
       .fetch()
 
     const tags = articles.reduce((acc, article) => {
-      console.log(article.tags)
-      if(article.tags) {
+      if (article.tags) {
         article.tags.forEach(tag => {
-          if(!acc.includes(tag)) {
+          if (!acc.includes(tag)) {
             acc.push(tag)
           }
         })
