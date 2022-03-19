@@ -8,7 +8,7 @@ cover:
 tags:
   - Abstract hip-hop
 audio: https://ucarecdn.com/5993f2f9-ebb2-44e9-9c39-b74935a6b014/
-date: 2022-03-16T18:25:43.880Z
+date: 2022-03-12T18:25:43.880Z
 url: https://www.discogs.com/release/97037-Dr-Octagon-Dr-Octagon
 ---
 Dr Octagon is een fictief personage, een gynaecoloog-chirurg van een andere planeet. Het heerschap komt uit de koker van Kool Keith, die via hem uiting geeft aan zijn meest donkere fantasieën.

@@ -9,7 +9,7 @@ tags:
   - Indie pop
   - Adult contemporary
 audio: https://ucarecdn.com/008d2c82-52d9-4db8-92e5-971fd3ec2118/
-date: 2022-03-16T18:16:17.460Z
+date: 2022-03-14T18:16:17.460Z
 url: https://nautic.bandcamp.com/album/navy-blue
 ---
 Nathan Jenkins ofte Bullion houdt van pop. In de discografie van zijn label DEEK vind je een resem compilaties van pop covers waaronder *Extraordinary Renditions*, met Gwilym Gold’s heerlijk trage versie van D’Angelo’s "The Root". Nog een aanrader: de gigantische [Pop-not-slop playlist](http://www.deekrecordings.co.uk/pop-not-slop/), ideaal om te verkennen wat nu juist onder pop verstaan wordt en wat het allemaal zou kunnen zijn. 
