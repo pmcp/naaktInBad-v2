@@ -36,7 +36,7 @@
       <div
         v-for="letter in tagsOrdened"
         :key="`letter-${letter.group}`"
-        class="w-1/3 md:w-1/4 mb-12 px-2">
+        class="w-1/3 mb-12 px-2">
         <h2 class="text-xl font-display font-bold">{{ letter.group }}</h2>
         <div
           v-for="tag in letter.children"
