@@ -9,7 +9,7 @@ tags:
   - Ambient
   - Field recordings
 audio: https://ucarecdn.com/9d7637aa-1161-4b60-bc68-15080f6819a8/
-date: 2022-03-16T18:42:47.418Z
+date: 2022-03-07T18:42:47.418Z
 url: https://goodmorningtapes.bandcamp.com/album/gmt48-ben-bondy-camo-2
 ---
 In gedachten verzonken ergens in het zuiden. Een vogel zien vliegen en hem een herinnering meegeven. Een vorig leven richting horizon. 
