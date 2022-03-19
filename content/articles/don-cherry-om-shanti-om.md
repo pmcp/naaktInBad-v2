@@ -9,7 +9,7 @@ tags:
   - Spiritual jazz
   - Avant-folk
 audio: https://ucarecdn.com/350657c1-890e-49db-9737-f41477a2f2fd/
-date: 2022-03-15T21:15:22.123Z
+date: 2022-03-17T21:15:22.123Z
 url: https://blacksweat.bandcamp.com/album/om-shanti-om
 ---
 Het kostte me wat tijd om aan Don Cherry’s werk te beginnen. Ik zag hem als één van die jazz-reuzen met een eindeloze discografie, waarover de mensen die er wel naar luisteren steeds irritant overdreven enthousiast zijn. Dat resulteerde in een bizzare apathie jegens de Organic Music maestro; een proces dat trouwens, jammer genoeg, geen geïsoleerd geval is. Aldus, muziekaanprijzers: hoog tijd om jullie strategieën te herdenken!
