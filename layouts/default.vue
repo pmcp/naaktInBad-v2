@@ -18,12 +18,12 @@
             >
               <Logo />
             </button>
-            <div class="md:hidden mt-4">
+            <div class="md:hidden mt-7">
               <Icon
                 v-if="navOpen"
                 close
                 class=" relative"
-                style="padding-top:0.23rem;left:-0.1rem;width:.9rem;height:.9rem;"
+                style="padding-top:0.4rem;left:0.8rem;width:1.8rem;height:.9rem;"
                 @clicked="navOpen = false"/>
               <Icon
                 v-if="!navOpen"
