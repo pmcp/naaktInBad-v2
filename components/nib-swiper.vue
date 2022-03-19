@@ -67,7 +67,7 @@ export default {
           slidesPerView: 3,
           spaceBetween: 40
         },
-        '1024': {
+        '1176': {
           slidesPerView: 5,
           spaceBetween: 50
         }

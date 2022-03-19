@@ -1,16 +1,16 @@
 <template>
   <div>
-
-    <div class="flex flex-col md:flex-row flex-wrap md:mx-32">
+    <dev/>
+    <div class="flex flex-col xl:flex-row flex-wrap md:items-center xl:items-start xl:mx-32">
 
       <!-- Navigation in desktop view -->
       <Navigation
-        class="bg-white hidden md:flex sticky w-full h-48 pt-16 top-0 z-20 md:mb-1"
+        class="bg-white hidden md:flex sticky w-full h-32 xl:h-48 pt-16 md:pt-12 top-0 z-20 md:w-112 xl:w-full"
       />
       <div
         :class="navClasses"
-        class="md:w-1/2">
-        <div class="md:fixed w-full md:w-112">
+        class="w-full md:w-112 xl:w-1/2 md:mb-7">
+        <div class="xl:fixed w-full xl:w-112">
           <div class="w-full px-7 md:px-0  flex h-16 mb-4">
             <button
               class="relative md:pb-10 md:-mt-4 w-full"
@@ -36,7 +36,7 @@
 
           <div class=" border-b md:border-b-0"/>
           <Player
-            class="fixed bottom-0 md:relative bottom-0 border-t md:border-t-0 z-40 bg-white px-7 md:px-0 md:mt-5"
+            class="fixed bottom-0 md:relative bottom-0 border-t md:border-t-0 z-40 bg-white px-7 md:px-0 md:mt-8 md:mb-5 xl:mt-5"
             style="width:inherit"
           />
           <div
@@ -49,14 +49,14 @@
           </div>
         </div>
       </div>
-      <main class="md:w-1/2 flex md:justify-end">
+      <main class="md:w-112 xl:w-1/2 flex md:justify-end">
         <nuxt
           class="relative md:w-112" />
       </main>
     </div>
     <More
       v-if="$nuxt.$route.name === 'index'"
-      class="hidden md:block fixed bottom-0 z-10 w-full"
+      class="hidden md:block fixed bottom-0 z-10 w-full md:bg-white"
     />
   </div>
 </template>
