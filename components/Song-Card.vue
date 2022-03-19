@@ -18,16 +18,16 @@
         style="top:-2px">
         <div
           :class="[centered ? 'text-center mt-6' : '']"
-          class="h-full flex flex-col justify-start md:leading-5">
+          class="h-full flex flex-col justify-start leading-5">
           <div :class="[centered ? 'h-28 cursor-pointer' : '']">
             <div
-              class="font-display font-extrabold text-base md:leading-5 group-hover:underline"
+              class="font-display font-extrabold text-lg leading-5 group-hover:underline"
             >{{ article.artist }}</div>
             <div
-              class="font-display text-base md:leading-5 group-hover:underline"
+              class="font-display text-lg leading-5 group-hover:underline"
             >{{ article.song }}</div>
             <div
-              class="font-display italic mb-2 text-base md:leading-5"
+              class="font-display italic mb-2 text-lg leading-5"
             >{{ article.label }} ({{ article.release }})</div>
           </div>
           <div class="leading-4 pt-2 pb-4">
@@ -35,7 +35,7 @@
             <span
               v-for="(t, key) in article.tags"
               :key="`tag-${key}`"
-              class="cursor-pointer font-body italic hover:underline text-mobileSize2"
+              class="cursor-pointer font-body italic hover:underline text-lg"
               @click="selectTag(t)"
             >
               #{{ t }}
