@@ -11,7 +11,7 @@
         :class="navClasses"
         class="md:w-1/2">
         <div class="md:fixed w-full md:w-112">
-          <div class="w-full px-7 md:px-0  flex h-16 mb-2">
+          <div class="w-full px-7 md:px-0  flex h-16 mb-4">
             <button
               class="relative md:pb-10 md:-mt-4 w-full"
               @click="goHome"
