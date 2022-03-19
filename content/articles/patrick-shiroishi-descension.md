@@ -9,7 +9,7 @@ tags:
   - Free improvisation
   - Noise
 audio: https://ucarecdn.com/9662a986-4ec3-43a2-9693-aa8777e9fbcb/
-date: 2022-03-16T18:48:50.397Z
+date: 2022-03-06T18:48:50.397Z
 url: https://patrickshiroishi.bandcamp.com/album/descension-2
 ---
 Met feedback en korrelige, abstracte arpeggio's bouwt Shiroishi een delicaat dreigende doch bijzonder onheilspellende opening. Na enkele minuten doorboort een hartverscheurende saxofoonlijn de klankenbrij: eerst blaast ze alles weg - ik lig voor een eerste keer tegen het canvas - vervolgens neemt ze wat texturen met zich mee, om uit te monden in een wiegende elegie. Deze toon wordt aangehouden op de A-kant: een meedogenloze combinatie van pijn en schoonheid. De B-kant van *Descension* opent agressief, lawaaierig en chaotisch, en schopt je brutaal uit het zopas bereikte evenwicht. De grandioze afsluiter van het album biedt alsnog troost: een met stem opgebouwde hymne zalft en heelt.
