@@ -1,6 +1,6 @@
 <template>
   <div>
-    <dev/>
+    <!--    <dev/>-->
     <div class="flex flex-col xl:flex-row flex-wrap md:items-center xl:items-start xl:mx-32">
 
       <!-- Navigation in desktop view -->
