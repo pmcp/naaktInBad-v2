@@ -8,7 +8,7 @@ cover:
 tags:
   - Hypnagogic pop
 audio: https://ucarecdn.com/509b1138-3904-48ee-8f6d-708978cd1f5f/
-date: 2022-03-15T20:58:06.150Z
+date: 2022-03-19T09:22:51.979Z
 url: https://cindylee.bandcamp.com/album/whats-tonight-to-eternity
 ---
 Binnen een afgebakend thema blijven werkt. Neem nu de Italiaanse keuken: dé veilige keuze voor zowat elke culinaire context, van een luie doordeweekse maaltijd tot pseudocreatief gepronk. Eerlijk is eerlijk, het is geen klein bier om zo’n reputatie op te bouwen. En we gaan niet flauw doen: het potentieel om met een handvol ingrediënten voor smaakbombardementen te zorgen is ronduit indrukwekkend.
