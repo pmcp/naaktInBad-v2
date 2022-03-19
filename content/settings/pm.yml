@@ -2,19 +2,11 @@ todos: >-
   ## TODO
 
 
-  **Algemeen**
-
-
-  * favicon veranderen
-
 
   ### ***DESKTOP***
 
 
   **Alle columns**
-
-
-  * tonen dat alles aanklikbaar is (onderlijnen bij hover?)
 
 
   **Een gok**
@@ -37,14 +29,14 @@ todos: >-
 
   * de column staat uitgevuld over de volledige breedte. Dat geeft goed op desktop, maar minder op mobiel. Mag uitgezet worden (zowel op desk als mobiel)
 
-  * Artiest, release & label (jaar) 
+  * Artiest, release & label (jaar)
 
-    * Iets minder witruimte tussen de drie 
+    * Iets minder witruimte tussen de drie
     * Tekst mag ook een klein beetje groter.
-  * Header: 
+  * Header:
 
-    * witruimte boven logo NIB is goed, witruimte eronder even groot. 
-    * Hamburger uitlijnen op midden logo NIB. 
+    * witruimte boven logo NIB is goed, witruimte eronder even groot.
+    * Hamburger uitlijnen op midden logo NIB.
 
   **Menu**
 

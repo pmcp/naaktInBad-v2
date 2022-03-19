@@ -2,7 +2,7 @@
   <div>
     <div
       v-if="article"
-      :class="[centered ? 'flex flex-col h-full items-center w-44 ' : ' gap-6 flex-auto', fullpage ? '' : 'flex-wrap']"
+      :class="[centered ? 'flex flex-col h-full items-center w-44 group' : 'gap-6 flex-auto', fullpage ? '' : 'flex-wrap']"
       class="flex md:flex-nowrap">
       <!-- Cover Image -->
       <img
@@ -19,12 +19,12 @@
         <div
           :class="[centered ? 'text-center mt-6' : '']"
           class="h-full flex flex-col justify-start md:leading-5">
-          <div :class="[centered ? 'h-28' : '']">
+          <div :class="[centered ? 'h-28 cursor-pointer' : '']">
             <div
-              class="font-display font-extrabold text-base md:leading-5"
+              class="font-display font-extrabold text-base md:leading-5 group-hover:underline"
             >{{ article.artist }}</div>
             <div
-              class="font-display text-base md:leading-5"
+              class="font-display text-base md:leading-5 group-hover:underline"
             >{{ article.song }}</div>
             <div
               class="font-display italic mb-2 text-base md:leading-5"
