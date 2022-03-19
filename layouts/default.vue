@@ -5,11 +5,11 @@
 
       <!-- Navigation in desktop view -->
       <Navigation
-        class="bg-white hidden md:flex sticky w-full h-32 xl:h-48 pt-16 md:pt-12 top-0 z-20 md:w-112 xl:w-full"
+        class="bg-white hidden md:flex sticky w-full h-20 md:mb-8 xl:h-48 pt-16 md:pt-12 top-0 z-20 md:w-112 xl:w-full md:z-50"
       />
       <div
         :class="navClasses"
-        class="w-full md:w-112 xl:w-1/2 md:mb-7">
+        class="w-full md:w-112 xl:w-1/2 md:pb-7 xl:mb-7">
         <div class="xl:fixed w-full xl:w-112">
           <div class="w-full px-7 md:px-0  flex h-16 mb-4">
             <button
@@ -36,7 +36,7 @@
 
           <div class=" border-b md:border-b-0"/>
           <Player
-            class="fixed bottom-0 md:relative bottom-0 border-t md:border-t-0 z-40 bg-white px-7 md:px-0 md:mt-8 md:mb-5 xl:mt-5"
+            class="fixed bottom-0 md:relative bottom-0 border-t md:border-t-0 z-40 bg-white px-7 md:px-0 md:mt-8 md:mb-0 xl:mt-5 md:top-0 bg-white"
             style="width:inherit"
           />
           <div
@@ -79,9 +79,9 @@ export default {
     navClasses() {
       if (this.navOpen) return 'fixed w-full h-full bg-white z-40 '
       if (this.showHeader) {
-        return 'sticky z-40 md:z-0 bg-white top-0 '
+        return 'sticky z-40 xl:z-0 bg-white top-0 '
       } else {
-        return 'sticky z-40 md:z-0 bg-white -top-24 '
+        return 'sticky z-40 xl:z-0 bg-white -top-24 '
       }
     }
   },
@@ -101,6 +101,9 @@ export default {
     window.removeEventListener('scroll', this.onScroll)
   },
   mounted() {
+    // TODO: recheck on resize
+    console.log(window.innerWidth)
+    if (window.innerWidth > 768) return
     this.lastScrollPosition = window.pageYOffset
     window.addEventListener('scroll', this.onScroll)
     this.getArticles({ id: null, intersected: null })

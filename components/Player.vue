@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-white">
     <div
       v-if="article"
       class="flex justify-end"
