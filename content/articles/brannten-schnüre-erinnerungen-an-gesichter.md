@@ -16,12 +16,12 @@ Brannten Schnüre moet zowat één van mijn zwaarste band crushes van de laatste
 
 Op het deken is een grote draaimolen geborduurd, waarop een eindeloos aantal andere, kleinere draaimolens in de omgekeerde zin staan te draaien. Op de allerkleinste molen, een monoculaire verrekijker, waardoor volgende miniaturen te zien zijn:
 
-\- Een meer, warm en donker
+\- een meer, warm en donker
 
-\- De Grundtvigskerk in Kopenhagen, maar dan vier keer zo klein als haar ware grootte
+\- de Grundtvigskerk in Kopenhagen, maar dan vier keer zo klein als haar ware grootte
 
-\- Tevreden arbeiders, haring etend op een stoeprand
+\- tevreden arbeiders, haring etend op een stoeprand
 
-\- Bladerloze bomen op een milde ochtend
+\- bladerloze bomen op een milde ochtend
 
-\- Een verlaten eg, niet verroest
+\- een verlaten eg, niet verroest
