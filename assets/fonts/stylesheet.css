@@ -65,7 +65,7 @@
     font-family: 'Americana Std';
     src: url('AmericanaStd-ExtraBold.woff2') format('woff2'),
         url('AmericanaStd-ExtraBold.woff') format('woff');
-    font-weight: 700;
+    font-weight: extrabold;
     font-style: normal;
     font-display: swap;
 }

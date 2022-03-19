@@ -25,7 +25,7 @@
         <nuxt-link
           to="alles"
           class="font-display font-bold hover:underline text-specificFont1">
-          alle Columns
+          alle columns
         </nuxt-link>
       </div>
 
