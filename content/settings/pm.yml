@@ -1,14 +1,21 @@
 todos: >-
-  ## TODO
+  **DESKTOP**
+
+
+  * Algemeen
+
+    * De knoppen (een gok, over, etc...) stonden vroeger in vet, terwijl ze nu regular staan. Is dat omdat dat op mobiel aangepast is? Want op desktop geeft vet mooier, terwijl op mobiel regular het mooist is? Is een scenario met verschillende tekstgrootte tussen desktop/mobiel mogelijk? Of niet? 
+    * Kan de naam naast het favicon zo geschreven worden: "naakt in bad"
+  * Kan de grootte van de broodtekst op schermen rond 13" (dus van de columns in kwestie, of van de tags, of van de tekst bij over) wat 1 of 2 punten groter gezet worden? 't Is nu wat klein.
+
+  * Ik heb het gevoel dat, na een klik op "een gok", logo en player verdwijnen. Kan dat?
 
 
 
-  ### ***Mobiel***
+
+  **MOBIEL**
 
 
+  * Alle columns: bij klikken op één van de columns in de rij, blijft de rij zichtbaar. In de achtergrond zie je dan de column in kwestie. Op desktop is dat geen probleem, maar op mobiel lijkt er niets te veranderen (omdat je in het menu "alle columns" blijft). Eventuele oplossing: bij klik op een column het menu afsluiten en naar de tekstkolom gaan, naar de column in kwestie (mag zowel op desk als op mobiel). Als dat een oplossing is he? 
 
-  **Tags**
-
-
-  * één van de tags is onderlijnd, mag gewoon zoals de rest staan
--> Dit lijkt een iOS bug, moet ik onderzoeken.
+  * Na klik op logo NIB bovenaan, bvb om terug te gaan naar home nadat je de pagina "over" las, blijft NIB onderlijnd. Kan dat afgezet worden?
