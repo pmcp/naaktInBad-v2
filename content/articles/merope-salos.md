@@ -14,4 +14,4 @@ url: https://stroomtv.bandcamp.com/album/salos
 ---
 Op een zinderende herfstmiddag verdwaalde een man hopeloos in het cederwoud. Het leek of het bos hem aanhoudend beetnam, van gedaante veranderend zodra hij het de rug toekeerde. Hij zag er de wonderlijkste dingen: een dozijn stipjes op een wilgenblad vormden de familienaam van zijn grootvader, een konijnenhol bleek een vergeten rommelkamer te zijn, een groep braamstruiken vormde een namaakuitspansel en een zilverberk speelde al sissend het volkslied van zijn geboortestreek, simultaan verse hars afscheidend. Toen de geluiden van de avond klonken, bood een berg veenmos hem het allerzachtste bed aan.
 
-Meropes *Salos* is een ongrijpbaar album dat binnen eenzelfde luisterbeurt nooit al zijn geheimen prijsgeeft. Litouwse folk- en koormelodiën bouwen iets onaards, iets modern-pastoraals, iets vredig-tactiels. Een onversneden geschenk dat blijft geven.
+Merope's *Salos* is een ongrijpbaar album dat binnen eenzelfde luisterbeurt nooit al zijn geheimen prijsgeeft. Litouwse folk- en koormelodiën bouwen iets onaards, iets modern-pastoraals, iets vredig-tactiels. Een onversneden geschenk dat blijft geven.
