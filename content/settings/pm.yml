@@ -2,13 +2,10 @@ todos: >-
   **DESKTOP**
 
 
-  * Algemeen
-
-
   * Kan de grootte van de broodtekst op schermen rond 13" (dus van de columns in kwestie, of van de   tags, of van de tekst bij over) wat 1 of 2 punten groter gezet worden? 't Is nu wat klein.
 -> Moeten we effe samen bekijken mssn (inch is een grootte om scherm uit te drukken, zegt iets over resolutie, dus moeten effe bespreken op welke (pixel)breedte we spreken.
   * Ik heb het gevoel dat, na een klik op "een gok", logo en player verdwijnen. Kan dat?
 -> Dat ondervind ik niet, heb jij het nog?
 
   * Alle columns werkt goed op mac (safari, chrome, firefox), op windows (edge) soms problemen dat columns niet laden
-
+-> Wat getest op windows + edge, bug niet gevonden, kan je iets preciesere info doorgeven? (welke windows, welke edge versie?)
