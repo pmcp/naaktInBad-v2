@@ -9,8 +9,8 @@
         :key="`navigation_${i}`"
         class="pb-4 text-specificFont1">
         <button
-          v-if="navItem.path == 'ontdek'"
-          :class="[(navItem.path == $nuxt.$route.name) ? 'underline' : '']"
+          v-if="navItem.path === 'ontdek'"
+          :class="[(navItem.path === $nuxt.$route.name) ? 'underline' : '']"
           @click="closeAndGo()">
           <span class="font-display font-bold hover:underline text-transparent bg-clip-text text-gradient bg-gradient-to-r from-pink to-orange">{{ navItem.title }}</span>
         </button>
@@ -38,19 +38,19 @@
         v-for="(navItem, i) in navigation"
         :key="`navigation_${i}`">
         <button
-          v-if="navItem.path == 'ontdek'"
-          :class="[(navItem.path == $nuxt.$route.name) ? 'underline' : '']"
+          v-if="navItem.path === 'ontdek'"
+          :class="[(navItem.path === $nuxt.$route.name) ? 'underline' : '']"
           @click="getArticle(null)"
         >
           <span
             :class="[(discovery && $nuxt.$route.path === '/') ? 'text-transparent text-gradient' : '']"
-            class="font-display font-extrabold hover:text-transparent bg-clip-text hover:text-gradient bg-gradient-to-r from-pink to-orange">{{ navItem.title }}</span>
+            class="font-display hover:text-transparent bg-clip-text hover:text-gradient bg-gradient-to-r from-pink to-orange">{{ navItem.title }}</span>
         </button>
         <nuxt-link
           v-else
           :to="navItem.path"
-          :class="[(navItem.path == $nuxt.$route.name) ? 'underline' : '']"
-          class="font-display font-extrabold hover:underline"
+          :class="[(navItem.path === $nuxt.$route.name) ? 'underline' : '']"
+          class="font-display hover:underline"
         >
           {{ navItem.title }}
         </nuxt-link>
