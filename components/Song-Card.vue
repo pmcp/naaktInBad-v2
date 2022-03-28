@@ -30,11 +30,12 @@
               class="font-display italic mb-2 text-lg leading-5"
             >{{ article.label }} ({{ article.release }})</div>
           </div>
-          <div class="leading-4 pt-2 pb-4">
+          <div class="pt-2 pb-4">
             <!-- TODO: Shouldn't do class cursor-pointer -->
             <span
               v-for="(t, key) in article.tags"
               :key="`tag-${key}`"
+              :class="[centered ? 'leading-3' : 'leading-4']"
               class="cursor-pointer font-body italic hover:underline text-lg"
               @click="selectTag(t)"
             >
