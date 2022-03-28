@@ -163,7 +163,6 @@ export const actions = {
         } else {
           allSurround = await this.$content('articles')
             .sortBy('date', 'desc')
-            .skip(loadedArticles)
             .surround(lastArticleId, { before: 0, after: 10 })
             .fetch()
             .catch(err => {
