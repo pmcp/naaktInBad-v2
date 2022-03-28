@@ -16,7 +16,7 @@
     <!--    </svg>-->
 
     <svg
-      class=" absolute top-0 left-0 opacity-100 border-b border-white group-hover:border-black h-full w-full"
+      class=" absolute top-0 left-0 opacity-100 border-b border-white xl:group-hover:border-black h-full w-full"
       width="128"
       height="8"
       viewBox="0 0 128 8"

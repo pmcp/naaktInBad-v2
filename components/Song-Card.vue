@@ -111,9 +111,14 @@ export default {
   },
   methods: {
     clickArticle(article) {
+      console.log(article)
+      if (this.fullpage) {
+        this.getArticle(article.slug)
+        return
+      }
       this.setActiveArticle({ article, more: this.more })
     },
-    ...mapActions(['setActiveArticle', 'selectTag'])
+    ...mapActions(['setActiveArticle', 'selectTag', 'getArticle'])
   }
 }
 </script>

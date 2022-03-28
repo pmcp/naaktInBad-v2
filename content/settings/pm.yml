@@ -12,10 +12,3 @@ todos: >-
 
   * Alle columns werkt goed op mac (safari, chrome, firefox), op windows (edge) soms problemen dat columns niet laden
 
-
-  **MOBIEL**
-
-
-  * Alle columns: bij klikken op één van de columns in de rij, blijft de rij zichtbaar. In de achtergrond zie je dan de column in kwestie. Op desktop is dat geen probleem, maar op mobiel lijkt er niets te veranderen (omdat je in het menu "alle columns" blijft). Eventuele oplossing: bij klik op een column het menu afsluiten en naar de tekstkolom gaan, naar de column in kwestie (mag zowel op desk als op mobiel). Als dat een oplossing is he?
-
-  * Na klik op logo NIB bovenaan, bvb om terug te gaan naar home nadat je de pagina "over" las, blijft NIB onderlijnd. Kan dat afgezet worden?

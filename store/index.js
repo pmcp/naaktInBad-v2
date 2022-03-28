@@ -128,7 +128,6 @@ export const actions = {
   },
   async getArticles({ state, commit }, { id, intersected }) {
     const loadedArticles = state.articles.length
-    console.log(loadedArticles, id, intersected, state.activeTag)
     let articles = []
 
     if (intersected === 'bottom') {
@@ -156,7 +155,6 @@ export const actions = {
             .catch(err => {
               console.log(err)
             })
-          console.log(id)
           allSurround = allSurroundUnfiltered.filter(
             article => article.slug !== id
           )
@@ -214,12 +212,9 @@ export const actions = {
 
   async findArticles({ state, commit }, el) {
     const searchString = el.target.value
-    console.log(`Searching for ${searchString}`)
     const results = await this.$content('articles')
       .search(searchString)
       .fetch()
-    console.log(`Got search results`, results)
-
     // Going to get all instances where this shows up)
     commit('setSearchResults', results)
   },
@@ -251,9 +246,6 @@ export const actions = {
   },
 
   setActiveArticle({ state, commit, dispatch }, { article, more = false }) {
-    // if (state.activeArticle) {
-    //   if (state.activeArticle.slug === article.slug) return
-    // }
     // Scroll to article
     if (more) {
       const element = document.getElementById(article.slug)
@@ -285,8 +277,7 @@ export const actions = {
       const random = Math.floor(Math.random() * articles.length)
       dispatch('getArticles', { id: articles[random].slug, intersected: null })
     } else {
-      console.log('here', id)
-      dispatch('getArticles', { id: id.id, intersected: null })
+      dispatch('getArticles', { id: id, intersected: null })
     }
     // Go to homepage
     await this.$router.push('/')

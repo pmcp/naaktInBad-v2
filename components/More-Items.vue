@@ -10,7 +10,6 @@
         class="flex-grow"
         centered
         fullpage
-        more
       />
     </div>
     <div

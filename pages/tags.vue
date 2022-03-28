@@ -18,7 +18,7 @@
         v-for="(s, k) in searchResults"
         :key="`searchResult-${k}`"
         class="mb-5 cursor-pointer hover:underline"
-        @click="getArticle({ id: s.slug })"
+        @click="getArticle(s.slug )"
       >
         <div class="font-bold font-display text-xl">{{ s.artist }}</div>
         <div class="font-display text-xl">{{ s.song }}</div>
