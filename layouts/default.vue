@@ -79,9 +79,9 @@ export default {
     navClasses() {
       if (this.navOpen) return 'fixed w-full h-full bg-white z-40 '
       if (this.showHeader) {
-        return 'sticky z-40 xl:z-0 bg-white top-0 '
+        return 'sticky xl:static z-40 xl:z-0 bg-white top-0 '
       } else {
-        return 'sticky z-40 xl:z-0 bg-white -top-24 '
+        return 'sticky xl:static z-40 xl:z-0 bg-white -top-24 '
       }
     }
   },
