@@ -242,9 +242,9 @@ export const actions = {
     this.$router.push('/')
     console.log('gonna scroll to top')
     // document.scrollingElement.scrollTop
-    window.scrollTo({
-      top: 0
-    })
+    // window.scrollTo({
+    //   top: 0
+    // })
     console.log('scrolled to top')
   },
 
