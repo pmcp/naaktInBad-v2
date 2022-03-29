@@ -14,6 +14,8 @@ todos: >-
   **Mobiel**
 
 
+  * Kan artiest+release+label+jaar nog iets groter (we kunnen gerust live doen zodat ge niet te lang moet zitten mozen)
+
   * Idem opmerking ivm waar klik op een gok, als ge lager staat in de kolom
 
   * Op alle pagina's lijkt onderaan een horizontale lijn te staan, kan die weg? (geen erg als die daardoor ook weg is op desktop, maar mag ook blijven staan daar als dat makkelijker werkt voor u. Geen drama)
@@ -21,5 +23,4 @@ todos: >-
   * Alle columns: 
 
     * er lijkt minder padding te zijn aan de linker- dan aan de rechterkant. Sowieso lijkt het wat nipt, de padding (normaal komt die overeen met de linkerkant van het NIB logo en de rechterkant van het hamburger icoon)
-
-    \- Er worden nog steeds maar 10 columns getoond ipv 12 (José Mauro & Patrick Shiroishi staan er niet bij). Op desktop is dit probleem er niet.
+    * Er worden nog steeds maar 10 columns getoond ipv 12 (José Mauro & Patrick Shiroishi staan er niet bij). Op desktop is dit probleem er niet.
