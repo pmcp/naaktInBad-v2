@@ -19,4 +19,4 @@ Wat de oorsprong ook moge zijn, vitello tonnato overdondert doordat het verder g
 
 Het album is een vreemdsoortig amalgaam van mierenzoete arrangementen (denk Richard Hawley), synths die niet zouden misstaan in een actiefilm uit de jaren ’80 (denk *Escape From New York*) en noise. Alle begrip als zo’n cocktail vrij random klinkt, zeker na een weinig relevante intro over Italiaans eten. Maar hoe willekeurig de opzet ook mag lijken: het resultaat is fenomenaal. 
 
-*What’s Tonight To Eternity* is een hopeloos romantisch album, één en al intense schoonheid. Een beetje als een roos die op de dansvloer eindigde: platgetrapt, besmeurd maar toch nog ietwat rood oplichtend. Ernaar kijken is je hart voelen breken.
+*What’s Tonight To Eternity* is een hopeloos romantisch album, één en al intense schoonheid. Een beetje als een roos die op een dansvloer eindigde: platgetrapt, besmeurd maar toch nog ietwat rood oplichtend. Ernaar kijken is je hart voelen breken.
