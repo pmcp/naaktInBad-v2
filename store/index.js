@@ -240,9 +240,11 @@ export const actions = {
     commit('setActiveTag', null)
     dispatch('getArticles', { id: null, intersected: null })
     this.$router.push('/')
-    window.scrollTo({
-      top: 0
-    })
+    document.scrollingElement.scrollTop
+
+    // window.scrollTo({
+    //   top: 0
+    // })
   },
 
   setActiveArticle({ state, commit, dispatch }, { article, more = false }) {
