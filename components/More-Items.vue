@@ -2,12 +2,11 @@
   <div>
     <div
       v-if="fullpage"
-      class="flex gap-3 flex-wrap">
+      class="flex gap-3 flex-wrap justify-between gap-3">
       <Song-Card
         v-for="(article, i) in articles"
         :article="article"
         :key="`navArticles_${i}`"
-        class="flex-grow"
         centered
         fullpage
       />
