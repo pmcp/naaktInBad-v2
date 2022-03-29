@@ -4,7 +4,7 @@
       <button
         v-if="!open"
         value="Toon alle columns"
-        class="font-display font-bold xl:ml-32 hover:underline"
+        class="font-display xl:ml-32 hover:underline"
         @click="toggleMore"
       >alle columns</button>
     </div>
