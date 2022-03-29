@@ -102,7 +102,6 @@ export default {
   },
   mounted() {
     // TODO: recheck on resize
-    console.log(window.innerWidth)
     if (window.innerWidth > 768) return
     this.lastScrollPosition = window.pageYOffset
     window.addEventListener('scroll', this.onScroll)

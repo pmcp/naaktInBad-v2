@@ -249,7 +249,7 @@ export const actions = {
     // Scroll to article
     if (more) {
       const element = document.getElementById(article.slug)
-      const offset = 190
+      const offset = 220
       const bodyRect = document.body.getBoundingClientRect().top
       const elementRect = element.getBoundingClientRect().top
       const elementPosition = elementRect - bodyRect
