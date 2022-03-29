@@ -4,6 +4,26 @@ todos: >-
 
   * Een gok: werkt perfect als ge helemaal boven staat in de kolom. Maar als ge lager staat 
 
-    * brengt een klik u niet exact naar de bovenkant van de column in kwestie (Als richtlijn: kan het exact eindigen waar de cover art begint?)
+    * brengt een klik u niet exact naar de bovenkant van de column in kwestie (Als richtlijn: kan het u exact brengen naar de bovenkant van de cover + een mini klein beetje witruimte?)
     * verdwijnt logo NIB bij klik op een gok
   * Knop "alle columns": zelfde styling als rest navigatie
+
+  * Alle columns: kan klik op een column u net iets hoger doen eindigen (nu is het exact op de bovenste lijn van de cover art, kan er een mini klein beetje witruimte boven gelaten worden?)
+
+
+
+
+
+
+  **Mobiel**
+
+
+  * Idem opmerking ivm waar klik op een gok, als ge lager staat in de kolom
+
+  * Op alle pagina's lijkt onderaan een horizontale lijn te staan, kan die weg?
+
+  * Alle columns: 
+
+    * er lijkt minder padding te zijn aan de linker- dan aan de rechterkant. Sowieso lijkt het wat nipt, de padding (normaal komt die overeen met de linkerkant van het NIB logo en de rechterkant van het hamburger icoon)
+
+    \- Er worden nog steeds maar 10 columns getoond ipv 12 (José Mauro & Patrick Shiroishi staan er niet bij). Op desktop is dit probleem er niet.
