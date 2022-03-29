@@ -241,11 +241,11 @@ export const actions = {
     dispatch('getArticles', { id: null, intersected: null })
     this.$router.push('/')
     console.log('gonna scroll to top')
-    document.scrollingElement.scrollTop
+    // document.scrollingElement.scrollTop
+    window.scrollTo({
+      top: 0
+    })
     console.log('scrolled to top')
-    // window.scrollTo({
-    //   top: 0
-    // })
   },
 
   setActiveArticle({ state, commit, dispatch }, { article, more = false }) {
