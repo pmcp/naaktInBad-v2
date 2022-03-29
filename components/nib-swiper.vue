@@ -13,7 +13,7 @@
             <Song-Card
               :article="article"
               :key="`navArticles_${i}`"
-              class="w-1/4 slider-content"
+              class="slider-content"
               centered
               more
             />

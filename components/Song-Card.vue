@@ -2,15 +2,15 @@
   <div>
     <div
       v-if="article"
-      :class="[centered ? 'flex flex-col h-full items-center w-44 group' : 'gap-6 flex-auto', fullpage ? '' : 'flex-wrap']"
-      class="flex md:flex-nowrap">
+      :class="classes"
+      class="flex md:flex-nowrap w-full">
       <!-- Cover Image -->
       <img
         v-if="article.cover[0]"
         :alt="`Cover art for ${article.song} by ${article.artist}`"
         :src="uploadCareURL"
         :class="[centered ? '' : '']"
-        class="cursor-pointer w-40 h-40  md:w-24 md:h-24"
+        class="cursor-pointer w-32 h-32  md:w-24 md:h-24"
         @click="clickArticle(article)"
       >
       <div
@@ -105,6 +105,14 @@ export default {
     }
   },
   computed: {
+    classes() {
+      // [centered ? 'flex flex-col h-full items-center w-44 group' : 'gap-6 flex-auto', fullpage ? '' : 'flex-wrap']"
+      if (this.centered && this.fullpage)
+        return 'flex flex-col h-full items-center group'
+      if (this.centered && !this.fullpage)
+        return 'flex flex-col h-full items-center w-44 group flex-wrap'
+      return 'gap-6 flex-auto'
+    },
     uploadCareURL() {
       return `${this.article.cover[0]}/-/resize/320x320/`
     }
