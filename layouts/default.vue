@@ -36,7 +36,7 @@
 
           <div class=" border-b md:border-b-0"/>
           <Player
-            class="fixed bottom-0 md:relative bottom-0 border-t md:border-t-0 z-40 bg-white px-7 md:px-0 md:mt-8 md:mb-0 xl:mt-5 md:top-0 bg-white"
+            class="fixed -bottom-1 md:relative bottom-0 border-t md:border-t-0 z-40 bg-white px-7 md:px-0 md:mt-8 md:mb-0 xl:mt-5 md:top-0 bg-white"
             style="width:inherit"
           />
           <div

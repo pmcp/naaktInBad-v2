@@ -10,6 +10,8 @@
         centered
         fullpage
       />
+      <Observer
+        @intersect="intersected()"/>
     </div>
     <div
       v-else
