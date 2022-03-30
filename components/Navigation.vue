@@ -11,21 +11,21 @@
       </nuxt-link>
       <nuxt-link
         :class="[('over' === $nuxt.$route.name) ? 'underline' : '']"
-        to="over"
+        to="/over"
         class="font-display font-bold hover:underline"
       >
         over
       </nuxt-link>
       <nuxt-link
         :class="[('tags' === $nuxt.$route.name) ? 'underline' : '']"
-        to="tags"
+        to="/tags"
         class="font-display font-bold hover:underline"
       >
         tags
       </nuxt-link>
       <nuxt-link
         :class="[('alles' === $nuxt.$route.name) ? 'underline' : '']"
-        to="alles"
+        to="/alles"
         class="font-display font-bold hover:underline"
       >
         alle columns
@@ -43,14 +43,14 @@
       </nuxt-link>
       <nuxt-link
         :class="[('over' === $nuxt.$route.name) ? 'underline' : '']"
-        to="over"
+        to="/over"
         class="font-display hover:underline"
       >
         over
       </nuxt-link>
       <nuxt-link
         :class="[('tags' === $nuxt.$route.name) ? 'underline' : '']"
-        to="tags"
+        to="/tags"
         class="font-display hover:underline"
       >
         tags
