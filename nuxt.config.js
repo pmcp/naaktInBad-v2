@@ -76,26 +76,27 @@ module.exports = {
   target: 'static',
   components: true,
   buildModules: ['@nuxtjs/tailwindcss', '@vueuse/core/nuxt'],
-  generate: {
-    routes: function() {
-      const { $content } = require('@nuxt/content')
-      const contentPaths = ['articles']
-      const files = []
-      contentPaths.forEach(async path => {
-        const file = await $content(path).fetch()
-        files.push(file)
-      })
-      const generated = files.map(file => {
-        return {
-          route: file.path === '/index' ? '/' : file.path,
-          payload: fs.readFileSync(
-            `./content/${file.path}${file.extension}`,
-            'utf-8'
-          )
-        }
-      })
-
-      return generated
-    }
-  }
+  // generate: {
+  //   routes: function() {
+  //     const { $content } = require('@nuxt/content')
+  //     const contentPaths = ['articles']
+  //     const files = []
+  //     contentPaths.forEach(async path => {
+  //       const file = await $content(path).fetch()
+  //       files.push(file)
+  //     })
+  //     console.log({ files })
+  //     const generated = files.map(file => {
+  //       return {
+  //         route: file.path === '/index' ? '/' : file.path,
+  //         payload: fs.readFileSync(
+  //           `./content/${file.path}${file.extension}`,
+  //           'utf-8'
+  //         )
+  //       }
+  //     })
+  //
+  //     return generated
+  //   }
+  // }
 }

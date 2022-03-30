@@ -115,7 +115,6 @@ export default {
   },
   methods: {
     clickArticle(article) {
-      console.log(article)
       if (this.fullpage) {
         this.getArticle(article.slug)
         return

@@ -30,7 +30,6 @@ export default {
   // },
   methods: {
     async intersected(val) {
-      console.log('observing')
       if (this.articles.length === 0) return
       //When intersect, pass the id (slug) of the last article
       this.getArticles({ id: null, intersected: 'bottom' })

@@ -84,7 +84,6 @@ export default {
       return this.$store.state.discovery
     },
     randomArticle() {
-      console.log(this.random)
       return this.articles[this.random]
     }
   },
