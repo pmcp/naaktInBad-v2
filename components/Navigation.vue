@@ -6,7 +6,7 @@
       class="w-full bg-white mx-7 pt-5 pb-4 text-specificFont1 flex flex-col gap-5">
       <nuxt-link
         v-if="randomArticle"
-        :to="randomArticle.slug">
+        :to="`/${randomArticle.slug}`">
         <span class="font-display font-bold hover:underline text-transparent bg-clip-text text-gradient bg-gradient-to-r from-pink to-orange">een gok</span>
       </nuxt-link>
       <nuxt-link
@@ -37,7 +37,8 @@
       class="flex justify-between w-full bg-white hidden md:flex">
       <nuxt-link
         v-if="randomArticle"
-        :to="randomArticle.slug">
+        :to="`/${randomArticle.slug}`"
+      >
         <span class="font-display hover:text-transparent bg-clip-text hover:text-gradient bg-gradient-to-r from-pink to-orange">een gok</span>
       </nuxt-link>
       <nuxt-link
