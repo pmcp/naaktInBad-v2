@@ -1,7 +1,6 @@
 const pkg = require('./package')
 
 module.exports = {
-  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -78,15 +77,14 @@ module.exports = {
   components: true,
   buildModules: ['@nuxtjs/tailwindcss', '@vueuse/core/nuxt'],
   generate: {
-    async routes() {
+    routes: function() {
+      const { $content } = require('@nuxt/content')
       const contentPaths = ['articles']
-
       const files = []
       contentPaths.forEach(async path => {
         const file = await $content(path).fetch()
         files.push(file)
       })
-
       const generated = files.map(file => {
         return {
           route: file.path === '/index' ? '/' : file.path,
