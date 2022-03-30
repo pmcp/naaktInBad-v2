@@ -3,7 +3,7 @@
     <div
       v-if="article"
       :class="classes"
-      class="flex md:flex-nowrap w-full">
+      class="flex flex-wrap md:flex-nowrap w-full">
       <!-- Cover Image -->
       <img
         v-if="article.cover[0]"
@@ -31,23 +31,19 @@
             >{{ article.label }} ({{ article.release }})</div>
           </div>
           <div class="pt-2 pb-4">
-            <!-- TODO: Shouldn't do class cursor-pointer -->
-            <span
+            <tag
               v-for="(t, key) in article.tags"
               :key="`tag-${key}`"
-              :class="[centered ? 'leading-3' : 'leading-4']"
-              class="cursor-pointer font-body italic hover:underline text-lg"
-              @click="selectTag(t)"
-            >
-              #{{ t }}
-            </span>
+              :id="t"
+              :centered="centered"
+            />
           </div>
         </div>
       </div>
       <!-- Action Buttons -->
       <div
         v-if="actions"
-        class="order-2 w-10 flex flex-col flex-grow items-end">
+        class="order-1 w-10 flex flex-col flex-grow items-end ">
         <Icon
           play
           class="w-10 h-10 md:w-7 md:h-7 mb-1 md:pb-8"

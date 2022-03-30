@@ -66,7 +66,9 @@ module.exports = {
   //Nuxt Content options
   content: {
     // Define fields on which search is indexed
-    fullTextSearchFields: ['song', 'artist', 'release', 'text']
+    fullTextSearchFields: ['song', 'artist', 'release', 'text'],
+    // Nested properties to search in tags
+    nestedProperties: ['tags.name']
   },
   target: 'static',
   components: true,

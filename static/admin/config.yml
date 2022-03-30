@@ -16,6 +16,11 @@ media_library:
   config:
     publicKey: 'acd567a26350e2ad1a5f'
 
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "_"
+
 collections:
   - name: 'articles'
     label: 'Articles'
@@ -94,7 +99,7 @@ collections:
     folder: 'content/pages'
     format: 'frontmatter'
     create: true
-    slug: '{{slug}}'
+    slug: '{{name}}'
     editor:
       preview: false
     fields:
@@ -109,13 +114,12 @@ collections:
       - label: 'Publish Date'
         name: 'date'
         widget: 'datetime'
-
   - name: 'tags'
     label: 'Tags'
     folder: 'content/tags'
     format: 'frontmatter'
     create: true
-    slug: '{{slug}}'
+    slug: '{{name}}'
     editor:
       preview: false
     fields:

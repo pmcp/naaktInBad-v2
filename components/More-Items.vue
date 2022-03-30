@@ -43,17 +43,28 @@ export default {
       }
     }
   },
-  computed: {
-    articles() {
-      return this.$store.state.articles
+  data() {
+    return {
+      articles: []
     }
+  },
+  async fetch({ $content }) {
+    this.content = await $content('articles').fetch()
   },
   methods: {
     async intersected() {
-      console.log('triggered from observer')
-      this.getArticles({ id: null, intersected: 'bottom' })
-    },
-    ...mapActions(['getArticles'])
+      let moreArticles
+      try {
+        moreArticles = await this.$content('articles')
+          .sortBy('date', 'desc')
+          .limit(10)
+          .skip(this.articles.length)
+          .fetch()
+      } catch (e) {
+        console.log(e)
+      }
+      return (this.articles = [...this.articles, ...moreArticles])
+    }
   }
 }
 </script>

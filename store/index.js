@@ -46,7 +46,7 @@ export const state = () => ({
   navigation: [
     { title: 'een gok', path: 'ontdek' },
     { title: 'over', path: 'over' },
-    { title: 'tags', path: 'tags' }
+    { title: 'index.vue', path: 'index.vue' }
   ],
   moreOpen: false,
   discovery: false
@@ -85,7 +85,7 @@ export const actions = {
       .sortBy('date', 'desc')
       .only([
         'cover',
-        'tags',
+        'index.vue',
         'label',
         'song',
         'release',
@@ -111,12 +111,12 @@ export const actions = {
 
     // Get all tags
     const articles = await this.$content('articles')
-      .only(['tags'])
+      .only(['index.vue'])
       .fetch()
 
     const tags = articles.reduce((acc, article) => {
-      if (article.tags) {
-        article.tags.forEach(tag => {
+      if (article.index) {
+        article.index.forEach(tag => {
           if (!acc.includes(tag)) {
             acc.push(tag)
           }
@@ -240,12 +240,11 @@ export const actions = {
     commit('setActiveTag', null)
     dispatch('getArticles', { id: null, intersected: null })
     this.$router.push('/')
-    console.log('gonna scroll to top')
+    // Moved the scroll to top to nuxt router settings (app/router.scrollBehavior.js)
     // document.scrollingElement.scrollTop
     // window.scrollTo({
     //   top: 0
     // })
-    console.log('scrolled to top')
   },
 
   setActiveArticle({ state, commit, dispatch }, { article, more = false }) {

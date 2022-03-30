@@ -105,7 +105,7 @@ export default {
     if (window.innerWidth > 768) return
     this.lastScrollPosition = window.pageYOffset
     window.addEventListener('scroll', this.onScroll)
-    this.getArticles({ id: null, intersected: null })
+    // this.getArticles({ id: null, intersected: null })
   },
   methods: {
     onScroll() {

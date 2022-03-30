@@ -1,60 +1,59 @@
 <template>
   <div>
-    <!-- Mobile Nav -->
+    <!--     Mobile Nav-->
     <nav
       v-if="mobile"
-      class="w-full bg-white mx-7 pt-5">
-      <div
-        v-for="(navItem, i) in navigation"
-        :key="`navigation_${i}`"
-        class="pb-4 text-specificFont1">
-        <button
-          v-if="navItem.path === 'ontdek'"
-          :class="[(navItem.path === $nuxt.$route.name) ? 'underline' : '']"
-          @click="closeAndGo()">
-          <span class="font-display font-bold hover:underline text-transparent bg-clip-text text-gradient bg-gradient-to-r from-pink to-orange">{{ navItem.title }}</span>
-        </button>
-        <nuxt-link
-          v-else
-          :to="navItem.path"
-          class="font-display font-bold hover:underline">
-          {{ navItem.title }}
-        </nuxt-link>
-      </div>
-      <div class="pt-1">
-        <nuxt-link
-          to="alles"
-          class="font-display font-bold hover:underline text-specificFont1">
-          alle columns
-        </nuxt-link>
-      </div>
-
+      class="w-full bg-white mx-7 pt-5 pb-4 text-specificFont1 flex flex-col gap-5">
+      <nuxt-link
+        v-if="randomArticle"
+        :to="randomArticle.slug">
+        <span class="font-display font-bold hover:underline text-transparent bg-clip-text text-gradient bg-gradient-to-r from-pink to-orange">een gok</span>
+      </nuxt-link>
+      <nuxt-link
+        :class="[('over' === $nuxt.$route.name) ? 'underline' : '']"
+        to="over"
+        class="font-display font-bold hover:underline"
+      >
+        over
+      </nuxt-link>
+      <nuxt-link
+        :class="[('tags' === $nuxt.$route.name) ? 'underline' : '']"
+        to="tags"
+        class="font-display font-bold hover:underline"
+      >
+        tags
+      </nuxt-link>
+      <nuxt-link
+        :class="[('alles' === $nuxt.$route.name) ? 'underline' : '']"
+        to="alles"
+        class="font-display font-bold hover:underline"
+      >
+        alle columns
+      </nuxt-link>
     </nav>
-    <!-- Normal Nav -->
+    <!--     Normal Nav-->
     <nav
       v-else
-      class="flex justify-between w-full bg-white ">
-      <div
-        v-for="(navItem, i) in navigation"
-        :key="`navigation_${i}`">
-        <button
-          v-if="navItem.path === 'ontdek'"
-          :class="[(navItem.path === $nuxt.$route.name) ? 'underline' : '']"
-          @click="getArticle(null)"
-        >
-          <span
-            :class="[(discovery && $nuxt.$route.path === '/') ? 'text-transparent text-gradient' : '']"
-            class="font-display hover:text-transparent bg-clip-text hover:text-gradient bg-gradient-to-r from-pink to-orange">{{ navItem.title }}</span>
-        </button>
-        <nuxt-link
-          v-else
-          :to="navItem.path"
-          :class="[(navItem.path === $nuxt.$route.name) ? 'underline' : '']"
-          class="font-display hover:underline"
-        >
-          {{ navItem.title }}
-        </nuxt-link>
-      </div>
+      class="flex justify-between w-full bg-white hidden md:flex">
+      <nuxt-link
+        v-if="randomArticle"
+        :to="randomArticle.slug">
+        <span class="font-display hover:text-transparent bg-clip-text hover:text-gradient bg-gradient-to-r from-pink to-orange">een gok</span>
+      </nuxt-link>
+      <nuxt-link
+        :class="[('over' === $nuxt.$route.name) ? 'underline' : '']"
+        to="over"
+        class="font-display hover:underline"
+      >
+        over
+      </nuxt-link>
+      <nuxt-link
+        :class="[('tags' === $nuxt.$route.name) ? 'underline' : '']"
+        to="tags"
+        class="font-display hover:underline"
+      >
+        tags
+      </nuxt-link>
     </nav>
   </div>
 </template>
@@ -71,20 +70,40 @@ export default {
       }
     }
   },
+  data() {
+    return {
+      articles: [],
+      random: null
+    }
+  },
   computed: {
     navigation() {
       return this.$store.state.navigation
     },
     discovery() {
       return this.$store.state.discovery
+    },
+    randomArticle() {
+      console.log(this.random)
+      return this.articles[this.random]
     }
   },
-  methods: {
-    closeAndGo() {
-      this.$nuxt.$emit('closeNav')
-      this.getArticle()
-    },
-    ...mapActions(['getArticle'])
+  watch: {
+    $route(to, from) {
+      this.random = Math.floor(Math.random() * this.articles.length)
+    }
+  },
+  async created() {
+    let articles
+    try {
+      articles = await this.$content('articles')
+        .only(['slug'])
+        .fetch()
+    } catch (e) {
+      console.log(e)
+    }
+    this.random = Math.floor(Math.random() * articles.length)
+    this.articles = articles
   }
 }
 </script>
