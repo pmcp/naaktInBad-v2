@@ -17,7 +17,11 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+      {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/apple-touch-icon.png'
+      },
       { rel: 'icon', sizes: '32x32', href: '/favicon-32x32.png' },
       { rel: 'icon', sizes: '16x16', href: '/favicon-16x16.png' },
       {
@@ -72,5 +76,28 @@ module.exports = {
   },
   target: 'static',
   components: true,
-  buildModules: ['@nuxtjs/tailwindcss', '@vueuse/core/nuxt']
+  buildModules: ['@nuxtjs/tailwindcss', '@vueuse/core/nuxt'],
+  generate: {
+    async routes() {
+      const contentPaths = ['articles']
+
+      const files = []
+      contentPaths.forEach(async path => {
+        const file = await $content(path).fetch()
+        files.push(file)
+      })
+
+      const generated = files.map(file => {
+        return {
+          route: file.path === '/index' ? '/' : file.path,
+          payload: fs.readFileSync(
+            `./content/${file.path}${file.extension}`,
+            'utf-8'
+          )
+        }
+      })
+
+      return generated
+    }
+  }
 }

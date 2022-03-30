@@ -47,7 +47,6 @@ export default {
     } catch (e) {
       console.log(e)
     }
-    console.log('got tag', tag.name)
 
     // Get the articles based on the tag
     let articles
@@ -60,7 +59,6 @@ export default {
     } catch (e) {
       console.log(e)
     }
-    console.log(tag, articles)
     return { tag, articles }
   },
   methods: {
