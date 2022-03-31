@@ -1,18 +1,29 @@
 const pkg = require('./package')
+import ogImage from '@/assets/logo.jpeg'
 
 module.exports = {
   /*
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'naakt in bad',
     bodyAttrs: {
       class: 'md:overflow-y-scroll'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: this.BASE_URL + ogImage
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'naakt in bad is een zondagse muziekcolumn'
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -75,7 +86,7 @@ module.exports = {
   },
   target: 'static',
   components: true,
-  buildModules: ['@nuxtjs/tailwindcss', '@vueuse/core/nuxt'],
+  buildModules: ['@nuxtjs/tailwindcss', '@vueuse/core/nuxt']
   // generate: {
   //   routes: function() {
   //     const { $content } = require('@nuxt/content')

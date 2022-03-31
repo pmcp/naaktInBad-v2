@@ -62,12 +62,12 @@ export default {
           hid: 'og:title',
           property: 'og:title',
           content: `● naakt in bad |  ${this.article.artist} - ${this.article.song}`
-        }
+        },
         {
           hid: 'og:image',
           property: 'og:image',
           content: this.article.cover
-        },
+        }
         // // Twitter Card
         // {
         //   hid: 'twitter:title',
