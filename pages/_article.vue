@@ -61,7 +61,9 @@ export default {
         {
           hid: 'og:title',
           property: 'og:title',
-          content: `● naakt in bad |  ${this.article.artist} - ${this.article.song}`
+          content: `● naakt in bad |  ${this.article.artist} - ${
+            this.article.song
+          }`
         },
         {
           hid: 'og:image',
