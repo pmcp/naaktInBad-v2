@@ -3,40 +3,49 @@
     <div
       v-if="article"
       :class="classes"
-      class="flex w-full">
+      class="flex">
       <!-- Cover Image -->
-      <img
-        v-if="article.cover[0]"
-        :alt="`Cover art for ${article.song} by ${article.artist}`"
-        :src="uploadCareURL"
-        :class="[centered ? '' : '']"
-        class="cursor-pointer w-32 h-32  md:w-24 md:h-24"
-        @click="clickArticle(article)"
-      >
+      <nuxt-link
+        :to="article.slug"
+        class="w-40 h-40  md:w-24 md:h-24 flex-shrink-0">
+        <img
+          v-if="article.cover"
+          :alt="`Cover art for ${article.song} by ${article.artist}`"
+          :src="uploadCareURL"
+          :class="[centered ? '' : '']"
+          class="cursor-pointer md:w-24 md:h-24"
+        >
+      </nuxt-link>
+
       <div
         class=" h-full order-last md:order-1 w-full relative"
         style="top:-2px">
         <div
           :class="[centered ? 'text-center mt-6' : '']"
-          class="h-full flex flex-col justify-start leading-5">
-          <div :class="[centered ? 'h-28 cursor-pointer' : '']">
+          class="h-full flex flex-col justify-start md:leading-5 pt-3 md:pt-0">
+          <nuxt-link
+            :class="[centered ? 'h-28 cursor-pointer' : '']"
+            :to="article.slug">
             <div
-              class="font-display font-extrabold text-lg leading-5 group-hover:underline"
+              class="font-display font-extrabold text-mobileSize3 md:text-lg md:leading-5 group-hover:underline"
             >{{ article.artist }}</div>
             <div
-              class="font-display text-lg leading-5 group-hover:underline"
+              class="font-display md:text-lg text-mobileSize3 md:leading-5 group-hover:underline"
             >{{ article.song }}</div>
             <div
-              class="font-display italic mb-2 text-lg leading-5"
+              class="font-display italic mb-2 text-mobileSize3 md:text-lg md:leading-5"
             >{{ article.label }} ({{ article.release }})</div>
-          </div>
+          </nuxt-link>
           <div class="pt-2 pb-4">
-            <tag
+            <span
               v-for="(t, key) in article.tags"
-              :key="`tag-${key}`"
-              :id="t"
-              :centered="centered"
-            />
+              :key="`tag-${key}`">
+              #<tag
+                :id="t"
+                :centered="centered"
+                class="italic"
+              />
+            </span>
           </div>
         </div>
       </div>
@@ -107,7 +116,7 @@ export default {
         return 'flex flex-col h-full items-center group flex-nowrap'
       if (this.centered && !this.fullpage)
         return 'flex flex-col h-full items-center w-44 group flex-nowrap '
-      return 'gap-6 flex-auto flex-wrap md:flex-nowrap'
+      return 'gap-4 flex-auto flex-wrap md:flex-nowrap'
     },
     uploadCareURL() {
       return `${this.article.cover[0]}/-/resize/320x320/`

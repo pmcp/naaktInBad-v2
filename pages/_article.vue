@@ -1,11 +1,16 @@
 <template>
   <div class="mt-7 md:mt-0">
     <Article :article="article" />
-    <Article
+    <div
       v-for="(article, i) in articles"
       :key="`articles_${i}`"
       :id="article.slug"
-      :article="article" />
+    >
+      <Article
+        :article="article"
+        :last="i ===Object.keys(articles).length - 1"
+      />
+    </div>
     <Observer
       class="pb-2"
       @intersect="intersected()"/>
@@ -29,32 +34,39 @@ export default {
     try {
       articles = await $content('articles')
         .sortBy('date', 'desc')
-        .where({ slug: { $ne: params.article } })
-        .limit(10)
+        .surround(article.slug, { before: 0, after: 10 })
+        // .where({ slug: { $ne: params.article } })
         .fetch()
     } catch (e) {
       console.log(e)
     }
 
+    // Filter out null
+    articles = articles.filter(article => article !== null)
     return {
       article,
       articles
     }
   },
   methods: {
-    async intersected() {
+    async intersected(article) {
+      const last = this.articles[this.articles.length - 1]
+      console.log(last)
       let moreArticles
       try {
         moreArticles = await this.$content('articles')
           .sortBy('date', 'desc')
-          .where({ slug: { $ne: this.article.slug } })
-          .limit(10)
-          .skip(this.articles.length)
+          .surround(last.slug, { before: 0, after: 10 })
           .fetch()
       } catch (e) {
         console.log(e)
       }
-      return (this.articles = [...this.articles, ...moreArticles])
+
+      const allArticles = [
+        ...this.articles,
+        ...moreArticles.filter(article => article !== null)
+      ]
+      this.articles = allArticles
     }
   }
 }

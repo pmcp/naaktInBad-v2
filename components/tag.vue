@@ -2,9 +2,9 @@
   <nuxt-link
     :to="`/tags/${tag.slug}`"
     :class="[centered ? 'leading-3' : 'leading-4']"
-    class="cursor-pointer font-body italic hover:underline text-lg"
+    class="cursor-pointer font-body hover:underline text-lg"
   >
-    #{{ id }}
+    {{ id }}
   </nuxt-link>
 </template>
 <script>
@@ -28,12 +28,15 @@ export default {
     let tag
     try {
       tag = await this.$content('tags')
-        .where({ name: { $contains: this.id } })
+        .where({ name: { $contains: [this.id] } })
         .fetch()
     } catch (e) {
       console.log(e)
     }
-    this.tag = tag[0]
+    const filteredTag = tag.filter(tag => {
+      return tag.name === this.id
+    })
+    this.tag = filteredTag[0]
   }
 }
 </script>

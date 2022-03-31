@@ -1,6 +1,7 @@
 <template>
   <div
-    class="border-b mb-10 md:mb-20 pb-8 md:pb-specific2 ">
+    :class="[last ? '' : 'border-b']"
+    class="mb-10 md:mb-20 pb-8 md:pb-specific2 ">
     <Song-Card
       :article="article"
       class="mx-7 md:mx-0"
@@ -18,6 +19,10 @@ export default {
     article: {
       type: Object,
       required: true
+    },
+    last: {
+      type: Boolean,
+      default: false
     }
   }
 }

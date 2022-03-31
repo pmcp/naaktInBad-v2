@@ -3,7 +3,14 @@
     <div
       v-if="article"
       class="flex justify-end"
-    ><span class="relative z-10 top-2 z-10 text-mobileSize2 font-body italic">{{ article.song }}</span></div>
+    >
+      <nuxt-link
+        :to="article.slug"
+        class="relative z-10 top-2 z-10 text-mobileSize2 font-body italic"
+      >
+        {{ article.song }}
+      </nuxt-link>
+    </div>
     <vue-plyr
       v-if="article"
       ref="plyr"

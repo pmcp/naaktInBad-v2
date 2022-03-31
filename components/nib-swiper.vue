@@ -34,15 +34,15 @@ import { mapActions } from 'vuex'
 export default {
   data() {
     return {
-      swiper: null
+      swiper: null,
+      articles: []
     }
   },
-  computed: {
-    articles() {
-      return this.$store.state.navArticles
-    }
-  },
-  mounted() {
+  async mounted() {
+    this.articles = await this.$content('articles')
+      .sortBy('date', 'desc')
+      .fetch()
+
     // configure Swiper to use modules. The modules were tested with SwiperJS v6.8.4 with NuxtJS v2.15.7
     // previously it was before export default. Moved here for performance issues. Move back in case of problems.
     // add or remove unused modules

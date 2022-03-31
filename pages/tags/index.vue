@@ -37,15 +37,17 @@
         :key="`letter-${letter.group}`"
         class="mb-12">
         <h2 class="text-xl font-display font-bold">{{ letter.group }}</h2>
-        <nuxt-link
+        <div
           v-for="tag in letter.children"
           :key="`tag-${tag.slug}`"
-          :to="`tags/${tag.slug}`"
           class="cursor-pointer font-body hover:underline text-xl md:text-body leading-5 block"
           style="text-indent: -0.4rem;padding-left:0.4rem;line-height: 1.4rem"
         >
-          {{ tag.name }}
-        </nuxt-link>
+          <tag
+            :id="tag"
+            :centered="centered"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -54,27 +56,38 @@
 export default {
   async asyncData({ $content, params, error }) {
     // Get all tags
-    let unordenedTags, ordenedTags, tags
+    let articles, unordenedTags, flattenedTags, uniqueTags, ordenedTags, tags
     try {
-      unordenedTags = await $content('tags').fetch()
+      articles = await $content('articles').fetch()
     } catch (e) {
       console.log(e)
     }
-    console.log(unordenedTags)
+    // Create unordened tags list
+    unordenedTags = articles.map(a => a.tags)
+
+    flattenedTags = unordenedTags.reduce(
+      (acc, curVal) => acc.concat(curVal),
+      []
+    )
+    uniqueTags = [...new Set(flattenedTags)]
+    flattenedTags = uniqueTags.sort()
 
     // Orden tags
-    ordenedTags = unordenedTags.reduce((r, e) => {
+
+    ordenedTags = flattenedTags.reduce((r, e) => {
       // get first letter of name of current element
-      let group = e.name.charAt(0).toUpperCase()
+      console.log(e)
+      let group = e.charAt(0).toUpperCase()
       // if there is no property in accumulator with this letter create it
-      if (!r[group]) r[group] = { group, children: [e.name] }
+      if (!r[group]) r[group] = { group, children: [e] }
       // if there is push current element to children array for that letter
-      else r[group].children.push({ name: e.name, slug: e.slug })
+      else r[group].children.push(e)
       // return accumulator
       return r
     }, {})
 
     // To get array of values we use Object.values method
+    //
     tags = Object.values(ordenedTags)
     return {
       tags

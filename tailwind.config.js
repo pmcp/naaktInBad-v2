@@ -305,10 +305,11 @@ module.exports = {
       '7xl': ['4.5rem', { lineHeight: '1' }],
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
-      body: ['1.1rem', { lineHeight: '1.6rem' }],
+      body: ['1.12rem', { lineHeight: '1.5rem' }],
       mobileSize1: ['1.3rem', { lineHeight: '1.6rem' }],
       mobileSize2: ['1.08rem', { lineHeight: '1.3rem' }],
-      specificFont1: ['1.7rem', { lineHeight: '2rem' }]
+      specificFont1: ['1.7rem', { lineHeight: '2rem' }],
+      mobileSize3: ['1.25rem', { lineHeight: '1.5rem' }]
     },
     fontWeight: {
       thin: '100',

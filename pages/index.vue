@@ -1,10 +1,15 @@
 <template>
   <div class="mt-7 md:mt-0">
-    <Article
+    <div
       v-for="(article, i) in articles"
       :key="`articles_${i}`"
       :id="article.slug"
-      :article="article" />
+    >
+      <Article
+        :article="article"
+        :last="i ===Object.keys(articles).length - 1"
+      />
+    </div>
     <Observer
       class="pb-2"
       @intersect="intersected()"/>
