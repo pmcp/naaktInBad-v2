@@ -1,41 +1,10 @@
-todos: >-
-  **Desktop**
-
-
-  * Tags: 
-
-    * mini klein beetje meer witruimte tussen de zoekresultaten
-  * Alle columns: spatie tussen # en genre weg?
-
-  * Body: 1.6 witruimte
-
-
-
-
-  **Mobiel**
-
-
-  * Info ivm artiest + release + genre: beetje groter
-
-  * Body tekst: puntje meer witruimte
-
-  * Menu: "een gok" lijkt niet altijd te verschijnen
-
-  * Alle columns: 
-
-    * meer witruimte tussen rijen
-    * klik lijkt niet naar column in kwestie te leiden (enkel naar bovenkant kolom)
-
-  **Varia**
-
-
-  * Social preview
-
-
-  \==========
-
-
+todos: |-
   **Opmerkingen Maarten**
 
-
   * Alle columns: intersect observer in More
+
+  \-----------------------------
+
+  **To do's voor de toekomst**
+
+  * Van zodra er 8 columns per genre zijn: testen of
