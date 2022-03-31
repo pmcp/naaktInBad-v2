@@ -52,12 +52,11 @@ export default {
     return {
       title: `● naakt in bad |  ${this.article.artist} - ${this.article.song}`,
       meta: [
-        // {
-        //   hid: 'description',
-        //   name: 'description',
-        //   content: this.article.description
-        // },
-        // Open Graph
+        {
+          hid: 'description',
+          name: 'description',
+          content: `een zondagse muziekcolumn`
+        },
         {
           hid: 'og:title',
           property: 'og:title',
