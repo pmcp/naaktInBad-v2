@@ -55,7 +55,7 @@
       </main>
     </div>
     <More
-      class="hidden md:block fixed bottom-0 z-10 w-full md:bg-white"
+      class="hidden md:block fixed bottom-0 z-10 w-full "
     />
   </div>
 </template>
