@@ -3,7 +3,7 @@
     <div
       v-if="article"
       :class="classes"
-      class="flex flex-nowrap w-full">
+      class="flex w-full">
       <!-- Cover Image -->
       <img
         v-if="article.cover[0]"
@@ -104,10 +104,10 @@ export default {
     classes() {
       // [centered ? 'flex flex-col h-full items-center w-44 group' : 'gap-6 flex-auto', fullpage ? '' : 'flex-wrap']"
       if (this.centered && this.fullpage)
-        return 'flex flex-col h-full items-center group'
+        return 'flex flex-col h-full items-center group flex-nowrap'
       if (this.centered && !this.fullpage)
-        return 'flex flex-col h-full items-center w-44 group flex-wrap'
-      return 'gap-6 flex-auto'
+        return 'flex flex-col h-full items-center w-44 group flex-nowrap '
+      return 'gap-6 flex-auto flex-wrap md:flex-nowrap'
     },
     uploadCareURL() {
       return `${this.article.cover[0]}/-/resize/320x320/`
