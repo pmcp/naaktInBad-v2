@@ -4,24 +4,28 @@ todos: >-
 
   * Tags: 
 
-    * geen hoofdletter laten verschijnen indien geen onderliggende tags
     * mini klein beetje meer witruimte tussen de zoekresultaten
-    * klik op "ambient" zorgt dat artikel getagd met "ambient pop" verschijnt (roger 3000), maar niet dat getagd met "ambient" (ben bondy)
-  * Home: onderste horizontale lijn (onder de laagste column) mag weg
-
   * Player: klik op track titel -> naar column in kwestie (alsof het een klik op "een gok" was)
+
+  * Alle columns: spatie tussen # en genre weg?
+
+
 
 
   **Mobiel**
 
 
-  * Info ivm arties + release + genre: beetje groter
+  * Info ivm artiest + release + genre: beetje groter
 
   * Body tekst: puntje meer witruimte
 
   * Menu: "een gok" lijkt niet altijd te verschijnen
 
-  * Alle columns: meer witruimte tussen rijen
+  * Alle columns: 
+
+    * meer witruimte tussen rijen
+    * klik lijkt niet naar column in kwestie te leiden (enkel naar bovenkant kolom)
+
 
 
   **Varia**
