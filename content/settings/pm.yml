@@ -2,18 +2,12 @@ todos: >-
   **Desktop**
 
 
-  * Tekst: 1,12 rem
-
   * Tags: 
 
-    * geen hoofdletter laten verschijnen indien geen onderliggende tags
-    * aantal tags gedelete maar staan er nog steeds in?
     * mini klein beetje meer witruimte tussen de zoekresultaten
-  * Home: onderste horizontale lijn (onder de laagste column) mag weg
+  * Alle columns: spatie tussen # en genre weg?
 
-  * Player: klik op track titel -> naar column in kwestie (alsof het een klik op "een gok" was)
-
-
+  * Body: 1.6 witruimte
 
 
 
@@ -21,23 +15,21 @@ todos: >-
   **Mobiel**
 
 
-  * Info ivm arties + release + genre: beetje groter
+  * Info ivm artiest + release + genre: beetje groter
 
   * Body tekst: puntje meer witruimte
 
   * Menu: "een gok" lijkt niet altijd te verschijnen
 
+  * Alle columns: 
 
-
-
-
+    * meer witruimte tussen rijen
+    * klik lijkt niet naar column in kwestie te leiden (enkel naar bovenkant kolom)
 
   **Varia**
 
 
   * Social preview
-
-
 
 
   \==========
