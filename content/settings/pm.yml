@@ -2,12 +2,9 @@ todos: >-
   **Desktop**
 
 
-  * Tekst: 1,12 rem
-
   * Tags: 
 
     * geen hoofdletter laten verschijnen indien geen onderliggende tags
-    * aantal tags gedelete maar staan er nog steeds in?
     * mini klein beetje meer witruimte tussen de zoekresultaten
   * Home: onderste horizontale lijn (onder de laagste column) mag weg
 
@@ -26,6 +23,8 @@ todos: >-
   * Body tekst: puntje meer witruimte
 
   * Menu: "een gok" lijkt niet altijd te verschijnen
+
+  * Alle columns: meer witruimte tussen rijen
 
 
 
