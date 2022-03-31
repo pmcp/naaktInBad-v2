@@ -9,7 +9,7 @@
     />
     <nuxt-content
       :document="article"
-      class="mx-7 md:mx-0 prose mt-4 md:mt-10 font-body text-mobileSize1 md:text-body leading-1"
+      class="mx-7 md:mx-0 prose mt-4 md:mt-10 font-body text-mobileSize1 md:text-body"
     />
   </div>
 </template>

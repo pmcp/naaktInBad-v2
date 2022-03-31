@@ -19,8 +19,8 @@
         :to="s.slug"
         class="cursor-pointer hover:underline"
       >
-        <div class="font-bold font-display text-xl">{{ s.artist }}</div>
-        <div class="font-display text-xl pb-5">{{ s.song }}</div>
+        <div class="font-bold font-display text-specificFont2">{{ s.artist }}</div>
+        <div class="font-display text-specificFont2 pb-5">{{ s.song }}</div>
       </nuxt-link>
     </div>
     <div
