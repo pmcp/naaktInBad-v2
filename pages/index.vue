@@ -34,6 +34,28 @@ export default {
       articles
     }
   },
+  head() {
+    return {
+      title: 'Home',
+      meta: [
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://naaktinbad.com/logo.jpeg'
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'naakt in bad is een zondagse muziekcolumn'
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: 'naakt in bad is een zondagse muziekcolumn'
+        }
+      ],
+    }
+  },
   methods: {
     async intersected() {
       let moreArticles
