@@ -1,8 +1,8 @@
 <template>
   <nuxt-link
     :to="`/tags/${tag.slug}`"
-    :class="[centered ? 'leading-3' : 'leading-4']"
-    class="cursor-pointer font-body hover:underline text-lg"
+    :class="[centered ? 'leading-3' : 'leading-4', fullpage ? 'text-mobileSize2' : 'text-lg']"
+    class="cursor-pointer font-body hover:underline  relative -left-1 leading md:leading-unset"
   >
     {{ id }}
   </nuxt-link>
@@ -15,6 +15,10 @@ export default {
       required: true
     },
     centered: {
+      type: Boolean,
+      default: false
+    },
+    fullpage: {
       type: Boolean,
       default: false
     }

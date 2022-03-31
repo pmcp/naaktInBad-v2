@@ -40,7 +40,7 @@
         <div
           v-for="tag in letter.children"
           :key="`tag-${tag.slug}`"
-          class="cursor-pointer font-body hover:underline text-xl md:text-body leading-5 block"
+          class="cursor-pointer font-body hover:underline text-xl md:text-body leading-5 block relative left-1"
           style="text-indent: -0.4rem;padding-left:0.4rem;line-height: 1.4rem"
         >
           <tag

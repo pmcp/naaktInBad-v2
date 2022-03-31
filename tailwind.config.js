@@ -59,7 +59,8 @@ module.exports = {
       112: '28rem',
       specific1: '15.675rem',
       specific2: '4.6rem',
-      specific3: '26.6rem'
+      specific3: '26.6rem',
+      specific4: '1.3rem'
     },
     animation: {
       none: 'none',

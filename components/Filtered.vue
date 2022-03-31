@@ -10,7 +10,7 @@
       <Icon
         close
         class="ml-1 w-4 h-4 items-center relative"
-        style="top:.1rem"/>
+        style="top:1px"/>
     </nuxt-link>
   </div>
 </template>

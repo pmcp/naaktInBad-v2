@@ -7,13 +7,13 @@
       <!-- Cover Image -->
       <nuxt-link
         :to="article.slug"
-        class="w-40 h-40  md:w-24 md:h-24 flex-shrink-0">
+        :class="[fullpage ? 'w-36 h-36' : 'w-40 h-40  md:w-24 md:h-24']"
+        class=" flex-shrink-0">
         <img
           v-if="article.cover"
           :alt="`Cover art for ${article.song} by ${article.artist}`"
           :src="uploadCareURL"
-          :class="[centered ? '' : '']"
-          class="cursor-pointer md:w-24 md:h-24"
+          class="cursor-pointer "
         >
       </nuxt-link>
 
@@ -21,28 +21,33 @@
         class=" h-full order-last md:order-1 w-full relative"
         style="top:-2px">
         <div
-          :class="[centered ? 'text-center mt-6' : '']"
-          class="h-full flex flex-col justify-start md:leading-5 pt-3 md:pt-0">
+          :class="[centered ? 'text-center mt-6' : '', fullpage ? '' : 'pt-2']"
+          class="h-full flex flex-col justify-start md:leading-5 md:pt-0">
           <nuxt-link
-            :class="[centered ? 'h-28 cursor-pointer' : '']"
+            :class="classes2"
             :to="article.slug">
             <div
-              class="font-display font-extrabold text-mobileSize3 md:text-lg md:leading-5 group-hover:underline"
+              :class="[fullpage ? 'text-specificFont2 leading-2' : 'text-mobileSize3 md:text-lg md:leading-5']"
+              class="font-display font-extrabold truncate group-hover:underline"
             >{{ article.artist }}</div>
             <div
-              class="font-display md:text-lg text-mobileSize3 md:leading-5 group-hover:underline"
+              :class="[fullpage ? 'text-specificFont2 leading-2' : 'text-mobileSize3 md:text-lg md:leading-5']"
+              class="font-display md:text-lg group-hover:underline"
             >{{ article.song }}</div>
             <div
-              class="font-display italic mb-2 text-mobileSize3 md:text-lg md:leading-5"
+              :class="[fullpage ? 'text-specificFont2 leading-2' : 'text-mobileSize3 md:text-lg md:leading-5']"
+              class="font-display italic mb-2"
             >{{ article.label }} ({{ article.release }})</div>
           </nuxt-link>
           <div class="pt-2 pb-4">
             <span
               v-for="(t, key) in article.tags"
+              :class="[centered? 'block h-specific4 md:h-6' : '']"
               :key="`tag-${key}`">
-              #<tag
+              <span class="text-sm">#</span><tag
                 :id="t"
                 :centered="centered"
+                :fullpage="fullpage"
                 class="italic"
               />
             </span>
@@ -117,6 +122,11 @@ export default {
       if (this.centered && !this.fullpage)
         return 'flex flex-col h-full items-center w-44 group flex-nowrap '
       return 'gap-4 flex-auto flex-wrap md:flex-nowrap'
+    },
+    classes2() {
+      // [centered ? 'h-28 cursor-pointer' : '', fullpage ? 'h-20' : '']
+      if (this.centered && this.fullpage) return 'cursor-pointer h-28'
+      if (this.centered && !this.fullpage) return 'h-28 cursor-pointer'
     },
     uploadCareURL() {
       return `${this.article.cover[0]}/-/resize/320x320/`
