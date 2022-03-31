@@ -22,6 +22,11 @@ module.exports = {
         hid: 'description',
         name: 'description',
         content: 'naakt in bad is een zondagse muziekcolumn'
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content: 'naakt in bad is een zondagse muziekcolumn'
       }
     ],
     link: [
