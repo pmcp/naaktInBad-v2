@@ -41,7 +41,7 @@
           v-for="tag in letter.children"
           :key="`tag-${tag.slug}`"
           :to="`tags/${tag.slug}`"
-          class="cursor-pointer font-body hover:underline text-xl md:text-body leading-5"
+          class="cursor-pointer font-body hover:underline text-xl md:text-body leading-5 block"
           style="text-indent: -0.4rem;padding-left:0.4rem;line-height: 1.4rem"
         >
           {{ tag.name }}
