@@ -1,5 +1,13 @@
-todos: |-
+todos: >-
   **Desktop**
 
-  * Tags: geen hoofdletter laten verschijnen indien geen onderliggende tags
-  *
+
+  * Tags: 
+
+    * geen hoofdletter laten verschijnen indien geen onderliggende tags
+    * drill 'n bass?
+  * Home: onderste horizontale lijn (onder de laagste column) mag weg
+
+  * Player: klik op track titel -> naar column in kwestie (alsof het een klik op "een gok" was)
+
+  * Alle columns: kruis iets lager (bovenkant uitlijnen op bovenkant cover art)
