@@ -1,5 +1,4 @@
 const pkg = require('./package')
-import ogImage from '@/assets/logo.jpeg'
 
 module.exports = {
   /*
@@ -17,7 +16,7 @@ module.exports = {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: this.BASE_URL + ogImage
+        content: '@/assets/logo.jpeg'
       },
       {
         hid: 'description',
