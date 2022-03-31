@@ -1,10 +1,5 @@
-todos: >-
+todos: |-
   **Desktop**
 
-  **Mobiel**
-  * Kan artiest+release+label+jaar nog iets groter (we kunnen gerust live doen zodat ge niet te lang moet zitten mozen)
--> Mssn best effe samen doen
-
-  * Idem opmerking ivm waar klik op een gok, als ge lager staat in de kolom
-
-
+  * Tags: geen hoofdletter laten verschijnen indien geen onderliggende tags
+  *
