@@ -48,6 +48,40 @@ export default {
       articles
     }
   },
+  head() {
+    return {
+      title: `● naakt in bad |  ${this.article.artist} - ${this.article.song}`,
+      meta: [
+        // {
+        //   hid: 'description',
+        //   name: 'description',
+        //   content: this.article.description
+        // },
+        // Open Graph
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: `● naakt in bad |  ${this.article.artist} - ${this.article.song}`
+        }
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.article.cover
+        },
+        // // Twitter Card
+        // {
+        //   hid: 'twitter:title',
+        //   name: 'twitter:title',
+        //   content: this.article.title
+        // },
+        // {
+        //   hid: 'twitter:description',
+        //   name: 'twitter:description',
+        //   content: this.article.description
+        // }
+      ]
+    }
+  },
   methods: {
     async intersected(article) {
       const last = this.articles[this.articles.length - 1]
