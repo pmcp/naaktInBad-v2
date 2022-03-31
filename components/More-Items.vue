@@ -7,7 +7,7 @@
         v-for="(article, i) in articles"
         :article="article"
         :key="`navArticles_${i}`"
-        class="w-1/2"
+        class="w-1/2 md:w-1/3"
         centered
         fullpage
       />

@@ -3,7 +3,7 @@
     <div
       v-if="article"
       :class="classes"
-      class="flex flex-wrap md:flex-nowrap w-full">
+      class="flex flex-nowrap w-full">
       <!-- Cover Image -->
       <img
         v-if="article.cover[0]"
