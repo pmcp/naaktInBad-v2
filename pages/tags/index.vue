@@ -17,10 +17,10 @@
         v-for="(s, k) in articles"
         :key="`searchResult-${k}`"
         :to="s.slug"
-        class="mb-5 cursor-pointer hover:underline"
+        class="cursor-pointer hover:underline"
       >
         <div class="font-bold font-display text-xl">{{ s.artist }}</div>
-        <div class="font-display text-xl">{{ s.song }}</div>
+        <div class="font-display text-xl pb-5">{{ s.song }}</div>
       </nuxt-link>
     </div>
     <div
