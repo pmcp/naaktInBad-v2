@@ -52,7 +52,6 @@ export default {
     } catch (e) {
       console.log(e)
     }
-
     // Get the articles based on the tag
     let articles
     try {

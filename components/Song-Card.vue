@@ -133,7 +133,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions(['setActiveArticle'])
+    ...mapActions(['setActiveArticle']),
   }
 }
 </script>
