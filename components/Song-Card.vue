@@ -6,7 +6,7 @@
       class="flex">
       <!-- Cover Image -->
       <nuxt-link
-        :to="`/${article.slug}`">
+        :to="`/${article.slug}`"
         :class="[fullpage ? 'w-36 h-36' : 'w-40 h-40  md:w-24 md:h-24']"
         class=" flex-shrink-0">
         <img
@@ -133,7 +133,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions(['setActiveArticle']),
+    ...mapActions(['setActiveArticle'])
   }
 }
 </script>
