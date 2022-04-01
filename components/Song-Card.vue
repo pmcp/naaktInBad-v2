@@ -62,7 +62,7 @@
           play
           class="w-10 h-10 md:w-7 md:h-7 mb-1 md:pb-8"
           style="width:1.96rem"
-          @clicked="clickArticle(article)"
+          @clicked="setActiveArticle(article)"
         />
         <a
           v-if="article.url"
@@ -133,14 +133,7 @@ export default {
     }
   },
   methods: {
-    clickArticle(article) {
-      if (this.fullpage) {
-        this.getArticle(article.slug)
-        return
-      }
-      this.setActiveArticle({ article, more: this.more })
-    },
-    ...mapActions(['setActiveArticle', 'selectTag', 'getArticle'])
+    ...mapActions(['setActiveArticle'])
   }
 }
 </script>

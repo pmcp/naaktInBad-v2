@@ -60,8 +60,6 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
-
 export default {
   props: {
     mobile: {
@@ -78,12 +76,6 @@ export default {
     }
   },
   computed: {
-    navigation() {
-      return this.$store.state.navigation
-    },
-    discovery() {
-      return this.$store.state.discovery
-    },
     randomArticle() {
       return this.articles[this.random]
     }

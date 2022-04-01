@@ -12,12 +12,12 @@
         class="w-full md:w-112 xl:w-1/2 md:pb-7 xl:mb-7">
         <div class="xl:fixed w-full xl:w-112">
           <div class="w-full px-7 md:px-0  flex h-16 mb-4">
-            <button
+            <nuxt-link
               class="relative md:pb-10 md:-mt-4 w-full"
-              @click="goHome"
+              to="/"
             >
               <Logo />
-            </button>
+            </nuxt-link>
             <div class="md:hidden mt-7">
               <Icon
                 v-if="navOpen"
@@ -60,8 +60,6 @@
   </div>
 </template>
 <script>
-import { mapActions } from 'vuex'
-
 export default {
   data() {
     return {
@@ -104,7 +102,6 @@ export default {
     if (window.innerWidth > 768) return
     this.lastScrollPosition = window.pageYOffset
     window.addEventListener('scroll', this.onScroll)
-    // this.getArticles({ id: null, intersected: null })
   },
   methods: {
     onScroll() {
@@ -127,8 +124,7 @@ export default {
         window.pageYOffset < this.lastScrollPosition &&
         !(window.innerHeight + window.scrollY >= document.body.offsetHeight)
       this.lastScrollPosition = window.pageYOffset
-    },
-    ...mapActions(['getArticles', 'goHome'])
+    }
   }
 }
 </script>
