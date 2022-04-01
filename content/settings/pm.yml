@@ -1,10 +1,16 @@
-todos: |-
+todos: >-
   **Opmerkingen Maarten**
 
-  * Alle columns: intersect observer in More
+
+  * Alle columns: intersect observer in More (ik laad nu alle artikels, beter met observer
+
+  * remove vuex store, niet meer nodig
+
 
   \-----------------------------
 
+
   **To do's voor de toekomst**
 
-  * Van zodra er 8 columns per genre zijn: testen of
+
+  * Van zodra er 8 columns per genre zijn: testen of pagina's goed bijgeladen worden
