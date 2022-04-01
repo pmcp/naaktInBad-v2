@@ -25,7 +25,7 @@
           class="h-full flex flex-col justify-start md:leading-5 md:pt-0">
           <nuxt-link
             :class="classes2"
-            :to="article.slug">
+            :to="`/${article.slug}`">
             <div
               :class="[fullpage ? 'text-specificFont2 leading-2' : 'text-mobileSize3 md:text-lg md:leading-5']"
               class="font-display font-extrabold truncate group-hover:underline"
