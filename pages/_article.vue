@@ -86,7 +86,6 @@ export default {
   methods: {
     async intersected(article) {
       const last = this.articles[this.articles.length - 1]
-      console.log(last)
       let moreArticles
       try {
         moreArticles = await this.$content('articles')

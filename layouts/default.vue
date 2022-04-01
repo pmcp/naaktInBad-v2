@@ -109,17 +109,10 @@ export default {
         Math.abs(window.pageYOffset - this.lastScrollPosition) <
         this.scrollOffset
       ) {
-        console.log('1')
         return
       }
       if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        console.log('bottom')
       }
-      console.log(
-        window.pageYOffset < this.lastScrollPosition,
-        window.pageYOffset,
-        this.lastScrollPosition
-      )
       this.showHeader =
         window.pageYOffset < this.lastScrollPosition &&
         !(window.innerHeight + window.scrollY >= document.body.offsetHeight)
