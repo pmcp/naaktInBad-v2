@@ -6,7 +6,7 @@
       <button
         value="Toon alle columns"
         class="font-display xl:ml-32 hover:underline"
-        @click="toggleMore"
+        @click="open = !open"
       >alle columns</button>
     </div>
     <custom-transition :id="0">
@@ -29,7 +29,6 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
 export default {
   data() {
     return {

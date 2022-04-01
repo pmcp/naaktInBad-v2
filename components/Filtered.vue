@@ -21,12 +21,6 @@ export default {
     tag: {
       type: Object,
       required: true
-    },
-    mobile: {
-      type: Boolean,
-      default() {
-        return false
-      }
     }
   }
 }

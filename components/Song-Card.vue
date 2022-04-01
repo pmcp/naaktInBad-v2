@@ -16,7 +16,6 @@
           class="cursor-pointer "
         >
       </nuxt-link>
-
       <div
         class=" h-full order-last md:order-1 w-full relative"
         style="top:-2px">
@@ -101,12 +100,6 @@ export default {
         return false
       }
     },
-    more: {
-      type: Boolean,
-      default() {
-        return false
-      }
-    },
     fullpage: {
       type: Boolean,
       default() {
@@ -116,7 +109,6 @@ export default {
   },
   computed: {
     classes() {
-      // [centered ? 'flex flex-col h-full items-center w-44 group' : 'gap-6 flex-auto', fullpage ? '' : 'flex-wrap']"
       if (this.centered && this.fullpage)
         return 'flex flex-col h-full items-center group flex-nowrap'
       if (this.centered && !this.fullpage)
@@ -124,7 +116,6 @@ export default {
       return 'gap-4 flex-auto flex-wrap md:flex-nowrap'
     },
     classes2() {
-      // [centered ? 'h-28 cursor-pointer' : '', fullpage ? 'h-20' : '']
       if (this.centered && this.fullpage) return 'cursor-pointer h-28'
       if (this.centered && !this.fullpage) return 'h-28 cursor-pointer'
     },

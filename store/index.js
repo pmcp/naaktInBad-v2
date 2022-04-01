@@ -38,23 +38,15 @@ export const state = () => ({
       leaveToClass: 'transform -translate-y-full opacity-0'
     }
   ],
-  moreOpen: false,
-  discovery: false
 })
 
 export const mutations = {
-  setMore(state, val) {
-    state.moreOpen = val
-  },
   setActiveArticle(state, val) {
     state.activeArticle = val
   }
 }
 
 export const actions = {
-  toggleMore({ state, commit }) {
-    commit('setMore', !state.moreOpen)
-  },
   setActiveArticle({ state, commit, dispatch }, article) {
     commit('setActiveArticle', article)
   }
