@@ -37,7 +37,7 @@ export const state = () => ({
       leaveClass: ' translate-y-0 opacity-100',
       leaveToClass: 'transform -translate-y-full opacity-0'
     }
-  ],
+  ]
 })
 
 export const mutations = {
@@ -45,7 +45,6 @@ export const mutations = {
     state.activeArticle = val
   }
 }
-
 export const actions = {
   setActiveArticle({ state, commit, dispatch }, article) {
     commit('setActiveArticle', article)
