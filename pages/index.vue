@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  async asyncData({ $content, params, error }) {
+  async asyncData({ $content }) {
     // Get the article
     let articles
     // Get the articles
@@ -53,7 +53,7 @@ export default {
           name: 'og:description',
           content: 'naakt in bad is een zondagse muziekcolumn'
         }
-      ],
+      ]
     }
   },
   methods: {

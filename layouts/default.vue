@@ -112,9 +112,20 @@ export default {
         Math.abs(window.pageYOffset - this.lastScrollPosition) <
         this.scrollOffset
       ) {
+        console.log('1')
         return
       }
-      this.showHeader = window.pageYOffset < this.lastScrollPosition
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        console.log('bottom')
+      }
+      console.log(
+        window.pageYOffset < this.lastScrollPosition,
+        window.pageYOffset,
+        this.lastScrollPosition
+      )
+      this.showHeader =
+        window.pageYOffset < this.lastScrollPosition &&
+        !(window.innerHeight + window.scrollY >= document.body.offsetHeight)
       this.lastScrollPosition = window.pageYOffset
     },
     ...mapActions(['getArticles', 'goHome'])
