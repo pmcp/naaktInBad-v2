@@ -16,7 +16,6 @@
           class="cursor-pointer "
         >
       </nuxt-link>
-
       <div
         class=" h-full order-last md:order-1 w-full relative"
         style="top:-2px">
@@ -62,7 +61,7 @@
           play
           class="w-10 h-10 md:w-7 md:h-7 mb-1 md:pb-8"
           style="width:1.96rem"
-          @clicked="clickArticle(article)"
+          @clicked="setActiveArticle(article)"
         />
         <a
           v-if="article.url"
@@ -101,12 +100,6 @@ export default {
         return false
       }
     },
-    more: {
-      type: Boolean,
-      default() {
-        return false
-      }
-    },
     fullpage: {
       type: Boolean,
       default() {
@@ -116,7 +109,6 @@ export default {
   },
   computed: {
     classes() {
-      // [centered ? 'flex flex-col h-full items-center w-44 group' : 'gap-6 flex-auto', fullpage ? '' : 'flex-wrap']"
       if (this.centered && this.fullpage)
         return 'flex flex-col h-full items-center group flex-nowrap'
       if (this.centered && !this.fullpage)
@@ -124,7 +116,6 @@ export default {
       return 'gap-4 flex-auto flex-wrap md:flex-nowrap'
     },
     classes2() {
-      // [centered ? 'h-28 cursor-pointer' : '', fullpage ? 'h-20' : '']
       if (this.centered && this.fullpage) return 'cursor-pointer h-28'
       if (this.centered && !this.fullpage) return 'h-28 cursor-pointer'
     },
@@ -133,14 +124,7 @@ export default {
     }
   },
   methods: {
-    clickArticle(article) {
-      if (this.fullpage) {
-        this.getArticle(article.slug)
-        return
-      }
-      this.setActiveArticle({ article, more: this.more })
-    },
-    ...mapActions(['setActiveArticle', 'selectTag', 'getArticle'])
+    ...mapActions(['setActiveArticle'])
   }
 }
 </script>

@@ -6,7 +6,7 @@
       <button
         value="Toon alle columns"
         class="font-display xl:ml-32 hover:underline"
-        @click="toggleMore"
+        @click="open = !open"
       >alle columns</button>
     </div>
     <custom-transition :id="0">
@@ -19,11 +19,9 @@
               close
               class="w-5 h-5 relative z-50"
               style="top:19px;left:6px"
-              @clicked="toggleMore"/>
+              @clicked="open = !open"/>
           </div>
           <nib-swiper />
-
-
         </div>
       </div>
     </custom-transition>
@@ -31,18 +29,11 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
 export default {
-  computed: {
-    navigation() {
-      return this.$store.state.navigation
-    },
-    open() {
-      return this.$store.state.moreOpen
+  data() {
+    return {
+      open: false
     }
-  },
-  methods: {
-    ...mapActions(['toggleMore'])
   }
 }
 </script>
