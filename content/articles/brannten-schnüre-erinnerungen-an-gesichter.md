@@ -14,7 +14,7 @@ url: https://www.discogs.com/release/13111522-Brannten-Schn%C3%BCre-Erinnerungen
 ---
 Brannten Schnüre moet zowat één van mijn zwaarste band crushes van de laatste jaren zijn. Elk album voelt als een kleine wereld op zich, als een knus labyrint om in te verdwalen en in de diepte te onderzoeken. Zo ook met "Erinnerungen An Gesichter", een plaat tjokvol donkere folkcollages, ontwapenende Duitse zang, organische drones, vergeten muziekdozen en eindeloze details. Als een deken voor zware winterse stemmingen.
 
-Op het deken is een grote draaimolen geborduurd, waarop een eindeloos aantal andere, kleinere draaimolens in de omgekeerde zin staan te draaien. Op de allerkleinste molen, een monoculaire verrekijker, waardoor volgende miniaturen te zien zijn:
+Op het deken is een grote draaimolen geborduurd, waarop een eindeloos aantal andere, kleinere draaimolens in de omgekeerde zin staan te draaien. Op de allerkleinste molen, enkel te vinden met een monoculaire verrekijker, zijn volgende miniaturen te zien:
 
 \- een meer, warm en donker
 
