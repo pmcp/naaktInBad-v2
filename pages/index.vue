@@ -36,7 +36,7 @@ export default {
   },
   head() {
     return {
-      title: 'Home',
+      title: 'naakt in bads',
       meta: [
         {
           hid: 'og:image',
