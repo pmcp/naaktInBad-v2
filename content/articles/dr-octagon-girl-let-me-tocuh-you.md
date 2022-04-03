@@ -13,7 +13,7 @@ url: https://www.discogs.com/release/97037-Dr-Octagon-Dr-Octagon
 ---
 Dr Octagon is een fictief personage, een gynaecoloog-chirurg van een andere planeet. Het heerschap komt uit de koker van Kool Keith, die via hem uiting geeft aan zijn meest donkere fantasieën.
 
-Rappers die over seks fantaseren… er zijn er duizend in een dozijn. Het eindresultaat landt meestal ergens tussen puberaal gepronk en vrouwonvriendelijk geblaf. Heel af en toe doet iemand de kunst van het pornografische proza echter eer aan. Op "Girl Let Me Touch You" komt een vrouwelijke patiënt Octagons prakijk binnengelopen. Woordspel en fetisj gaan elkaar te lijf terwijl Keith, op eloquente wijze, lekker concrete taferelen visualiseert. Perversie van de bovenste plank, van een Boon uit de Bronx.
+Rappers die over seks fantaseren… er zijn er duizend in een dozijn. Het eindresultaat landt meestal ergens tussen puberaal gepronk en vrouwonvriendelijk geblaf. Heel af en toe doet iemand de kunst van de pornografische poëzie echter eer aan. Op "Girl Let Me Touch You" komt een vrouwelijke patiënt Octagons prakijk binnengelopen. Woordspel en fetisj gaan elkaar te lijf terwijl Keith, op eloquente wijze, lekker concrete taferelen visualiseert. Perversie van de bovenste plank, van een Boon uit de Bronx.
 
 \
 *It's morning, 7 o'clock, you at my clinic*\
