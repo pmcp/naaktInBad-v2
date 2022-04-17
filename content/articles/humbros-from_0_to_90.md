@@ -15,4 +15,12 @@ url: https://phantomlimblabel.bandcamp.com/album/from-0-to-90
 ---
 Hobbelig elektro-akoestisch tripje. Het muzikale equivalent van:
 
-Recept: Gado GadoSchilderij: Willem De Kooning - Untitled XXIIVegetatie: RubberboomFilm: MicrokosmosGebouw: Carlo Aymonino - Gallaratese, MilaanRoman: Italo Calvino - Onzichtbare StedenWielrenner: Giulio CicconeDier: WitborstamaziliaMeubel: Bold Chair - Moustache Editions
+Recept: Gado Gado\
+Schilderij: Willem De Kooning - Untitled XXII\
+Vegetatie: Rubberboom\
+Film: Microkosmos\
+Gebouw: Carlo Aymonino - Gallaratese, Milaan\
+Roman: Italo Calvino - Onzichtbare Steden\
+Wielrenner: Giulio Ciccone\
+Dier: Witborstamazilia\
+Meubel: Bold Chair - Moustache Editions
