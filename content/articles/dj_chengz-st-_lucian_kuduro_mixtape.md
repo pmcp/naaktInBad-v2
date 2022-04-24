@@ -5,6 +5,10 @@ label: Nyege Nyege Tapes
 release: "2020"
 cover:
   - https://ucarecdn.com/2afbe82e-6ade-4f20-9fb6-53d4b5025854/
+tags:
+  - Dennery Segment
+  - Kuduro
+  - Batida
 audio: https://ucarecdn.com/c26f84a4-a88f-4cd0-81fe-5c20cbfd18e6/
 date: 2022-04-24T10:49:50.931Z
 url: https://nyegenyegetapes.bandcamp.com/album/st-lucian-kuduro-mixtape
