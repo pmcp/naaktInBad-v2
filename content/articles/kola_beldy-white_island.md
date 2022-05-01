@@ -1,7 +1,7 @@
 ---
 song: White Island
 artist: Kola Beldy
-label: Мелодия
+label: Melodiya
 release: "1989"
 cover:
   - https://ucarecdn.com/fdcd1b01-53c8-481a-9e48-568975a0fc0d/
