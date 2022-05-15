@@ -1,5 +1,5 @@
 ---
-song: The Healing Music of Rana - Vol. I
+song: The Healing Music of Rana
 artist: Randall McClellan
 label: Niet op label
 release: "1979"
