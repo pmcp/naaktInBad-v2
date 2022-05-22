@@ -5,7 +5,10 @@ label: Les Disques Du Crépuscule
 release: "1980"
 cover:
   - https://ucarecdn.com/589f90f4-9a18-4a0d-a41d-b7417246b994/
-tags: []
+tags:
+  - Post-punk
+  - Minimalism
+  - Minimal Wave
 audio: https://ucarecdn.com/aabed9b1-d348-438d-a694-7684005fa347/
 date: 2022-05-22T17:13:43.827Z
 url: https://lesdisquesducrepuscule.com/from_brussels_with_love_ltmcd2479.html.html
