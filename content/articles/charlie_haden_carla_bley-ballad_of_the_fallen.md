@@ -5,6 +5,9 @@ label: ECM
 release: "1983"
 cover:
   - https://ucarecdn.com/7d933cc4-8d59-401d-9c8b-6328cd733731/
+tags:
+  - Big band
+  - Avant-garde jazz
 audio: https://ucarecdn.com/bf411e8a-61d7-43b3-8f6c-adf9fe42d696/
 date: 2022-06-12T21:17:36.951Z
 url: https://www.discogs.com/release/606533-Charlie-Haden-Carla-Bley-The-Ballad-Of-The-Fallen
