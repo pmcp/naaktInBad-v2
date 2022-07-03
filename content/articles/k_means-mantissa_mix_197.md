@@ -11,7 +11,7 @@ audio: https://ucarecdn.com/51f14b19-cef9-4f65-b80e-6bdeb2f60031/
 date: 2022-07-03T12:35:40.800Z
 url: https://soundcloud.com/mantissa1/mantissa-mix-197-k-means
 ---
-Ik had nog nooit van K Means gehoord tot Batu, het type DJ die je perceptie van tijd en ruimte binnenstebuiten keert, haar omschreef als iemand waarmee men maar beter rekening houdt achter de decks. Voeg daar maandelijkse shows op Rinse en Noods aan toe en ik had voldoende aanbevelingsbrieven gezien voor een stap in het duister. Richting Soundcloud dus, waar mijn oog op een mix voor Mantissa valt. 
+Ik had nog nooit van K Means gehoord tot Batu, het type DJ die je perceptie van tijd en ruimte binnenstebuiten keert, haar omschreef als iemand waarmee men maar beter rekening houdt achter de *decks*. Voeg daar maandelijkse shows op Rinse en Noods aan toe en ik had voldoende aanbevelingsbrieven gezien voor een stap in het duister. Richting Soundcloud dus, waar mijn oog op een mix voor Mantissa valt. 
 
 Die is in K Means’ eigen woorden geïnspireerd op een dagdroom waarbij ze op weg is naar een feest. En cours de route trekt een glinsterend meer haar aandacht. Ze valt in slaap in het gras naast het water en als ze enkele uren later wakker wordt, is het ochtend. Vogels fluiten, K Means hervat haar weg naar het feest om er, eens aangekomen, te constateren dat ze geen schoenen blijkt te dragen. Gelukkig is de grond er warm en zacht, bijna sensueel. 
 
