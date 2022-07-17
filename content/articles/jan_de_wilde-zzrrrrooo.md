@@ -7,6 +7,7 @@ cover:
   - https://ucarecdn.com/2a7d77f6-492e-4955-a97f-9c4834063710/
 tags:
   - Kleinkunst
+  - Contemporary folk
 audio: https://ucarecdn.com/c46e0cbf-0903-46c6-875a-e95acb74e9c0/
 date: 2022-07-17T13:51:22.931Z
 url: https://www.discogs.com/release/2597122-Jan-De-Wilde-Zzrrrr%C3%B4%C3%B4%C3%B4
