@@ -6,6 +6,7 @@ release: "2021"
 cover:
   - https://ucarecdn.com/0e1ae280-ac91-44e3-904e-078b342604c0/
 tags:
+  - Alternative R&B
   - Ambient pop
 audio: https://ucarecdn.com/29e6e252-1315-43b7-b484-adfd6692c416/
 date: 2022-07-24T06:28:22.064Z
