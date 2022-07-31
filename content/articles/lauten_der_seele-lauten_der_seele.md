@@ -6,6 +6,7 @@ release: "2022"
 cover:
   - https://ucarecdn.com/cd6dbac9-865b-49a3-8a53-e41c18816848/
 tags:
+  - Sound collage
   - Drone
 audio: https://ucarecdn.com/082f5fe2-7997-499a-ae5d-ff928a6d0901/
 date: 2022-07-31T11:08:36.785Z
