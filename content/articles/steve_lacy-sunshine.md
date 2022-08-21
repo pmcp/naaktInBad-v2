@@ -29,6 +29,7 @@ Opvolgers:
 [Blod - “Du Kan Sjunga Fritt](https://www.youtube.com/watch?v=NyUrnI45bRw)”
 
 •    Categorie ‘Afkoeling’ (Gouden Airco 2022):\
+\
 [Civilistjävel! - “A2](https://civilistjavel.bandcamp.com/track/a2)”
 
 •    Categorie ‘Middeleeuwen’ (Gouden Maliënkolder 2022):
