@@ -18,11 +18,11 @@ McAloon bracht het album oorspronkelijk uit onder zijn eigen naam, om het in 201
 
 Maar hoe komt een doorwinterde popartiest op deze plek? De backstory is even triest als fascinerend: McAloon was tijdens de genese van *I Trawl The Megahertz* herstellende van een netvliesloslating (een aandoening die tot tijdelijke blindheid kan leiden), waardoor het voor hem onmogelijk was om rechtop te zitten of om naar schermen te kijken. Hij zocht daarom zijn toevlucht in audioboeken en radio-uitzendingen, en begon zo flarden van teksten samen te leggen, bouwend aan een bitterzoete, raadselachtige en omvangrijke tekstuele collage. Prachtige passages als onderstaande zijn het resultaat:
 
- *\    So, I rake the sky*\
- *\    I listen hard*\
- *\    I trawl the megahertz*\
- *\    But the net isn't fine enough, and I miss you*\
- *\    A swan sailing between two continents*\
- *\    A ghost immune to radar*
+*So, I rake the sky*\
+*I listen hard*\
+*I trawl the megahertz*\
+*But the net isn't fine enough, and I miss you*\
+*A swan sailing between two continents*\
+*A ghost immune to radar*
 
 De kamermuziekuitstap bleek eenmalig te zijn. In 2013 releaste Prefab Sprout *Crimson/Red*, waarop McAloon als vanouds (die stem, schijnbaar onveranderd!) de pophemel bereikt. Van een artistieke evolutie als die van Mark Hollis (de man ging van megahits als *[It’s My Life](https://www.youtube.com/watch?v=cFH5JgyZK1I)* naar een minimalistisch meesterwerk als *[The Colour of Spring](https://www.youtube.com/watch?v=Pdf--O5WWrU)*) is dus geen sprake. Niet geklaagd, *I Trawl The Megahertz* is een labyrint om in te blijven verdwalen, of hoe McAloon het zelf beschreef in de liner notes: “Het is als een portret van een vrouw die haar leven probeert te doorgronden door haar herinneringen te herbeleven. “Ze is als iemand die met zijn hand op een radioknop zit en naar ver afgelegen zenders draait, luisterend naar fragmenten van verschillende uitzendingen.”
