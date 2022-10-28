@@ -16,7 +16,7 @@ Ballades? Inderdaad, ze zijn stevig *underrated*. Dat ene trage nummer op een Nu
 
 De verwachtingen waren dus hooggespannen toen Efficient Space een balladscompilatie aankondigde. Enkele jaren geleden had het Australische label immers *[Sky Girl](https://efficientspace.bandcamp.com/album/sky-girl-compiled-by-julien-dechery-and-dj-sundae)* gereleaset; een ongelofelijke verzamelaar bol van vergeten melancholisch DIY-vertoon.
 
-Op Ghost Riders wordt een gelijkaardige reis gemaakt. 17 nummers, opgenomen tussen 1965 en 1974 in Noord-Amerika, geen enkele artiest met enige egards op de *tracklist*, lo-fi productie, intimiteit en oprecht hartzeer. Enkel klinkt alles nu nog jeugdiger en nog hartverscheurender – vage beelden van *bands* met grote dromen in landelijke achterhuizen en op afstudeerceremonies waaien voorbij.
+Op *Ghost Riders* wordt een gelijkaardige reis gemaakt. 17 nummers, opgenomen tussen 1965 en 1974 in Noord-Amerika, geen enkele artiest met enige egards op de *tracklist*, lo-fi productie, intimiteit en oprecht hartzeer. Enkel klinkt alles nu nog jeugdiger en nog hartverscheurender – vage beelden van *bands* met grote dromen in landelijke achterhuizen en op afstudeerceremonies waaien voorbij.
 
 De hoogtepunten zijn talrijk, ik licht er hier drie uit. Openingstrack “A Puppet” door all-girlband The Mod 4 uit 1968 is een Velvet Underground-achtige orgelballad, opgenomen toen de leden 14 waren. Het resultaat is een spookachtig, dromerig en algeheel wonderlijk nummer, van een kwaliteit waar veel bands na tig jaren repeteren nog steeds van dromen.
 
@@ -24,4 +24,4 @@ Ergens over halfweg valt ook “Until Then” van Tresa Leigh op. En dat  door 
 
 Maar het hoogtepunt is misschien wel “Summer’s Over” van Dennis Harte. Een indrukwekkende stem, ergens tussen kind en volwassene, beweent het einde van het warmste seizoen. Zijn zomerliefde heeft hem verlaten, de beste weken ooit zijn voorbij. Het gitaarspel en productie is heerlijk klungelig, de progressie doet denken aan George Harrison in [zijn beste dagen](https://www.youtube.com/watch?v=R_AKQTz47cs), de echo’s op Hartes stem galmen voor de eeuwigheid.
 
-Het is Efficient Space dus weer gelukt. Ghost Riders is een essentiële ode aan bands in lege schuren, rurale coryfeeën, free podiums, aan schoonheid die zich in elke hoek kan verschuilen.
+Het is Efficient Space dus weer gelukt. *Ghost Riders* is een essentiële ode aan bands in lege schuren, rurale coryfeeën, free podiums, aan schoonheid die zich in elke hoek kan verschuilen.
