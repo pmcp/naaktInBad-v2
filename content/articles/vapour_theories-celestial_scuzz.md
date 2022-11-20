@@ -7,6 +7,7 @@ cover:
   - https://ucarecdn.com/ed87a932-9ad6-4bef-bd82-c18ecaf652dc/
 tags:
   - Ambient
+  - Space rock
 audio: https://ucarecdn.com/147dc076-9d9c-4736-9c16-af3e6860ff52/
 date: 2022-11-20T11:40:15.305Z
 url: https://bardopondmusic.bandcamp.com/album/celestial-scuzz
