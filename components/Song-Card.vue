@@ -120,7 +120,7 @@ export default {
       if (this.centered && !this.fullpage) return 'h-28 cursor-pointer'
     },
     uploadCareURL() {
-      return `${this.article.cover[0]}/-/resize/320x320/`
+      return `${this.article.cover[0]}?width=250&aspect_ratio=1:1`
     }
   },
   methods: {
