@@ -4,10 +4,10 @@ artist: Cindy Lee
 label: Superior Viaduct
 release: "2020"
 cover:
-  - https://ucarecdn.com/7c834bb6-9b22-427f-b39d-7294352c7812/
+  - https://naaktinbad.b-cdn.net/site_uploads/7c834bb6-9b22-427f-b39d-7294352c7812.jpg
 tags:
   - Hypnagogic pop
-audio: https://ucarecdn.com/509b1138-3904-48ee-8f6d-708978cd1f5f/
+audio: https://naaktinbad.b-cdn.net/site_uploads/509b1138-3904-48ee-8f6d-708978cd1f5f.mp3
 date: 2022-03-19T09:22:51.979Z
 url: https://cindylee.bandcamp.com/album/whats-tonight-to-eternity
 ---

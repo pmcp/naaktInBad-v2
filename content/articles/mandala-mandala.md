@@ -4,11 +4,11 @@ artist: Mandala
 label: Morisom
 release: "1976"
 cover:
-  - https://ucarecdn.com/0df10fee-7f74-4f45-8133-6b53cfaabfda/
+  - https://naaktinbad.b-cdn.net/site_uploads/0df10fee-7f74-4f45-8133-6b53cfaabfda.jpg
 tags:
   - Jazz fusion
   - New age
-audio: https://ucarecdn.com/b8d6c0e6-7901-4cf8-bf1e-eb87c8fa0148/
+audio: https://naaktinbad.b-cdn.net/site_uploads/b8d6c0e6-7901-4cf8-bf1e-eb87c8fa0148.mp3
 date: 2022-10-02T11:20:42.762Z
 url: https://madaboutrecordslabel.bandcamp.com/album/mandala-mandala
 ---

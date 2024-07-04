@@ -4,10 +4,10 @@ artist: Roberto Cacciapaglia
 label: Philips
 release: "1979"
 cover:
-  - https://ucarecdn.com/7a5b3990-ded8-4fca-8ca3-ee0cd45a689d/
+  - https://naaktinbad.b-cdn.net/site_uploads/7a5b3990-ded8-4fca-8ca3-ee0cd45a689d.jpg
 tags:
   - Minimalism
-audio: https://ucarecdn.com/e16220e4-8e25-4c83-9346-c82dbccc5997/
+audio: https://naaktinbad.b-cdn.net/site_uploads/e16220e4-8e25-4c83-9346-c82dbccc5997.mp3
 date: 2022-06-26T17:44:34.046Z
 url: https://www.discogs.com/release/1338597-Roberto-Cacciapaglia-Sei-Note-In-Logica
 ---

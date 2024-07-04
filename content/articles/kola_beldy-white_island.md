@@ -4,11 +4,11 @@ artist: Kola Beldy
 label: Melodiya
 release: "1989"
 cover:
-  - https://ucarecdn.com/fdcd1b01-53c8-481a-9e48-568975a0fc0d/
+  - https://naaktinbad.b-cdn.net/site_uploads/fdcd1b01-53c8-481a-9e48-568975a0fc0d.jpg
 tags:
   - Opera
   - Soviet estrada
-audio: https://ucarecdn.com/3ef387aa-9365-4601-b795-543681181a94/
+audio: https://naaktinbad.b-cdn.net/site_uploads/3ef387aa-9365-4601-b795-543681181a94.mp3
 date: 2022-05-01T10:08:20.756Z
 url: https://www.discogs.com/master/1652259-%D0%9A%D0%BE%D0%BB%D0%B0-%D0%91%D0%B5%D0%BB%D1%8C%D0%B4%D1%8B-Kola-Beldy-%D0%91%D0%B5%D0%BB%D1%8B%D0%B9-%D0%9E%D1%81%D1%82%D1%80%D0%BE%D0%B2-White-Island
 ---

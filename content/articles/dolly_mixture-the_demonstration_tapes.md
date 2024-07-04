@@ -4,11 +4,11 @@ artist: Dolly Mixture
 label: Eigen Beheer
 release: "1984"
 cover:
-  - https://ucarecdn.com/76120d94-e06a-4491-84da-acdb5999b458/
+  - https://naaktinbad.b-cdn.net/site_uploads/76120d94-e06a-4491-84da-acdb5999b458.jpg
 tags:
   - Indie rock
   - Twee pop
-audio: https://ucarecdn.com/255bfa1d-8e04-46cb-b8c9-e4c8c73ee067/
+audio: https://naaktinbad.b-cdn.net/site_uploads/255bfa1d-8e04-46cb-b8c9-e4c8c73ee067.mp3
 date: 2022-11-14T13:18:10.317Z
 url: https://www.discogs.com/release/682685-Dolly-Mixture-Demonstration-Tapes
 ---

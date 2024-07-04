@@ -4,11 +4,11 @@ artist: Kath Bloom & Loren Connors
 label: St. Joan
 release: "1984"
 cover:
-  - https://ucarecdn.com/4a6e853f-f526-4037-ae9b-6582382ea1c1/
+  - https://naaktinbad.b-cdn.net/site_uploads/4a6e853f-f526-4037-ae9b-6582382ea1c1.jfif
 tags:
   - Contemporary folk
   - Acoustic blues
-audio: https://ucarecdn.com/cf5a6a0a-7cd7-454d-a58c-827ed3b14f12/
+audio: https://naaktinbad.b-cdn.net/site_uploads/cf5a6a0a-7cd7-454d-a58c-827ed3b14f12.mp3
 date: 2022-10-09T16:15:23.628Z
 url: https://kathbloomlorenconnors.bandcamp.com/album/moonlight
 ---

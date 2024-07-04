@@ -4,11 +4,11 @@ artist: Ashtar Lavanda
 label: Niet op label
 release: "2018"
 cover:
-  - https://ucarecdn.com/bdfd075f-7fa2-4a65-afe1-b3fbd0f9ecb0/
+  - https://naaktinbad.b-cdn.net/site_uploads/bdfd075f-7fa2-4a65-afe1-b3fbd0f9ecb0.jpeg
 tags:
   - Electro
   - Detroit techno
-audio: https://ucarecdn.com/4db71c4f-70af-4a34-859e-54ec43888925/
+audio: https://naaktinbad.b-cdn.net/site_uploads/4db71c4f-70af-4a34-859e-54ec43888925.m4a
 date: 2022-03-15T21:37:17.270Z
 url: https://www.nts.live/shows/guests/episodes/ashtar-lavanda-15th-january-2018
 ---

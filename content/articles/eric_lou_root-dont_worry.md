@@ -4,11 +4,11 @@ artist: Eric Lou Root
 label: Wortel
 release: "1987"
 cover:
-  - https://ucarecdn.com/076b5945-6fee-48f3-bd81-0adb8d364d6f/
+  - https://naaktinbad.b-cdn.net/site_uploads/076b5945-6fee-48f3-bd81-0adb8d364d6f
 tags:
   - Dub
   - Synth pop
-audio: https://ucarecdn.com/2fb07093-cf27-444d-ba11-59b1de673d8a/
+audio: https://naaktinbad.b-cdn.net/site_uploads/2fb07093-cf27-444d-ba11-59b1de673d8a.mp3
 date: 2022-08-14T13:29:44.737Z
 url: https://youtu.be/aRkAvsJYHNQ
 ---

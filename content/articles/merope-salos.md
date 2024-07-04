@@ -4,11 +4,11 @@ artist: Merope
 label: Stroom
 release: "2021"
 cover:
-  - https://ucarecdn.com/8407adfd-2df7-4db7-a92a-3207996bed35/
+  - https://naaktinbad.b-cdn.net/site_uploads/8407adfd-2df7-4db7-a92a-3207996bed35.jpg
 tags:
   - New age
   - Chamber folk
-audio: https://ucarecdn.com/ef572a59-ee1e-4113-850d-62f927b5c661/
+audio: https://naaktinbad.b-cdn.net/site_uploads/ef572a59-ee1e-4113-850d-62f927b5c661.mp3
 date: 2022-03-13T18:20:23.630Z
 url: https://stroomtv.bandcamp.com/album/salos
 ---

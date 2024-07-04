@@ -4,10 +4,10 @@ artist: K Means
 label: Niet op label
 release: "2021"
 cover:
-  - https://ucarecdn.com/18bddbc0-4a65-43f8-a54f-14f967093cc6/
+  - https://naaktinbad.b-cdn.net/site_uploads/18bddbc0-4a65-43f8-a54f-14f967093cc6.png
 tags:
   - Bass
-audio: https://ucarecdn.com/51f14b19-cef9-4f65-b80e-6bdeb2f60031/
+audio: https://naaktinbad.b-cdn.net/site_uploads/51f14b19-cef9-4f65-b80e-6bdeb2f60031.mp3
 date: 2022-07-03T12:35:40.800Z
 url: https://soundcloud.com/mantissa1/mantissa-mix-197-k-means
 ---

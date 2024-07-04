@@ -4,11 +4,11 @@ artist: Nautic
 label: DEEK
 release: "2014"
 cover:
-  - https://ucarecdn.com/f12d9b55-a092-429c-a8d4-37de5fafda4c/
+  - https://naaktinbad.b-cdn.net/site_uploads/f12d9b55-a092-429c-a8d4-37de5fafda4c.jpg
 tags:
   - Indie pop
   - Adult contemporary
-audio: https://ucarecdn.com/008d2c82-52d9-4db8-92e5-971fd3ec2118/
+audio: https://naaktinbad.b-cdn.net/site_uploads/008d2c82-52d9-4db8-92e5-971fd3ec2118.mp3
 date: 2022-03-14T18:16:17.460Z
 url: https://nautic.bandcamp.com/album/navy-blue
 ---

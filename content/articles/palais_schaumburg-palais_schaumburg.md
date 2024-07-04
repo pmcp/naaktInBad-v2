@@ -4,11 +4,11 @@ artist: Palais Schaumburg
 label: Palais Schaumburg
 release: "1981"
 cover:
-  - https://ucarecdn.com/6d9d2d62-ff9a-4772-a83f-c9105cf2b529/
+  - https://naaktinbad.b-cdn.net/site_uploads/6d9d2d62-ff9a-4772-a83f-c9105cf2b529.jpg
 tags:
   - Neue Deutsche Welle
   - Post-punk
-audio: https://ucarecdn.com/fe6352e3-3a23-427d-a66e-ba937e461d73/
+audio: https://naaktinbad.b-cdn.net/site_uploads/fe6352e3-3a23-427d-a66e-ba937e461d73.mp3
 date: 2022-09-18T10:28:20.732Z
 url: https://palaisschaumburg.bandcamp.com/album/palais-schaumburg-deluxe-edition
 ---

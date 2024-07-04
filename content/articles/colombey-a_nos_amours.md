@@ -4,11 +4,11 @@ artist: Colombey
 label: POUeT! Schallplatten
 release: "2014"
 cover:
-  - https://ucarecdn.com/950989be-3e3d-4b2c-b00f-ad58521a43b4/
+  - https://naaktinbad.b-cdn.net/site_uploads/950989be-3e3d-4b2c-b00f-ad58521a43b4.jpg
 tags:
   - Synth pop
   - Chanson à la texte
-audio: https://ucarecdn.com/ba8cce58-d9e9-412e-a206-13015698f2d8/
+audio: https://naaktinbad.b-cdn.net/site_uploads/ba8cce58-d9e9-412e-a206-13015698f2d8.mp3
 date: 2022-09-25T09:29:19.486Z
 url: https://pouetschallplatten.bandcamp.com/album/tut-tut-006-no-title
 ---

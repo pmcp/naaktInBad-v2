@@ -4,11 +4,11 @@ artist: Prefab Sprout
 label: EMI
 release: "2003"
 cover:
-  - https://ucarecdn.com/23915f86-767f-483c-8192-e6398c7cf532/
+  - https://naaktinbad.b-cdn.net/site_uploads/23915f86-767f-483c-8192-e6398c7cf532.jpg
 tags:
   - Chamber jazz
   - Modern classical
-audio: https://ucarecdn.com/062f6108-cc7b-4b79-8962-75335a88a878/
+audio: https://naaktinbad.b-cdn.net/site_uploads/062f6108-cc7b-4b79-8962-75335a88a878.mp3
 date: 2022-09-11T08:29:05.697Z
 url: https://www.discogs.com/master/53413-Paddy-McAloon-I-Trawl-The-Megahertz
 ---

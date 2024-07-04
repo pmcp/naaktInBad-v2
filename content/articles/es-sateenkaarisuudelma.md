@@ -4,11 +4,11 @@ artist: Es
 label: KRAAK
 release: "2005"
 cover:
-  - https://ucarecdn.com/3169bdc7-9835-4604-b61d-a4d1553eec62/
+  - https://naaktinbad.b-cdn.net/site_uploads/3169bdc7-9835-4604-b61d-a4d1553eec62.jpg
 tags:
   - Free folk
   - Ambient
-audio: https://ucarecdn.com/fb5420c2-3893-45b4-b606-54f18d315796/
+audio: https://naaktinbad.b-cdn.net/site_uploads/fb5420c2-3893-45b4-b606-54f18d315796.mp3
 date: 2022-06-05T17:28:45.532Z
 url: https://fonal.bandcamp.com/track/sateenkaarisuudelma-ii
 ---

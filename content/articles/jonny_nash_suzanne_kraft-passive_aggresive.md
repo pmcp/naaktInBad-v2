@@ -4,11 +4,11 @@ artist: Jonny Nash & Suzanne Kraft
 label: Melody As Truth
 release: "2017"
 cover:
-  - https://ucarecdn.com/aa318a73-087b-4691-8cc8-a40866d99a35/
+  - https://naaktinbad.b-cdn.net/site_uploads/aa318a73-087b-4691-8cc8-a40866d99a35.webp
 tags:
   - Ambient
   - ECM-style jazz
-audio: https://ucarecdn.com/7be55d35-2d5f-4676-9e1b-f1612396c36b/
+audio: https://naaktinbad.b-cdn.net/site_uploads/7be55d35-2d5f-4676-9e1b-f1612396c36b.mp3
 date: 2022-10-19T12:04:58.835Z
 url: https://melodyastruth.bandcamp.com/track/refractory-cafe
 ---

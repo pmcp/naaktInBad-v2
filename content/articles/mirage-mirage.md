@@ -4,10 +4,10 @@ artist: Mirage
 label: Peatonal
 release: "2021"
 cover:
-  - https://ucarecdn.com/4faa8940-3e77-4959-8ea0-d66df9a19126/
+  - https://naaktinbad.b-cdn.net/site_uploads/4faa8940-3e77-4959-8ea0-d66df9a19126.jpg
 tags:
   - Hypnagogic pop
-audio: https://ucarecdn.com/d9319663-2f69-414c-b621-a883156e34a3/
+audio: https://naaktinbad.b-cdn.net/site_uploads/d9319663-2f69-414c-b621-a883156e34a3.mp3
 date: 2022-05-29T09:56:04.791Z
 url: https://peatonalwest.bandcamp.com/album/mirage
 ---

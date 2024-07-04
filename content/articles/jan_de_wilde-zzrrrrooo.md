@@ -4,11 +4,11 @@ artist: Jan De Wilde
 label: Philips
 release: "1970"
 cover:
-  - https://ucarecdn.com/2a7d77f6-492e-4955-a97f-9c4834063710/
+  - https://naaktinbad.b-cdn.net/site_uploads/2a7d77f6-492e-4955-a97f-9c4834063710.jpg
 tags:
   - Kleinkunst
   - Contemporary folk
-audio: https://ucarecdn.com/c46e0cbf-0903-46c6-875a-e95acb74e9c0/
+audio: https://naaktinbad.b-cdn.net/site_uploads/c46e0cbf-0903-46c6-875a-e95acb74e9c0.mp3
 date: 2022-07-17T13:51:22.931Z
 url: https://www.discogs.com/release/2597122-Jan-De-Wilde-Zzrrrr%C3%B4%C3%B4%C3%B4
 ---

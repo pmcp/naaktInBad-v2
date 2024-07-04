@@ -4,11 +4,11 @@ artist: Brannten Schnüre
 label: Low Company
 release: "2019"
 cover:
-  - https://ucarecdn.com/fff0a26f-cec2-4380-b548-2b70618efa5e/
+  - https://naaktinbad.b-cdn.net/site_uploads/fff0a26f-cec2-4380-b548-2b70618efa5e.jpg
 tags:
   - Drone
   - Dark folk
-audio: https://ucarecdn.com/746c9be5-a4d5-4d35-be30-d682843d3403/
+audio: https://naaktinbad.b-cdn.net/site_uploads/746c9be5-a4d5-4d35-be30-d682843d3403.mp3
 date: 2022-03-08T18:34:19.154Z
 url: https://www.discogs.com/release/13111522-Brannten-Schn%C3%BCre-Erinnerungen-An-Gesichter
 ---

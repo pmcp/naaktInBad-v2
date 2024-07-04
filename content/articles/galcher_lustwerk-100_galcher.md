@@ -4,11 +4,11 @@ artist: Galcher Lustwerk
 label: Eigen Beheer
 release: "2013"
 cover:
-  - https://ucarecdn.com/dbbc3ef8-2dd3-4129-b99b-5b111db9dc67/
+  - https://naaktinbad.b-cdn.net/site_uploads/dbbc3ef8-2dd3-4129-b99b-5b111db9dc67.jpg
 tags:
   - Deep House
   - Hip House
-audio: https://ucarecdn.com/aebcbe7c-4502-4005-b3d8-597bacad196a/
+audio: https://naaktinbad.b-cdn.net/site_uploads/aebcbe7c-4502-4005-b3d8-597bacad196a.mp3
 date: 2022-11-08T08:39:07.318Z
 url: https://galcherlustwerk.bandcamp.com/album/100-galcher
 ---

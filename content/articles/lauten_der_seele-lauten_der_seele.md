@@ -4,11 +4,11 @@ artist: Läuten Der Seele
 label: Hands in the Dark
 release: "2022"
 cover:
-  - https://ucarecdn.com/cd6dbac9-865b-49a3-8a53-e41c18816848/
+  - https://naaktinbad.b-cdn.net/site_uploads/cd6dbac9-865b-49a3-8a53-e41c18816848.jpg
 tags:
   - Sound collage
   - Drone
-audio: https://ucarecdn.com/082f5fe2-7997-499a-ae5d-ff928a6d0901/
+audio: https://naaktinbad.b-cdn.net/site_uploads/082f5fe2-7997-499a-ae5d-ff928a6d0901.mp3
 date: 2022-07-31T11:08:36.785Z
 url: https://handsinthedarkrecords.bandcamp.com/album/l-uten-der-seele
 ---

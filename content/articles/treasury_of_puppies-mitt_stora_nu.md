@@ -4,11 +4,11 @@ artist: "Treasury Of Puppies "
 label: Discreet Music
 release: "2022"
 cover:
-  - https://ucarecdn.com/57a144fc-ffa2-4494-a87b-25303e09edcc/
+  - https://naaktinbad.b-cdn.net/site_uploads/57a144fc-ffa2-4494-a87b-25303e09edcc.jpg
 tags:
   - Minimal Wave
   - Spoken word
-audio: https://ucarecdn.com/b56e37ba-f793-4c96-bb7d-e574f2246e36/
+audio: https://naaktinbad.b-cdn.net/site_uploads/b56e37ba-f793-4c96-bb7d-e574f2246e36.mp3
 date: 2022-07-10T14:05:57.483Z
 url: https://treasuryofpuppies.bandcamp.com/album/mitt-stora-nu
 ---

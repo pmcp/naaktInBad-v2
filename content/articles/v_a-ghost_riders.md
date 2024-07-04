@@ -4,11 +4,11 @@ artist: V/A
 label: Efficient Space
 release: "2022"
 cover:
-  - https://ucarecdn.com/88a17b2a-b447-4589-a635-2ca66bb40a84/
+  - https://naaktinbad.b-cdn.net/site_uploads/88a17b2a-b447-4589-a635-2ca66bb40a84.jpg
 tags:
   - Psychedelic soul
   - Garage Soul
-audio: https://ucarecdn.com/fe81a66c-6817-4a52-a1c3-44a16692c61c/
+audio: https://naaktinbad.b-cdn.net/site_uploads/fe81a66c-6817-4a52-a1c3-44a16692c61c.mp3
 date: 2022-10-24T07:38:28.908Z
 url: https://efficientspace.bandcamp.com/album/ghost-riders
 ---

@@ -4,10 +4,10 @@ artist: Roger 3000
 label: Eigen beheer
 release: "2019"
 cover:
-  - https://ucarecdn.com/a6e66ca9-4524-44f3-9b3a-52bf8807e7b3/
+  - https://naaktinbad.b-cdn.net/site_uploads/a6e66ca9-4524-44f3-9b3a-52bf8807e7b3.jpg
 tags:
   - Ambient pop
-audio: https://ucarecdn.com/0f15a7d5-4c29-4829-813d-ac533d31d354/
+audio: https://naaktinbad.b-cdn.net/site_uploads/0f15a7d5-4c29-4829-813d-ac533d31d354.mp3
 date: 2022-03-18T21:07:07.136Z
 url: https://roger3000.bandcamp.com/album/dans-la-ville
 ---

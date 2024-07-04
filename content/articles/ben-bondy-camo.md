@@ -4,11 +4,11 @@ artist: Ben Bondy
 label: Good Morning Tapes
 release: "2022"
 cover:
-  - https://ucarecdn.com/a1536ef8-1e5f-468e-bc97-59bbf8b74678/
+  - https://naaktinbad.b-cdn.net/site_uploads/a1536ef8-1e5f-468e-bc97-59bbf8b74678.jpg
 tags:
   - Ambient
   - Field recordings
-audio: https://ucarecdn.com/9d7637aa-1161-4b60-bc68-15080f6819a8/
+audio: https://naaktinbad.b-cdn.net/site_uploads/9d7637aa-1161-4b60-bc68-15080f6819a8.mp3
 date: 2022-03-07T18:42:47.418Z
 url: https://goodmorningtapes.bandcamp.com/album/gmt48-ben-bondy-camo-2
 ---

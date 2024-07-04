@@ -4,10 +4,10 @@ artist: Eberhard Weber
 label: ECM
 release: "1979"
 cover:
-  - https://ucarecdn.com/14d8be0a-d671-4e27-b6fc-c57b4ffd79fb/
+  - https://naaktinbad.b-cdn.net/site_uploads/14d8be0a-d671-4e27-b6fc-c57b4ffd79fb.jpg
 tags:
   - ECM-style jazz
-audio: https://ucarecdn.com/39b54d02-0411-4e59-b290-b7497a08739f/
+audio: https://naaktinbad.b-cdn.net/site_uploads/39b54d02-0411-4e59-b290-b7497a08739f.mp3
 date: 2022-11-27T14:16:21.992Z
 url: https://www.discogs.com/release/812724-Eberhard-Weber-Fluid-Rustle
 ---

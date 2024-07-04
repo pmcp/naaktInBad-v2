@@ -4,11 +4,11 @@ artist: Vapour Theories
 label: Fire Records
 release: "2021"
 cover:
-  - https://ucarecdn.com/ed87a932-9ad6-4bef-bd82-c18ecaf652dc/
+  - https://naaktinbad.b-cdn.net/site_uploads/ed87a932-9ad6-4bef-bd82-c18ecaf652dc.jpg
 tags:
   - Ambient
   - Space rock
-audio: https://ucarecdn.com/147dc076-9d9c-4736-9c16-af3e6860ff52/
+audio: https://naaktinbad.b-cdn.net/site_uploads/147dc076-9d9c-4736-9c16-af3e6860ff52.mp3
 date: 2022-11-20T11:40:15.305Z
 url: https://bardopondmusic.bandcamp.com/album/celestial-scuzz
 ---

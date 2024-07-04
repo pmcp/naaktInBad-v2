@@ -4,11 +4,11 @@ artist: Lucio Battisti
 label: Numero Uno
 release: "1973"
 cover:
-  - https://ucarecdn.com/c67908eb-4f05-4edc-8b4a-db4903fe468e/
+  - https://naaktinbad.b-cdn.net/site_uploads/c67908eb-4f05-4edc-8b4a-db4903fe468e.jpg
 tags:
   - Art pop
   - Progressive pop
-audio: https://ucarecdn.com/0a716b10-ed27-4441-a7ec-c414f8c74403/
+audio: https://naaktinbad.b-cdn.net/site_uploads/0a716b10-ed27-4441-a7ec-c414f8c74403.mp3
 date: 2022-04-10T07:13:33.630Z
 url: https://www.discogs.com/release/10225822-Lucio-Battisti-Il-Nostro-Caro-Angelo
 ---

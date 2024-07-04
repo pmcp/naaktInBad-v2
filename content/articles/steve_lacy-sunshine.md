@@ -4,11 +4,11 @@ artist: Steve Lacy
 label: RCA
 release: "2022"
 cover:
-  - https://ucarecdn.com/c7506fa2-e179-4d4a-9395-57159d685dc5/
+  - https://naaktinbad.b-cdn.net/site_uploads/c7506fa2-e179-4d4a-9395-57159d685dc5.jpg
 tags:
   - Psychedelic soul
   - Bedroom pop
-audio: https://ucarecdn.com/a074aa1e-2470-4cd1-bc5f-435791d84bbe/
+audio: https://naaktinbad.b-cdn.net/site_uploads/a074aa1e-2470-4cd1-bc5f-435791d84bbe.mp3
 date: 2022-08-21T15:14:34.962Z
 url: https://www.youtube.com/watch?v=RC8u7RJe-TE
 ---

@@ -4,11 +4,11 @@ artist: International Harvester
 label: Love Records
 release: "1968"
 cover:
-  - https://ucarecdn.com/c2a553af-ae5c-4a7f-983d-7399394dbe9a/
+  - https://naaktinbad.b-cdn.net/site_uploads/c2a553af-ae5c-4a7f-983d-7399394dbe9a.jpg
 tags:
   - Psychedelic rock
   - Experimental rock
-audio: https://ucarecdn.com/156ed2b5-708d-4ca4-90ec-70fcbe48a316/
+audio: https://naaktinbad.b-cdn.net/site_uploads/156ed2b5-708d-4ca4-90ec-70fcbe48a316.mp3
 date: 2022-12-11T16:16:45.572Z
 url: https://www.discogs.com/master/72762-International-Harvester-Sov-Gott-Rose-Marie
 ---

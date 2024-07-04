@@ -4,11 +4,11 @@ artist: Blackout
 label: Snubnoze Muzik
 release: "1995"
 cover:
-  - https://ucarecdn.com/4166c4aa-7c7f-4569-892c-b2a805f4ab83/
+  - https://naaktinbad.b-cdn.net/site_uploads/4166c4aa-7c7f-4569-892c-b2a805f4ab83.jpg
 tags:
   - Memphis Rap
   - Horrorcore
-audio: https://ucarecdn.com/286c66eb-6d74-4d36-a9d3-3946fd8ea225/
+audio: https://naaktinbad.b-cdn.net/site_uploads/286c66eb-6d74-4d36-a9d3-3946fd8ea225.mp3
 date: 2022-10-30T11:09:13.393Z
 url: https://suncitypublishing.bandcamp.com/album/dreamworld
 ---

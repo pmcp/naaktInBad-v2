@@ -4,11 +4,11 @@ artist: Patrick Shiroishi
 label: Thin Wrist Recordings
 release: "2020"
 cover:
-  - https://ucarecdn.com/2e7aaa19-66b2-4034-b291-a00ae810f7fe/
+  - https://naaktinbad.b-cdn.net/site_uploads/2e7aaa19-66b2-4034-b291-a00ae810f7fe.jpg
 tags:
   - Free improvisation
   - Noise
-audio: https://ucarecdn.com/9662a986-4ec3-43a2-9693-aa8777e9fbcb/
+audio: https://naaktinbad.b-cdn.net/site_uploads/9662a986-4ec3-43a2-9693-aa8777e9fbcb.mp3
 date: 2022-03-06T18:48:50.397Z
 url: https://patrickshiroishi.bandcamp.com/album/descension-2
 ---

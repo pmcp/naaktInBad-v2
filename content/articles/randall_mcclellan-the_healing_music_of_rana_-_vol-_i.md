@@ -4,11 +4,11 @@ artist: Randall McClellan
 label: Niet op label
 release: "1979"
 cover:
-  - https://ucarecdn.com/4821a827-e586-4158-848e-cc39bf28ba11/
+  - https://naaktinbad.b-cdn.net/site_uploads/4821a827-e586-4158-848e-cc39bf28ba11.jpg
 tags:
   - Ambient
   - New age
-audio: https://ucarecdn.com/18677f80-7547-4bfd-a197-633902880dde/
+audio: https://naaktinbad.b-cdn.net/site_uploads/18677f80-7547-4bfd-a197-633902880dde.mp3
 date: 2022-05-15T10:54:13.418Z
 url: https://www.discogs.com/release/11333155-Randall-McClellan-The-Healing-Music-Of-Rana-Vol-1
 ---

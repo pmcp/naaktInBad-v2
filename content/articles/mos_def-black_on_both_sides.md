@@ -4,10 +4,10 @@ artist: Mos Def
 label: Rawkus
 release: "1999"
 cover:
-  - https://ucarecdn.com/8cfbcdcd-86d4-4770-952c-a21428f1d0d1/
+  - https://naaktinbad.b-cdn.net/site_uploads/8cfbcdcd-86d4-4770-952c-a21428f1d0d1.jpg
 tags:
   - Conscious hip-hop
-audio: https://ucarecdn.com/2342d495-f897-451e-950b-b96129af4fc6/
+audio: https://naaktinbad.b-cdn.net/site_uploads/2342d495-f897-451e-950b-b96129af4fc6.mp3
 date: 2022-09-04T19:34:07.990Z
 url: https://www.discogs.com/master/66510-Mos-Def-Black-On-Both-Sides
 ---

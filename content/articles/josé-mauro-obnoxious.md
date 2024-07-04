@@ -4,11 +4,11 @@ artist: José Mauro
 label: Quartin
 release: "1970"
 cover:
-  - https://ucarecdn.com/f7590a73-ccba-40f3-946a-2a0222739e8d/
+  - https://naaktinbad.b-cdn.net/site_uploads/f7590a73-ccba-40f3-946a-2a0222739e8d.jpeg
 tags:
   - MPB
   - Baroque pop
-audio: https://ucarecdn.com/85db88f0-4ff5-419b-9d9a-80224ced9c70/
+audio: https://naaktinbad.b-cdn.net/site_uploads/85db88f0-4ff5-419b-9d9a-80224ced9c70.mp3
 date: 2022-03-05T18:51:52.118Z
 url: https://josemauro.bandcamp.com/track/obn-xius
 ---

@@ -4,11 +4,11 @@ artist: Dawuna
 label: O___o?
 release: "2021"
 cover:
-  - https://ucarecdn.com/0e1ae280-ac91-44e3-904e-078b342604c0/
+  - https://naaktinbad.b-cdn.net/site_uploads/0e1ae280-ac91-44e3-904e-078b342604c0.jpg
 tags:
   - Alternative R&B
   - Ambient pop
-audio: https://ucarecdn.com/29e6e252-1315-43b7-b484-adfd6692c416/
+audio: https://naaktinbad.b-cdn.net/site_uploads/29e6e252-1315-43b7-b484-adfd6692c416.mp3
 date: 2022-07-24T06:28:22.064Z
 url: https://dawuna.bandcamp.com/album/glass-lit-dream-2
 ---

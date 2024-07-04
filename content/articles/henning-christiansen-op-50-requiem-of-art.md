@@ -4,11 +4,11 @@ artist: Henning Christiansen
 label: Penultimate Press
 release: "2016"
 cover:
-  - https://ucarecdn.com/d3f7ec5c-0bec-40b8-a084-b61e4a5d04e1/
+  - https://naaktinbad.b-cdn.net/site_uploads/d3f7ec5c-0bec-40b8-a084-b61e4a5d04e1.jpeg
 tags:
   - Musique concrète
   - Field recordings
-audio: https://ucarecdn.com/b75ddaae-6d94-4209-8523-84688e781196/
+audio: https://naaktinbad.b-cdn.net/site_uploads/b75ddaae-6d94-4209-8523-84688e781196.mp3
 date: 2022-03-16T21:31:25.696Z
 url: https://www.soundohm.com/product/requiem-of-art-fluxorum-o
 ---

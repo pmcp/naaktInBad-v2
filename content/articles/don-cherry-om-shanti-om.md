@@ -4,11 +4,11 @@ artist: Don Cherry
 label: Black Sweat
 release: "2020"
 cover:
-  - https://ucarecdn.com/bc5ce2e0-158b-48b4-a278-bf631b3425f2/
+  - https://naaktinbad.b-cdn.net/site_uploads/bc5ce2e0-158b-48b4-a278-bf631b3425f2.jpg
 tags:
   - Spiritual jazz
   - Avant-folk
-audio: https://ucarecdn.com/350657c1-890e-49db-9737-f41477a2f2fd/
+audio: https://naaktinbad.b-cdn.net/site_uploads/350657c1-890e-49db-9737-f41477a2f2fd.mp3
 date: 2022-03-17T21:15:22.123Z
 url: https://blacksweat.bandcamp.com/album/om-shanti-om
 ---

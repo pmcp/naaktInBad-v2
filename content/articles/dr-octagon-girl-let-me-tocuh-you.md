@@ -4,10 +4,10 @@ artist: Dr. Octagon
 label: Bulk
 release: "1996"
 cover:
-  - https://ucarecdn.com/842f9c6a-996b-4f9d-b739-c51fb4d60ebb/
+  - https://naaktinbad.b-cdn.net/site_uploads/842f9c6a-996b-4f9d-b739-c51fb4d60ebb.jpg
 tags:
   - Abstract hip-hop
-audio: https://ucarecdn.com/5993f2f9-ebb2-44e9-9c39-b74935a6b014/
+audio: https://naaktinbad.b-cdn.net/site_uploads/5993f2f9-ebb2-44e9-9c39-b74935a6b014.mp3
 date: 2022-03-12T18:25:43.880Z
 url: https://www.discogs.com/release/97037-Dr-Octagon-Dr-Octagon
 ---
